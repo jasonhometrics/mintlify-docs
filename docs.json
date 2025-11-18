@@ -15,18 +15,21 @@
         "groups": [
           {
             "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               "introduction"
             ]
           },
           {
             "group": "Glossary",
+            "icon": "book-open",
             "pages": [
               "glossary"
             ]
           },
           {
             "group": "Service Categories",
+            "icon": "users",
             "pages": [
               {
                 "group": "Accountants & Tax",
@@ -140,6 +143,7 @@
           },
           {
             "group": "Resources",
+            "icon": "toolbox",
             "pages": [
               "resources/checklists"
             ]

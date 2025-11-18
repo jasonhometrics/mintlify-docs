@@ -24,7 +24,7 @@ aside nav [class*="group"] [class*="group"] > div:first-child {
   letter-spacing: normal !important;
 }
 
-/* Sidebar pages - medium dark (NOT buttons, just sidebar links) */
+/* Sidebar pages - medium dark */
 aside nav a:not([class*="button"]),
 aside nav a:not([class*="primary"]) {
   color: #303030 !important;
@@ -35,14 +35,14 @@ aside nav a:not([class*="button"]):hover {
   background-color: #F7F6F3 !important;
 }
 
-/* Active page ONLY: blue text + neutral background */
+/* Active page ONLY: brand blue text + light blue background */
 aside nav a[aria-current="page"]:not([class*="button"]) {
-  background-color: #F7F6F3 !important;
+  background-color: #3B82F6 !important;
   color: #052EAD !important;
   font-weight: 600 !important;
 }
 
-/* Primary button (Search Directory) - keep white text */
+/* Primary button - keep white text */
 [class*="primary"] button,
 [class*="primary"] a,
 button[class*="primary"],
@@ -61,7 +61,7 @@ h1 {
   color: #111111 !important;
 }
 
-/* H2, H3 darker */
+/* H2, H3, H4, H5, H6 darker */
 h2, h3, h4, h5, h6 {
   color: #303030 !important;
 }

@@ -26,14 +26,123 @@
             ]
           },
           {
-            "group": "Title & Escrow",
+            "group": "Service Categories",
             "pages": [
-              "service-categories/title-escrow/overview",
-              "service-categories/title-escrow/how-to-evaluate",
-              "service-categories/title-escrow/what-to-expect",
-              "service-categories/title-escrow/wire-fraud-protection",
-              "service-categories/title-escrow/earnest-money-escrow",
-              "service-categories/title-escrow/ready-to-compare"
+              "service-categories/overview",
+              {
+                "group": "Title & Escrow",
+                "pages": [
+                  "service-categories/title-escrow/overview",
+                  "service-categories/title-escrow/how-to-evaluate",
+                  "service-categories/title-escrow/what-to-expect",
+                  "service-categories/title-escrow/wire-fraud-protection",
+                  "service-categories/title-escrow/earnest-money-escrow",
+                  "service-categories/title-escrow/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Mortgage Lenders",
+                "pages": [
+                  "service-categories/mortgage-lenders/overview",
+                  "service-categories/mortgage-lenders/how-to-evaluate",
+                  "service-categories/mortgage-lenders/what-to-expect",
+                  "service-categories/mortgage-lenders/pre-approval-vs-pre-qualification",
+                  "service-categories/mortgage-lenders/loan-options",
+                  "service-categories/mortgage-lenders/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Real Estate Agents",
+                "pages": [
+                  "service-categories/real-estate-agents/overview",
+                  "service-categories/real-estate-agents/how-to-evaluate",
+                  "service-categories/real-estate-agents/what-to-expect",
+                  "service-categories/real-estate-agents/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Homeowners Insurance",
+                "pages": [
+                  "service-categories/homeowners-insurance/overview",
+                  "service-categories/homeowners-insurance/how-to-evaluate",
+                  "service-categories/homeowners-insurance/what-to-expect",
+                  "service-categories/homeowners-insurance/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Legal Services",
+                "pages": [
+                  "service-categories/legal-services/overview",
+                  "service-categories/legal-services/how-to-evaluate",
+                  "service-categories/legal-services/what-to-expect",
+                  "service-categories/legal-services/estate-planning-real-estate",
+                  "service-categories/legal-services/probate-inherited-property",
+                  "service-categories/legal-services/gift-equity-family-transfers",
+                  "service-categories/legal-services/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Home Inspectors",
+                "pages": [
+                  "service-categories/home-inspectors/overview",
+                  "service-categories/home-inspectors/how-to-evaluate",
+                  "service-categories/home-inspectors/what-to-expect",
+                  "service-categories/home-inspectors/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Appraisers",
+                "pages": [
+                  "service-categories/appraisers/overview",
+                  "service-categories/appraisers/how-to-evaluate",
+                  "service-categories/appraisers/what-to-expect",
+                  "service-categories/appraisers/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Property Management",
+                "pages": [
+                  "service-categories/property-management/overview",
+                  "service-categories/property-management/how-to-evaluate",
+                  "service-categories/property-management/what-to-expect",
+                  "service-categories/property-management/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Accountants & Tax",
+                "pages": [
+                  "service-categories/accountants-tax/overview",
+                  "service-categories/accountants-tax/how-to-evaluate",
+                  "service-categories/accountants-tax/what-to-expect",
+                  "service-categories/accountants-tax/tax-implications-buying",
+                  "service-categories/accountants-tax/tax-implications-selling",
+                  "service-categories/accountants-tax/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Moving Companies",
+                "pages": [
+                  "service-categories/moving-companies/overview",
+                  "service-categories/moving-companies/how-to-evaluate",
+                  "service-categories/moving-companies/what-to-expect",
+                  "service-categories/moving-companies/ready-to-compare"
+                ]
+              },
+              {
+                "group": "Staging & Interior Design",
+                "pages": [
+                  "service-categories/staging-interior-design/overview",
+                  "service-categories/staging-interior-design/how-to-evaluate",
+                  "service-categories/staging-interior-design/what-to-expect",
+                  "service-categories/staging-interior-design/ready-to-compare"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/checklists"
             ]
           }
         ]

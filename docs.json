@@ -28,8 +28,7 @@
           {
             "group": "Service Categories",
             "pages": [
-              "service-categories/overview",
-              {
+                  {
                 "group": "Title & Escrow",
                 "pages": [
                   "service-categories/title-escrow/overview",

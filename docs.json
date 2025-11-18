@@ -26,25 +26,14 @@
             ]
           },
           {
-            "group": "Service Categories",
+            "group": "Title & Escrow",
             "pages": [
-              {
-                "group": "Title & Escrow",
-                "pages": [
-                  "service-categories/title-escrow/overview",
-                  "service-categories/title-escrow/how-to-evaluate",
-                  "service-categories/title-escrow/what-to-expect",
-                  "service-categories/title-escrow/wire-fraud-protection",
-                  "service-categories/title-escrow/earnest-money-escrow",
-                  "service-categories/title-escrow/ready-to-compare"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "resources/checklists"
+              "service-categories/title-escrow/overview",
+              "service-categories/title-escrow/how-to-evaluate",
+              "service-categories/title-escrow/what-to-expect",
+              "service-categories/title-escrow/wire-fraud-protection",
+              "service-categories/title-escrow/earnest-money-escrow",
+              "service-categories/title-escrow/ready-to-compare"
             ]
           }
         ]
@@ -56,11 +45,6 @@
           "anchor": "Directory",
           "href": "https://hometrics.com",
           "icon": "magnifying-glass"
-        },
-        {
-          "anchor": "About",
-          "href": "https://hometrics.com/about",
-          "icon": "circle-info"
         }
       ]
     }
@@ -82,20 +66,9 @@
       "href": "https://hometrics.com"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "cursor"
-   ]
-  },
   "footer": {
     "socials": {
-      "x": "https://x.com/hometrics",
-      "linkedin": "https://linkedin.com/company/hometrics"
+      "x": "https://x.com/hometrics"
     }
   }
 }

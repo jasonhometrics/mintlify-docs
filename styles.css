@@ -29,9 +29,9 @@ h1 {
   color: #111111;
 }
 
-/* Body/supporting text - 90% opacity on #303030 */
+/* Body/supporting text */
 p, li, span, div {
-  color: rgba(48, 48, 48, 0.6);
+  color: #FF0606;
 }
 
 /* Links stay brand blue */

@@ -2,15 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
 /* Ensure font applies everywhere */
-* {
+body, * {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-/* Section headers: All caps, slightly smaller, darkest */
-nav div[class*="group"] > div:first-child,
-nav div[class*="Group"] > div:first-child,
-.sidebar-group-title,
-[role="navigation"] [class*="group"] > div:first-child {
+/* Section headers: All caps, darkest */
+aside nav [class*="group"] > div:first-child,
+aside [role="navigation"] [class*="group"] > div:first-child {
   text-transform: uppercase !important;
   font-size: 0.75rem !important;
   letter-spacing: 0.05em !important;
@@ -19,41 +17,43 @@ nav div[class*="Group"] > div:first-child,
 }
 
 /* Section Categories (nested groups) - medium dark */
-nav div[class*="group"] div[class*="group"] > div:first-child {
+aside nav [class*="group"] [class*="group"] > div:first-child {
   color: #303030 !important;
   text-transform: none !important;
   font-size: 0.875rem !important;
   letter-spacing: normal !important;
 }
 
-/* Default sidebar navigation items (pages) - medium dark */
-nav a,
-nav a span,
-.sidebar-item,
-.sidebar-item span,
-[role="navigation"] a,
-[role="navigation"] a span {
+/* Sidebar pages - medium dark (NOT buttons, just sidebar links) */
+aside nav a:not([class*="button"]),
+aside nav a:not([class*="primary"]) {
   color: #303030 !important;
-  opacity: 1 !important;
 }
 
-/* Hover states: neutral background, keep text color */
-nav a:hover,
-.sidebar-item:hover,
-[class*="sidebarItem"]:hover,
-[role="navigation"] a:hover {
+/* Hover states: neutral background */
+aside nav a:not([class*="button"]):hover {
   background-color: #F7F6F3 !important;
-  color: #303030 !important;
 }
 
-/* Active nav item ONLY: blue text + neutral background */
-nav a[aria-current="page"],
-nav a[aria-current="page"] span,
-[role="navigation"] a[aria-current="page"],
-[role="navigation"] a[aria-current="page"] span {
+/* Active page ONLY: blue text + neutral background */
+aside nav a[aria-current="page"]:not([class*="button"]) {
   background-color: #F7F6F3 !important;
   color: #052EAD !important;
   font-weight: 600 !important;
+}
+
+/* Primary button (Search Directory) - keep white text */
+[class*="primary"] button,
+[class*="primary"] a,
+button[class*="primary"],
+a[class*="primary"] {
+  color: #FFFFFF !important;
+  background-color: #052EAD !important;
+}
+
+[class*="primary"] button:hover,
+[class*="primary"] a:hover {
+  background-color: #041F7A !important;
 }
 
 /* H1 text color */
@@ -66,16 +66,13 @@ h2, h3, h4, h5, h6 {
   color: #303030 !important;
 }
 
-/* Body/supporting text - readable but lighter */
+/* Body/supporting text */
 article p,
 article li,
-article span,
 .prose p,
 .prose li,
-.prose span,
 main p,
-main li,
-main span {
+main li {
   color: rgba(48, 48, 48, 0.85) !important;
 }
 

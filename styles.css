@@ -6,7 +6,7 @@
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-/* Section headers: All caps, slightly smaller - more specific selectors */
+/* Section headers: All caps, slightly smaller, darkest */
 nav div[class*="group"] > div:first-child,
 nav div[class*="Group"] > div:first-child,
 .sidebar-group-title,
@@ -15,9 +15,18 @@ nav div[class*="Group"] > div:first-child,
   font-size: 0.75rem !important;
   letter-spacing: 0.05em !important;
   font-weight: 600 !important;
+  color: #111111 !important;
 }
 
-/* Sidebar navigation items - darker text */
+/* Section Categories (nested groups) - medium dark */
+nav div[class*="group"] div[class*="group"] > div:first-child {
+  color: #303030 !important;
+  text-transform: none !important;
+  font-size: 0.875rem !important;
+  letter-spacing: normal !important;
+}
+
+/* Default sidebar navigation items (pages) - medium dark */
 nav a,
 nav a span,
 .sidebar-item,
@@ -28,18 +37,20 @@ nav a span,
   opacity: 1 !important;
 }
 
-/* Hover states: Replace gray with neutral */
+/* Hover states: neutral background, keep text color */
 nav a:hover,
 .sidebar-item:hover,
 [class*="sidebarItem"]:hover,
 [role="navigation"] a:hover {
   background-color: #F7F6F3 !important;
+  color: #303030 !important;
 }
 
-/* Active nav items */
+/* Active nav item ONLY: blue text + neutral background */
 nav a[aria-current="page"],
-nav a[class*="active"],
-[role="navigation"] a[aria-current="page"] {
+nav a[aria-current="page"] span,
+[role="navigation"] a[aria-current="page"],
+[role="navigation"] a[aria-current="page"] span {
   background-color: #F7F6F3 !important;
   color: #052EAD !important;
   font-weight: 600 !important;
@@ -55,7 +66,7 @@ h2, h3, h4, h5, h6 {
   color: #303030 !important;
 }
 
-/* Body/supporting text - still 60% but more visible base */
+/* Body/supporting text - readable but lighter */
 article p,
 article li,
 article span,
@@ -68,12 +79,16 @@ main span {
   color: rgba(48, 48, 48, 0.85) !important;
 }
 
-/* Links stay brand blue */
-a {
+/* Links in content stay brand blue */
+article a,
+main a,
+.prose a {
   color: #052EAD !important;
 }
 
-a:hover {
+article a:hover,
+main a:hover,
+.prose a:hover {
   color: #041F7A !important;
 }
 

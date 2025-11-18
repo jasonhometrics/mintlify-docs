@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Hometrics Guide",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#052EAD",
+    "light": "#3B82F6",
+    "dark": "#041F7A"
   },
   "favicon": "/favicon.svg",
   "navigation": {

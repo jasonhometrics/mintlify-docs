@@ -1,33 +1,101 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "Your guide to researching and evaluating real estate professionals"
+icon: "house"
 ---
 
+# Welcome to the Hometrics Guide
+
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  Buying or selling a home means working with professionals you've likely never hired before. Most people accept whoever their agent recommends. This guide exists so you don't have to.
 </Note>
 
-## Welcome
+## What You'll Find Here
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+<CardGroup cols={3}>
+  <Card title="Glossary" icon="book" href="/glossary">
+    Quick definitions of every term you'll encounter in real estate transactions
+  </Card>
+  <Card title="Service Guides" icon="users" href="/service-categories">
+    How to evaluate title companies, lenders, agents, and other professionals
+  </Card>
+  <Card title="Checklists" icon="list-check" href="/resources">
+    Downloadable tools to compare providers and ask the right questions
+  </Card>
+</CardGroup>
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
+## Who This Is For
+
+<AccordionGroup>
+  <Accordion title="First-Time Buyers" icon="house-user">
+    You don't know where to start, what questions to ask, or who to trust. This guide walks you through evaluating every professional involved in your transaction.
+  </Accordion>
+  <Accordion title="Sellers" icon="hand-holding-dollar">
+    You're building your transaction team and want to make informed decisions about who represents your interests and handles your proceeds.
+  </Accordion>
+  <Accordion title="Investors" icon="building">
+    You need to vet property managers, accountants, and other professionals for portfolio management and tax optimization.
+  </Accordion>
+  <Accordion title="Anyone Who Wants Transparency" icon="magnifying-glass">
+    You believe informed decisions beat accepted recommendations. You want to understand what you're signing and who you're hiring.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  You don't need industry experience to use this guide. If you can ask questions, you can use this.
+</Tip>
+
+## How to Navigate
+
+Choose your path based on what you need right now:
+
+<Steps>
+  <Step title="Looking up a term?">
+    Start with the [Glossary](/glossary). Quick definitions with links to comprehensive guides when you need more context.
+  </Step>
+  <Step title="Researching a service?">
+    Go to [Service Categories](/service-categories). Each guide explains what to look for, red flags to avoid, and questions that separate good providers from great ones.
+  </Step>
+  <Step title="Ready to compare?">
+    Download the checklists in each service guide, then compare professionals in the [Hometrics Directory](https://hometrics.com) based on verified reviews.
+  </Step>
+</Steps>
+
+## Quick Access
+
+<CardGroup cols={2}>
+  <Card title="Most Critical Decisions" icon="triangle-exclamation" href="/service-categories/title-companies">
+    **Title & Escrow:** Holds your money. Protects from wire fraud.
+
+    **Mortgage Lenders:** Determines if you can actually afford what you're buying.
+
+    **Legal Services:** Ensures everything is legally sound and tax-optimized.
+  </Card>
+  <Card title="Start Here If Unsure" icon="route" href="/glossary">
+    Not sure what you need? Start with the glossary. When you see terms like "earnest money" or "escrow," you'll understand what they mean and why they matter.
+  </Card>
+</CardGroup>
+
+<Warning>
+  This is a reference guide, not legal or financial advice. When in doubt, consult licensed professionals. Use this guide to know what questions to ask them.
+</Warning>
+
+## What Makes This Different
+
+<Tabs>
+  <Tab title="No Gatekeeping">
+    Every term is explained. Every process is broken down. Nothing assumes you already know how real estate works.
+  </Tab>
+  <Tab title="Consumer Advocate">
+    This guide tells you what professionals don't always volunteer. Red flags. Questions they hope you don't ask. What "normal" actually costs.
+  </Tab>
+  <Tab title="Verification Over Trust">
+    When you're ready to hire, the [Hometrics Directory](https://hometrics.com) shows you verified customer reviews, not just marketing claims.
+  </Tab>
+</Tabs>
+
+---
+
+<Card title="Ready to Start?" icon="arrow-right" href="/glossary">
+  Jump into the glossary or pick a service category. You don't need to read this front-to-back—start wherever answers your question right now.
 </Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```

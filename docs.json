@@ -7,7 +7,19 @@
     "light": "#3B82F6",
     "dark": "#041F7A"
   },
+  "font": {
+    "headings": "DM Sans",
+    "body": "DM Sans"
+  },
+  "background": {
+    "style": "transparent"
+  },
+  "css": ["/styles.css"],
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
@@ -160,10 +172,6 @@
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [

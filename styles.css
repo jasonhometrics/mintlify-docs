@@ -1,0 +1,49 @@
+/* Import DM Sans font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* Section headers: All caps, slightly smaller */
+nav [class*="group"] > div:first-child,
+nav [class*="Group"] > div:first-child {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Hover states: Replace gray with neutral */
+nav a:hover,
+.sidebar-item:hover,
+[class*="sidebarItem"]:hover {
+  background-color: #F7F6F3 !important;
+}
+
+/* Active nav items */
+nav a[aria-current="page"],
+[class*="active"] {
+  background-color: #F7F6F3 !important;
+  color: #052EAD !important;
+}
+
+/* H1 text color */
+h1 {
+  color: #111111;
+}
+
+/* Body/supporting text - 60% opacity on #303030 */
+p, li, span, div {
+  color: rgba(48, 48, 48, 0.6);
+}
+
+/* Links stay brand blue */
+a {
+  color: #052EAD;
+}
+
+a:hover {
+  color: #041F7A;
+}
+
+/* Ensure font applies everywhere */
+* {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

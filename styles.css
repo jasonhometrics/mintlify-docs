@@ -55,10 +55,9 @@ aside:last-child a {
   color: #222222 !important;
 }
 
-/* Table of contents - active header brand blue */
+/* Table of contents - active header brand blue (not bold) */
 [class*="toc"] a[aria-current="true"],
 .toc a[aria-current="true"],
 aside:last-child a[aria-current="true"] {
   color: #052EAD !important;
-  font-weight: 600 !important;
 }

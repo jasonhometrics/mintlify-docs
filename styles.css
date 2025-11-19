@@ -48,15 +48,6 @@ a:hover {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Table of contents container background */
-[class*="toc"],
-.toc,
-aside:last-child {
-  background-color: #F7F6F3 !important;
-  padding: 1rem !important;
-  border-radius: 0.5rem !important;
-}
-
 /* Table of contents - inactive headers dark gray */
 [class*="toc"] a,
 .toc a,

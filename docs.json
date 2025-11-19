@@ -14,7 +14,9 @@
   "background": {
     "style": "transparent"
   },
-  "css": ["/styles.css"],
+  "css": [
+    "/styles.css"
+  ],
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
@@ -147,8 +149,7 @@
                   "service-categories/title-escrow/how-to-evaluate",
                   "service-categories/title-escrow/what-to-expect",
                   "service-categories/title-escrow/wire-fraud-protection",
-                  "service-categories/title-escrow/earnest-money-escrow",
-                  "service-categories/title-escrow/ready-to-compare"
+                  "service-categories/title-escrow/earnest-money-escrow"
                 ]
               }
             ]

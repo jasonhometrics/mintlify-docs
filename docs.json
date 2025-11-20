@@ -84,15 +84,147 @@
                 ]
               },
               {
-                "group": "Legal Services",
+                "group": "Legal",
                 "pages": [
-                  "service-categories/legal-services/overview",
-                  "service-categories/legal-services/how-to-evaluate",
-                  "service-categories/legal-services/what-to-expect",
-                  "service-categories/legal-services/estate-planning-real-estate",
-                  "service-categories/legal-services/probate-inherited-property",
-                  "service-categories/legal-services/gift-equity-family-transfers",
-                  "service-categories/legal-services/ready-to-compare"
+                  "service-categories/legal/overview",
+                  {
+                    "group": "Consumer Protections",
+                    "pages": [
+                      "service-categories/legal/consumer-protections/overview",
+                      "service-categories/legal/consumer-protections/respa",
+                      "service-categories/legal/consumer-protections/tila",
+                      "service-categories/legal/consumer-protections/fair-housing",
+                      "service-categories/legal/consumer-protections/required-disclosures"
+                    ]
+                  },
+                  {
+                    "group": "Real Estate Attorneys",
+                    "pages": [
+                      "service-categories/legal/real-estate-attorneys/overview",
+                      "service-categories/legal/real-estate-attorneys/when-you-need-one",
+                      "service-categories/legal/real-estate-attorneys/types-of-attorneys",
+                      "service-categories/legal/real-estate-attorneys/comparing-attorneys"
+                    ]
+                  },
+                  {
+                    "group": "Contracts & Agreements",
+                    "pages": [
+                      "service-categories/legal/contracts-and-agreements/overview",
+                      "service-categories/legal/contracts-and-agreements/purchase-contracts",
+                      "service-categories/legal/contracts-and-agreements/lease-agreements",
+                      "service-categories/legal/contracts-and-agreements/addendums-and-contingencies",
+                      "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
+                    ]
+                  },
+                  {
+                    "group": "Landlord-Tenant",
+                    "pages": [
+                      "service-categories/legal/landlord-tenant/overview",
+                      "service-categories/legal/landlord-tenant/lease-agreements",
+                      "service-categories/legal/landlord-tenant/landlord-rights",
+                      "service-categories/legal/landlord-tenant/tenant-rights",
+                      "service-categories/legal/landlord-tenant/eviction-process",
+                      "service-categories/legal/landlord-tenant/security-deposits",
+                      "service-categories/legal/landlord-tenant/disputes"
+                    ]
+                  },
+                  {
+                    "group": "Estate & Inheritance",
+                    "pages": [
+                      "service-categories/legal/estate-and-inheritance/overview",
+                      "service-categories/legal/estate-and-inheritance/probate-process",
+                      "service-categories/legal/estate-and-inheritance/inherited-property",
+                      "service-categories/legal/estate-and-inheritance/trusts-and-real-estate",
+                      "service-categories/legal/estate-and-inheritance/power-of-attorney",
+                      "service-categories/legal/estate-and-inheritance/transferring-ownership"
+                    ]
+                  },
+                  {
+                    "group": "Divorce & Property",
+                    "pages": [
+                      "service-categories/legal/divorce-and-property/overview",
+                      "service-categories/legal/divorce-and-property/dividing-real-estate",
+                      "service-categories/legal/divorce-and-property/buyout-scenarios",
+                      "service-categories/legal/divorce-and-property/removing-names-from-title",
+                      "service-categories/legal/divorce-and-property/court-ordered-sales"
+                    ]
+                  },
+                  {
+                    "group": "Financial Distress",
+                    "pages": [
+                      "service-categories/legal/financial-distress/overview",
+                      "service-categories/legal/financial-distress/foreclosure-process",
+                      "service-categories/legal/financial-distress/short-sales",
+                      "service-categories/legal/financial-distress/pre-foreclosure-options",
+                      "service-categories/legal/financial-distress/rights-during-foreclosure"
+                    ]
+                  },
+                  {
+                    "group": "HOA & Associations",
+                    "pages": [
+                      "service-categories/legal/hoa-and-associations/overview",
+                      "service-categories/legal/hoa-and-associations/ccrs-explained",
+                      "service-categories/legal/hoa-and-associations/assessments-and-fees",
+                      "service-categories/legal/hoa-and-associations/governance-and-boards",
+                      "service-categories/legal/hoa-and-associations/buyer-rights"
+                    ]
+                  },
+                  {
+                    "group": "Liens & Encumbrances",
+                    "pages": [
+                      "service-categories/legal/liens-and-encumbrances/overview",
+                      "service-categories/legal/liens-and-encumbrances/types-of-liens",
+                      "service-categories/legal/liens-and-encumbrances/lien-priority",
+                      "service-categories/legal/liens-and-encumbrances/removing-liens"
+                    ]
+                  },
+                  {
+                    "group": "Business Structures",
+                    "pages": [
+                      "service-categories/legal/business-structures/overview",
+                      "service-categories/legal/business-structures/llcs-for-real-estate",
+                      "service-categories/legal/business-structures/partnerships",
+                      "service-categories/legal/business-structures/asset-protection"
+                    ]
+                  },
+                  {
+                    "group": "Property Disputes",
+                    "pages": [
+                      "service-categories/legal/property-disputes/overview",
+                      "service-categories/legal/property-disputes/boundary-disputes",
+                      "service-categories/legal/property-disputes/easement-disputes",
+                      "service-categories/legal/property-disputes/title-claims",
+                      "service-categories/legal/property-disputes/neighbor-disputes"
+                    ]
+                  },
+                  {
+                    "group": "Zoning & Land Use",
+                    "pages": [
+                      "service-categories/legal/zoning-and-land-use/overview",
+                      "service-categories/legal/zoning-and-land-use/zoning-basics",
+                      "service-categories/legal/zoning-and-land-use/variances-and-permits",
+                      "service-categories/legal/zoning-and-land-use/non-conforming-use"
+                    ]
+                  },
+                  {
+                    "group": "Environmental Concerns",
+                    "pages": [
+                      "service-categories/legal/environmental-concerns/overview",
+                      "service-categories/legal/environmental-concerns/required-disclosures",
+                      "service-categories/legal/environmental-concerns/lead-paint",
+                      "service-categories/legal/environmental-concerns/flood-zones",
+                      "service-categories/legal/environmental-concerns/mold-and-hazards"
+                    ]
+                  },
+                  {
+                    "group": "New Construction",
+                    "pages": [
+                      "service-categories/legal/new-construction/overview",
+                      "service-categories/legal/new-construction/builder-contracts",
+                      "service-categories/legal/new-construction/warranty-rights",
+                      "service-categories/legal/new-construction/inspection-rights"
+                    ]
+                  }
                 ]
               },
               {
@@ -105,7 +237,7 @@
                   "service-categories/mortgage-lenders/loan-types",
                   "service-categories/mortgage-lenders/mortgage-timeline",
                   "service-categories/mortgage-lenders/comparing-lenders"
-                  ]
+                ]
               },
               {
                 "group": "Moving Companies",
@@ -147,7 +279,7 @@
                 "group": "Title & Escrow",
                 "pages": [
                   "service-categories/title-escrow/overview",
-                  "service-categories/title-escrow/settlement-agents-and-closers",
+                  "service-categories/title-escrow/title-company-roles",
                   "service-categories/title-escrow/title-insurance",
                   "service-categories/title-escrow/title-ownership-options",
                   "service-categories/title-escrow/earnest-money",

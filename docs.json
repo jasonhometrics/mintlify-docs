@@ -147,10 +147,13 @@
                 "group": "Title & Escrow",
                 "pages": [
                   "service-categories/title-escrow/overview",
-                  "service-categories/title-escrow/how-to-evaluate",
-                  "service-categories/title-escrow/what-to-expect",
+                  "service-categories/title-escrow/settlement-agents-and-closers",
+                  "service-categories/title-escrow/title-insurance",
+                  "service-categories/title-escrow/title-ownership-options",
+                  "service-categories/title-escrow/earnest-money",
                   "service-categories/title-escrow/wire-fraud-protection",
-                  "service-categories/title-escrow/title-escrow/title-ownership-options"
+                  "service-categories/title-escrow/closing-process",
+                  "service-categories/title-escrow/comparing-title-companies"
                 ]
               }
             ]

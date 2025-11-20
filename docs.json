@@ -99,12 +99,13 @@
                 "group": "Mortgage Lenders",
                 "pages": [
                   "service-categories/mortgage-lenders/overview",
-                  "service-categories/mortgage-lenders/how-to-evaluate",
-                  "service-categories/mortgage-lenders/what-to-expect",
-                  "service-categories/mortgage-lenders/pre-approval-vs-pre-qualification",
-                  "service-categories/mortgage-lenders/loan-options",
-                  "service-categories/mortgage-lenders/ready-to-compare"
-                ]
+                  "service-categories/mortgage-lenders/loan-officers-and-brokers",
+                  "service-categories/mortgage-lenders/local-vs-national-lenders",
+                  "service-categories/mortgage-lenders/pre-approval",
+                  "service-categories/mortgage-lenders/loan-types",
+                  "service-categories/mortgage-lenders/mortgage-timeline",
+                  "service-categories/mortgage-lenders/comparing-lenders"
+                  ]
               },
               {
                 "group": "Moving Companies",

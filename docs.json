@@ -47,12 +47,7 @@
               {
                 "group": "Accountants & Tax",
                 "pages": [
-                  "service-categories/accountants-tax/overview",
-                  "service-categories/accountants-tax/how-to-evaluate",
-                  "service-categories/accountants-tax/what-to-expect",
-                  "service-categories/accountants-tax/tax-implications-buying",
-                  "service-categories/accountants-tax/tax-implications-selling",
-                  "service-categories/accountants-tax/ready-to-compare"
+                  "service-categories/accountants-tax/overview"
                 ]
               },
               {
@@ -76,10 +71,7 @@
               {
                 "group": "Homeowners Insurance",
                 "pages": [
-                  "service-categories/homeowners-insurance/overview",
-                  "service-categories/homeowners-insurance/how-to-evaluate",
-                  "service-categories/homeowners-insurance/what-to-expect",
-                  "service-categories/homeowners-insurance/ready-to-compare"
+                  "service-categories/homeowners-insurance/overview"
                 ]
               },
               {

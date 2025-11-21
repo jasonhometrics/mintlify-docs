@@ -59,10 +59,7 @@
               {
                 "group": "Home Inspectors",
                 "pages": [
-                  "service-categories/home-inspectors/overview",
-                  "service-categories/home-inspectors/how-to-evaluate",
-                  "service-categories/home-inspectors/what-to-expect",
-                  "service-categories/home-inspectors/ready-to-compare"
+                  "service-categories/home-inspectors/overview"
                 ]
               },
               {
@@ -160,10 +157,7 @@
               {
                 "group": "Moving Companies",
                 "pages": [
-                  "service-categories/moving-companies/overview",
-                  "service-categories/moving-companies/how-to-evaluate",
-                  "service-categories/moving-companies/what-to-expect",
-                  "service-categories/moving-companies/ready-to-compare"
+                  "service-categories/moving-companies/overview"
                 ]
               },
               {

@@ -53,10 +53,7 @@
               {
                 "group": "Appraisers",
                 "pages": [
-                  "service-categories/appraisers/overview",
-                  "service-categories/appraisers/how-to-evaluate",
-                  "service-categories/appraisers/what-to-expect",
-                  "service-categories/appraisers/ready-to-compare"
+                  "service-categories/appraisers/overview"
                 ]
               },
               {

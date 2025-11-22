@@ -163,10 +163,7 @@
               {
                 "group": "Property Management",
                 "pages": [
-                  "service-categories/property-management/overview",
-                  "service-categories/property-management/how-to-evaluate",
-                  "service-categories/property-management/what-to-expect",
-                  "service-categories/property-management/ready-to-compare"
+                  "service-categories/property-management/overview"
                 ]
               },
               {
@@ -176,15 +173,6 @@
                   "service-categories/real-estate-agents/how-to-evaluate",
                   "service-categories/real-estate-agents/what-to-expect",
                   "service-categories/real-estate-agents/ready-to-compare"
-                ]
-              },
-              {
-                "group": "Staging & Interior Design",
-                "pages": [
-                  "service-categories/staging-interior-design/overview",
-                  "service-categories/staging-interior-design/how-to-evaluate",
-                  "service-categories/staging-interior-design/what-to-expect",
-                  "service-categories/staging-interior-design/ready-to-compare"
                 ]
               },
               {

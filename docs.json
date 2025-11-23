@@ -84,14 +84,26 @@
             "group": "Appraisers",
             "icon": "magnifying-glass-dollar",
             "pages": [
-              "service-categories/appraisers/overview"
+              "service-categories/appraisers/overview",
+              "service-categories/appraisers/types-of-appraisals",
+              "service-categories/appraisers/the-appraisal-process",
+              "service-categories/appraisers/understanding-the-report",
+              "service-categories/appraisers/appraisal-vs-other-valuations",
+              "service-categories/appraisers/when-appraisals-come-in-low",
+              "service-categories/appraisers/comparing-appraisers"
             ]
           },
           {
             "group": "Home Inspectors",
             "icon": "clipboard-check",
             "pages": [
-              "service-categories/home-inspectors/overview"
+              "service-categories/home-inspectors/overview",
+              "service-categories/home-inspectors/types-of-inspections",
+              "service-categories/home-inspectors/the-inspection-process",
+              "service-categories/home-inspectors/understanding-the-report",
+              "service-categories/home-inspectors/common-issues-found",
+              "service-categories/home-inspectors/after-the-inspection",
+              "service-categories/home-inspectors/comparing-inspectors"
             ]
           },
           {

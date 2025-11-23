@@ -41,153 +41,189 @@
         "tab": "Service Categories",
         "groups": [
           {
-            "group": "Service Categories",
-            "icon": "users",
+            "group": "Title & Escrow",
+            "icon": "shield-check",
+            "pages": [
+              "service-categories/title-escrow/overview",
+              "service-categories/title-escrow/title-company-roles",
+              "service-categories/title-escrow/title-insurance",
+              "service-categories/title-escrow/title-ownership-options",
+              "service-categories/title-escrow/earnest-money",
+              "service-categories/title-escrow/wire-fraud-protection",
+              "service-categories/title-escrow/closing-process",
+              "service-categories/title-escrow/comparing-title-companies"
+            ]
+          },
+          {
+            "group": "Mortgage Lenders",
+            "icon": "house-circle-check",
+            "pages": [
+              "service-categories/mortgage-lenders/overview",
+              "service-categories/mortgage-lenders/loan-officers-and-brokers",
+              "service-categories/mortgage-lenders/local-vs-national-lenders",
+              "service-categories/mortgage-lenders/pre-approval",
+              "service-categories/mortgage-lenders/loan-types",
+              "service-categories/mortgage-lenders/mortgage-timeline",
+              "service-categories/mortgage-lenders/comparing-lenders"
+            ]
+          },
+          {
+            "group": "Property Management",
+            "icon": "building",
+            "pages": [
+              "service-categories/property-management/overview",
+              "service-categories/property-management/types-of-services",
+              "service-categories/property-management/the-management-process",
+              "service-categories/property-management/costs-and-fees",
+              "service-categories/property-management/owner-responsibilities",
+              "service-categories/property-management/evaluating-performance",
+              "service-categories/property-management/comparing-property-managers"
+            ]
+          },
+          {
+            "group": "Appraisers",
+            "icon": "magnifying-glass-dollar",
+            "pages": [
+              "service-categories/appraisers/overview"
+            ]
+          },
+          {
+            "group": "Home Inspectors",
+            "icon": "clipboard-check",
+            "pages": [
+              "service-categories/home-inspectors/overview"
+            ]
+          },
+          {
+            "group": "Staging and Interior Design",
+            "icon": "couch",
             "pages": [
               {
-                "group": "Accountants & Tax",
+                "group": "Staging",
                 "pages": [
-                  "service-categories/accountants-tax/overview"
+                  "service-categories/staging-interior-design/staging/overview",
+                  "service-categories/staging-interior-design/staging/types-of-staging",
+                  "service-categories/staging-interior-design/staging/the-staging-process",
+                  "service-categories/staging-interior-design/staging/costs-and-roi",
+                  "service-categories/staging-interior-design/staging/comparing-stagers"
                 ]
               },
               {
-                "group": "Appraisers",
+                "group": "Interior Design",
                 "pages": [
-                  "service-categories/appraisers/overview"
-                ]
-              },
-              {
-                "group": "Home Inspectors",
-                "pages": [
-                  "service-categories/home-inspectors/overview"
-                ]
-              },
-              {
-                "group": "Homeowners Insurance",
-                "pages": [
-                  "service-categories/homeowners-insurance/overview"
-                ]
-              },
-              {
-                "group": "Legal",
-                "pages": [
-                  "service-categories/legal/overview",
-                  {
-                    "group": "Consumer Protections",
-                    "pages": [
-                      "service-categories/legal/consumer-protections/overview",
-                      "service-categories/legal/consumer-protections/respa",
-                      "service-categories/legal/consumer-protections/tila",
-                      "service-categories/legal/consumer-protections/fair-housing",
-                      "service-categories/legal/consumer-protections/required-disclosures"
-                    ]
-                  },
-                  {
-                    "group": "Real Estate Attorneys",
-                    "pages": [
-                      "service-categories/legal/real-estate-attorneys/overview",
-                      "service-categories/legal/real-estate-attorneys/when-you-need-one",
-                      "service-categories/legal/real-estate-attorneys/types-of-attorneys",
-                      "service-categories/legal/real-estate-attorneys/comparing-attorneys"
-                    ]
-                  },
-                  {
-                    "group": "Contracts & Agreements",
-                    "pages": [
-                      "service-categories/legal/contracts-and-agreements/overview",
-                      "service-categories/legal/contracts-and-agreements/purchase-contracts",
-                      "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
-                    ]
-                  },
-                  {
-                    "group": "Rentals",
-                    "pages": [
-                      "service-categories/legal/rentals/overview",
-                      "service-categories/legal/rentals/lease-agreements",
-                      "service-categories/legal/rentals/landlord-rights",
-                      "service-categories/legal/rentals/tenant-rights",
-                      "service-categories/legal/rentals/eviction-process",
-                      "service-categories/legal/rentals/security-deposits",
-                      "service-categories/legal/rentals/disputes"
-                    ]
-                  },
-                  {
-                    "group": "Ownership Changes",
-                    "pages": [
-                      "service-categories/legal/ownership-changes/overview",
-                      "service-categories/legal/ownership-changes/probate-process",
-                      "service-categories/legal/ownership-changes/inherited-property",
-                      "service-categories/legal/ownership-changes/trusts-and-real-estate",
-                      "service-categories/legal/ownership-changes/power-of-attorney",
-                      "service-categories/legal/ownership-changes/transferring-ownership",
-                      "service-categories/legal/ownership-changes/divorce-and-property",
-                      "service-categories/legal/ownership-changes/buyout-scenarios",
-                      "service-categories/legal/ownership-changes/removing-names-from-title"
-                    ]
-                  },
-                  {
-                    "group": "Property Issues",
-                    "pages": [
-                      "service-categories/legal/property-issues/overview",
-                      "service-categories/legal/property-issues/foreclosure-process",
-                      "service-categories/legal/property-issues/short-sales",
-                      "service-categories/legal/property-issues/liens-and-encumbrances",
-                      "service-categories/legal/property-issues/hoa-basics",
-                      "service-categories/legal/property-issues/zoning-and-land-use",
-                      "service-categories/legal/property-issues/environmental-disclosures",
-                      "service-categories/legal/property-issues/property-disputes",
-                      "service-categories/legal/property-issues/llcs-and-business-structures",
-                      "service-categories/legal/property-issues/new-construction"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Mortgage Lenders",
-                "pages": [
-                  "service-categories/mortgage-lenders/overview",
-                  "service-categories/mortgage-lenders/loan-officers-and-brokers",
-                  "service-categories/mortgage-lenders/local-vs-national-lenders",
-                  "service-categories/mortgage-lenders/pre-approval",
-                  "service-categories/mortgage-lenders/loan-types",
-                  "service-categories/mortgage-lenders/mortgage-timeline",
-                  "service-categories/mortgage-lenders/comparing-lenders"
-                ]
-              },
-              {
-                "group": "Moving Companies",
-                "pages": [
-                  "service-categories/moving-companies/overview"
-                ]
-              },
-              {
-                "group": "Property Management",
-                "pages": [
-                  "service-categories/property-management/overview"
-                ]
-              },
-              {
-                "group": "Real Estate Agents",
-                "pages": [
-                  "service-categories/real-estate-agents/overview",
-                  "service-categories/real-estate-agents/how-to-evaluate",
-                  "service-categories/real-estate-agents/what-to-expect",
-                  "service-categories/real-estate-agents/ready-to-compare"
-                ]
-              },
-              {
-                "group": "Title & Escrow",
-                "pages": [
-                  "service-categories/title-escrow/overview",
-                  "service-categories/title-escrow/title-company-roles",
-                  "service-categories/title-escrow/title-insurance",
-                  "service-categories/title-escrow/title-ownership-options",
-                  "service-categories/title-escrow/earnest-money",
-                  "service-categories/title-escrow/wire-fraud-protection",
-                  "service-categories/title-escrow/closing-process",
-                  "service-categories/title-escrow/comparing-title-companies"
+                  "service-categories/staging-interior-design/interior-design/overview",
+                  "service-categories/staging-interior-design/interior-design/types-of-services",
+                  "service-categories/staging-interior-design/interior-design/the-design-process",
+                  "service-categories/staging-interior-design/interior-design/costs-and-fees",
+                  "service-categories/staging-interior-design/interior-design/comparing-designers"
                 ]
               }
+            ]
+          },
+          {
+            "group": "Real Estate Agents",
+            "icon": "house-user",
+            "pages": [
+              "service-categories/real-estate-agents/overview",
+              "service-categories/real-estate-agents/how-to-evaluate",
+              "service-categories/real-estate-agents/what-to-expect",
+              "service-categories/real-estate-agents/ready-to-compare"
+            ]
+          },
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "service-categories/legal/overview",
+              {
+                "group": "Consumer Protections",
+                "pages": [
+                  "service-categories/legal/consumer-protections/overview",
+                  "service-categories/legal/consumer-protections/respa",
+                  "service-categories/legal/consumer-protections/tila",
+                  "service-categories/legal/consumer-protections/fair-housing",
+                  "service-categories/legal/consumer-protections/required-disclosures"
+                ]
+              },
+              {
+                "group": "Real Estate Attorneys",
+                "pages": [
+                  "service-categories/legal/real-estate-attorneys/overview",
+                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
+                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
+                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
+                ]
+              },
+              {
+                "group": "Contracts & Agreements",
+                "pages": [
+                  "service-categories/legal/contracts-and-agreements/overview",
+                  "service-categories/legal/contracts-and-agreements/purchase-contracts",
+                  "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
+                ]
+              },
+              {
+                "group": "Rentals",
+                "pages": [
+                  "service-categories/legal/rentals/overview",
+                  "service-categories/legal/rentals/lease-agreements",
+                  "service-categories/legal/rentals/landlord-rights",
+                  "service-categories/legal/rentals/tenant-rights",
+                  "service-categories/legal/rentals/eviction-process",
+                  "service-categories/legal/rentals/security-deposits",
+                  "service-categories/legal/rentals/disputes"
+                ]
+              },
+              {
+                "group": "Ownership Changes",
+                "pages": [
+                  "service-categories/legal/ownership-changes/overview",
+                  "service-categories/legal/ownership-changes/probate-process",
+                  "service-categories/legal/ownership-changes/inherited-property",
+                  "service-categories/legal/ownership-changes/trusts-and-real-estate",
+                  "service-categories/legal/ownership-changes/power-of-attorney",
+                  "service-categories/legal/ownership-changes/transferring-ownership",
+                  "service-categories/legal/ownership-changes/divorce-and-property",
+                  "service-categories/legal/ownership-changes/buyout-scenarios",
+                  "service-categories/legal/ownership-changes/removing-names-from-title"
+                ]
+              },
+              {
+                "group": "Property Issues",
+                "pages": [
+                  "service-categories/legal/property-issues/overview",
+                  "service-categories/legal/property-issues/foreclosure-process",
+                  "service-categories/legal/property-issues/short-sales",
+                  "service-categories/legal/property-issues/liens-and-encumbrances",
+                  "service-categories/legal/property-issues/hoa-basics",
+                  "service-categories/legal/property-issues/zoning-and-land-use",
+                  "service-categories/legal/property-issues/environmental-disclosures",
+                  "service-categories/legal/property-issues/property-disputes",
+                  "service-categories/legal/property-issues/llcs-and-business-structures",
+                  "service-categories/legal/property-issues/new-construction"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Homeowners Insurance",
+            "icon": "house-shield",
+            "pages": [
+              "service-categories/homeowners-insurance/overview"
+            ]
+          },
+          {
+            "group": "Accountants & Tax",
+            "icon": "calculator",
+            "pages": [
+              "service-categories/accountants-tax/overview"
+            ]
+          },
+          {
+            "group": "Moving Companies",
+            "icon": "truck-moving",
+            "pages": [
+              "service-categories/moving-companies/overview"
             ]
           }
         ]

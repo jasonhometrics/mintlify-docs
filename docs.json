@@ -82,7 +82,7 @@
           },
           {
             "group": "Homeowners Insurance",
-            "icon": "house-shield",
+            "icon": "shield-halved",
             "pages": [
               "service-categories/homeowners-insurance/overview",
               "service-categories/homeowners-insurance/types-of-coverage",

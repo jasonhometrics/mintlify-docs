@@ -1,65 +1,294 @@
 /* Hometrics Guide - Custom Styles */
 
 /* ================================
-   CSS VARIABLES
+   LIGHT MODE (DEFAULT)
    ================================ */
 
 :root {
+  /* Brand Colors */
   --brand-blue: #052EAD;
+  --brand-blue-light: #3B82F6;
+  
+  /* Backgrounds */
+  --background: #FFFFFF;
   --surface-light: #F7F6F3;
+  --cta-dark: #1F1F1F;
+  
+  /* Text Colors */
   --text-primary: #111111;
   --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  /* Borders */
   --border-light: #E5E5E5;
+  
+  /* Component Colors */
+  --note-bg: #EFF6FF;
+  --note-border: #3B82F6;
+  --note-text: #1E3A8A;
+  
+  --warning-bg: #FEF2F2;
+  --warning-border: #EF4444;
+  --warning-text: #991B1B;
+  
+  --tip-bg: #F0FDF4;
+  --tip-border: #22C55E;
+  --tip-text: #166534;
+  
+  --info-bg: #F5F5F5;
+  --info-border: #737373;
+  --info-text: #404040;
+  
+  --check-bg: #F0FDF4;
+  --check-border: #22C55E;
+  --check-text: #166534;
 }
 
-[data-theme="dark"] {
-  --brand-blue: #4A78FF;
-  --surface-dark: #1E1E1E;
-  --text-primary-dark: #E8E8E8;
-  --text-secondary-dark: #A8A8A8;
-  --border-dark: rgba(255, 255, 255, 0.08);
+/* Typography */
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-primary);
 }
 
 /* ================================
-   LIGHT MODE - TARGETED FIXES
+   NAVIGATION
    ================================ */
 
-/* Search Bar Background */
-#search-bar-entry,
-button#search-bar-entry.bg-background-light {
-  background-color: var(--surface-light) !important;
+/* Main Navigation Tabs - Active State */
+nav[role="tablist"] button[aria-selected="true"],
+nav[role="tablist"] a[aria-current="page"] {
+  color: var(--brand-blue) !important;
+  border-bottom: 2px solid var(--brand-blue) !important;
+  font-weight: 600;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
-/* Card Icon Background ONLY */
-div[data-component-part="card-icon"] {
+/* Sidebar Active Page */
+aside nav a[aria-current="page"],
+aside nav a[data-active="true"] {
+  color: var(--brand-blue) !important;
   background-color: var(--surface-light) !important;
-  border-radius: 8px !important;
-  padding: 8px !important;
+  font-weight: 500;
+  border-radius: 6px;
 }
 
-/* Table of Contents - Active State Light Mode */
+/* Table of Contents - "On This Page" */
+.toc a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: var(--text-primary);
+}
+
+/* Active state in light mode - Brand Blue + Bold */
 #table-of-contents-content a[class*="font-medium"][class*="text-primary"] {
   color: var(--brand-blue) !important;
   font-weight: 700 !important;
 }
 
 /* ================================
-   DARK MODE FIXES
+   CALLOUTS
    ================================ */
 
-/* Sidebar Category Headers - Keep Light Text */
+/* Note - Blue */
+div[class*="Note"],
+.callout[data-callout="note"] {
+  background-color: var(--note-bg) !important;
+  border-left: 4px solid var(--note-border) !important;
+  color: var(--note-text) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Warning - Soft Red */
+div[class*="Warning"],
+.callout[data-callout="warning"] {
+  background-color: var(--warning-bg) !important;
+  border-left: 4px solid var(--warning-border) !important;
+  color: var(--warning-text) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Tip - Green */
+div[class*="Tip"],
+.callout[data-callout="tip"] {
+  background-color: var(--tip-bg) !important;
+  border-left: 4px solid var(--tip-border) !important;
+  color: var(--tip-text) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Info - Gray */
+div[class*="Info"],
+.callout[data-callout="info"] {
+  background-color: var(--info-bg) !important;
+  border-left: 4px solid var(--info-border) !important;
+  color: var(--info-text) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Check - Green */
+div[class*="Check"],
+.callout[data-callout="check"] {
+  background-color: var(--check-bg) !important;
+  border-left: 4px solid var(--check-border) !important;
+  color: var(--check-text) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* ================================
+   DARK MODE
+   ================================ */
+
+[data-theme="dark"] {
+  /* Brand Colors */
+  --brand-blue: #4A78FF;
+  --brand-blue-dark: #3B69E5;
+  
+  /* Backgrounds */
+  --background: #0F0F0F;
+  --surface: #1E1E1E;
+  --surface-elevated: #252525;
+  --cta-dark: #FFFFFF;
+  
+  /* Text Colors */
+  --text-primary: #E8E8E8;
+  --text-secondary: #A8A8A8;
+  --text-tertiary: #787878;
+  
+  /* Borders */
+  --border-dark: rgba(255, 255, 255, 0.08);
+  
+  /* Component Colors */
+  --note-bg: rgba(59, 130, 246, 0.1);
+  --note-border: #3B82F6;
+  --note-text: #93C5FD;
+  
+  --warning-bg: rgba(239, 68, 68, 0.1);
+  --warning-border: #EF4444;
+  --warning-text: #FCA5A5;
+  
+  --tip-bg: rgba(34, 197, 94, 0.1);
+  --tip-border: #22C55E;
+  --tip-text: #86EFAC;
+  
+  --info-bg: rgba(115, 115, 115, 0.1);
+  --info-border: #737373;
+  --info-text: #D4D4D4;
+  
+  --check-bg: rgba(34, 197, 94, 0.1);
+  --check-border: #22C55E;
+  --check-text: #86EFAC;
+}
+
+/* Dark Mode Typography */
+[data-theme="dark"] body {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-primary);
+}
+
+/* Dark Mode Navigation */
+[data-theme="dark"] nav[role="tablist"] button[aria-selected="true"],
+[data-theme="dark"] nav[role="tablist"] a[aria-current="page"] {
+  color: var(--brand-blue) !important;
+  border-bottom: 2px solid var(--brand-blue) !important;
+}
+
+[data-theme="dark"] aside nav a[aria-current="page"],
+[data-theme="dark"] aside nav a[data-active="true"] {
+  color: var(--brand-blue) !important;
+  background-color: var(--surface) !important;
+}
+
+/* Dark Mode Sidebar Category Headers - White Text */
 [data-theme="dark"] .sidebar-group-header,
 [data-theme="dark"] .sidebar-group-header h5 {
   color: #E5E5E5 !important;
 }
 
-/* Search Bar Dark Mode */
-[data-theme="dark"] #search-bar-entry,
-[data-theme="dark"] button#search-bar-entry {
-  background-color: var(--surface-dark) !important;
+/* Dark Mode TOC */
+[data-theme="dark"] .toc a {
+  color: var(--text-secondary);
 }
 
-/* Card Icon Dark Mode */
-[data-theme="dark"] div[data-component-part="card-icon"] {
-  background-color: var(--surface-dark) !important;
+[data-theme="dark"] .toc a:hover {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] #table-of-contents-content a[class*="font-medium"] {
+  color: var(--brand-blue) !important;
+  font-weight: 700 !important;
+}
+
+/* Dark Mode Callouts */
+[data-theme="dark"] div[class*="Note"] {
+  background-color: var(--note-bg) !important;
+  border-left-color: var(--note-border) !important;
+  color: var(--note-text) !important;
+}
+
+[data-theme="dark"] div[class*="Warning"] {
+  background-color: var(--warning-bg) !important;
+  border-left-color: var(--warning-border) !important;
+  color: var(--warning-text) !important;
+}
+
+[data-theme="dark"] div[class*="Tip"] {
+  background-color: var(--tip-bg) !important;
+  border-left-color: var(--tip-border) !important;
+  color: var(--tip-text) !important;
+}
+
+[data-theme="dark"] div[class*="Info"] {
+  background-color: var(--info-bg) !important;
+  border-left-color: var(--info-border) !important;
+  color: var(--info-text) !important;
+}
+
+[data-theme="dark"] div[class*="Check"] {
+  background-color: var(--check-bg) !important;
+  border-left-color: var(--check-border) !important;
+  color: var(--check-text) !important;
+}
+
+/* ================================
+   UTILITIES
+   ================================ */
+
+/* Focus States */
+*:focus-visible {
+  outline: 2px solid var(--brand-blue) !important;
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
+}
+
+[data-theme="dark"] ::selection {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
 }

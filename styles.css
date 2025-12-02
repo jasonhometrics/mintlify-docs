@@ -78,32 +78,31 @@ aside nav a[data-active="true"] {
   border-radius: 6px;
 }
 
-/* Table of Contents - "On This Page" - AGGRESSIVE TARGETING */
-.toc a,
-nav[aria-label*="Table"] a,
-div[class*="toc"] a,
-aside nav ul li a {
+/* Table of Contents - "On This Page" */
+/* Base state - all links */
+nav[aria-labelledby*="table-of-contents"] a,
+aside div[class*="sticky"] nav a,
+.toc a {
   color: var(--text-secondary) !important;
   text-decoration: none;
   transition: color 0.2s ease;
   font-weight: 400 !important;
 }
 
-.toc a:hover,
-nav[aria-label*="Table"] a:hover,
-div[class*="toc"] a:hover {
+/* Hover state */
+nav[aria-labelledby*="table-of-contents"] a:hover,
+aside div[class*="sticky"] nav a:hover,
+.toc a:hover {
   color: var(--text-primary) !important;
 }
 
-/* ACTIVE STATE - Brand Blue + Bold */
+/* ACTIVE STATE - Brand Blue + Bold - LIGHT MODE */
+nav[aria-labelledby*="table-of-contents"] a[aria-current="true"],
+nav[aria-labelledby*="table-of-contents"] a[data-active="true"],
+aside div[class*="sticky"] nav a[aria-current="true"],
+aside div[class*="sticky"] nav a[data-active="true"],
 .toc a[aria-current="true"],
-.toc a[data-active="true"],
-nav[aria-label*="Table"] a[aria-current="true"],
-nav[aria-label*="Table"] a[data-active="true"],
-div[class*="toc"] a[aria-current="true"],
-div[class*="toc"] a[data-active="true"],
-aside nav ul li a[aria-current="true"],
-aside nav ul li a[data-active="true"] {
+.toc a[data-active="true"] {
   color: var(--brand-blue) !important;
   font-weight: 700 !important;
   border-left: 2px solid var(--brand-blue) !important;
@@ -112,70 +111,64 @@ aside nav ul li a[data-active="true"] {
 }
 
 /* ================================
-   SEARCH - AGGRESSIVE TARGETING
+   SEARCH - EXACT TARGETING
    ================================ */
 
-/* Search container */
-div[class*="search"],
-div[data-search],
-form[role="search"],
+/* Search button trigger */
+#search-bar-entry,
+button#search-bar-entry {
+  background-color: var(--surface-light) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+/* Override Tailwind bg-background-light class */
+.bg-background-light {
+  background-color: var(--surface-light) !important;
+}
+
+/* Search modal/dialog when open */
 [cmdk-root],
-[cmdk-input-wrapper] {
+[cmdk-dialog],
+div[role="dialog"] input[type="text"] {
   background-color: var(--surface-light) !important;
-  border-radius: 8px !important;
-}
-
-/* Search input field */
-input[type="search"],
-input[placeholder*="Search"],
-input[class*="search"],
-[cmdk-input] {
-  background-color: var(--surface-light) !important;
-  border: 1px solid var(--border-light) !important;
-  border-radius: 8px !important;
-}
-
-/* Search button/trigger */
-button[data-search-button],
-button[class*="search"],
-button[aria-label*="Search"],
-kbd {
-  background-color: var(--surface-light) !important;
-  border: 1px solid var(--border-light) !important;
-  border-radius: 6px !important;
 }
 
 /* ================================
-   CARDS - AGGRESSIVE TARGETING
+   CARDS - INDIVIDUAL TILES
    ================================ */
 
-/* All card variations */
-div[class*="Card"],
-div[class*="card"],
-a[class*="Card"],
-a[class*="card"],
-[data-card],
-.grid > div,
-.grid > a {
+/* Target the actual card wrapper, not CardGroup container */
+a[href] > div[data-component-part="card-content-container"],
+a[href]:has(div[data-component-part="card-content-container"]) {
   background-color: var(--surface-light) !important;
-  border: 1px solid var(--border-light) !important;
   border-radius: 12px !important;
   transition: all 0.2s ease !important;
 }
 
-div[class*="Card"]:hover,
-div[class*="card"]:hover,
-a[class*="Card"]:hover,
-a[class*="card"]:hover {
+/* Card hover effect */
+a[href]:has(div[data-component-part="card-content-container"]):hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
   transform: translateY(-2px) !important;
 }
 
+/* Alternative card targeting */
+div[class*="group"]:has(div[data-component-part="card-content-container"]),
+a[class*="group"]:has(div[data-component-part="card-content-container"]) {
+  background-color: var(--surface-light) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 12px !important;
+}
+
+/* Ensure CardGroup container itself is transparent or white */
+div:has(> a > div[data-component-part="card-content-container"]) {
+  background-color: transparent !important;
+}
+
 /* CTA Cards - Matte Dark Style */
 .card-cta,
+.card-cta a,
 [data-card-type="cta"],
-.card-cta div[class*="Card"],
-[data-card-type="cta"] div[class*="Card"] {
+[data-card-type="cta"] a {
   background-color: var(--cta-dark) !important;
   color: #FFFFFF !important;
   border: none !important;
@@ -260,14 +253,13 @@ div[class*="Check"],
    STEPS COMPONENT
    ================================ */
 
-/* Step Number Circles - AGGRESSIVE */
+/* Step Number Circles */
 div[class*="Step"] > div:first-child,
 div[class*="step"] > div:first-child,
 span[class*="number"],
 .step-number,
 [data-step-number],
-div[class*="Step"] span,
-ol[class*="step"] li::before {
+div[class*="Step"] span {
   background-color: var(--surface-light) !important;
   color: var(--text-primary) !important;
   border: 2px solid var(--border-light) !important;
@@ -353,58 +345,58 @@ ol[class*="step"] li::before {
   background-color: var(--surface) !important;
 }
 
-/* Dark Mode TOC */
-[data-theme="dark"] .toc a,
-[data-theme="dark"] nav[aria-label*="Table"] a,
-[data-theme="dark"] div[class*="toc"] a {
+/* Dark Mode TOC - Keep working as is */
+[data-theme="dark"] nav[aria-labelledby*="table-of-contents"] a,
+[data-theme="dark"] aside div[class*="sticky"] nav a,
+[data-theme="dark"] .toc a {
   color: var(--text-secondary) !important;
 }
 
-[data-theme="dark"] .toc a:hover,
-[data-theme="dark"] nav[aria-label*="Table"] a:hover {
+[data-theme="dark"] nav[aria-labelledby*="table-of-contents"] a:hover,
+[data-theme="dark"] aside div[class*="sticky"] nav a:hover {
   color: var(--text-primary) !important;
 }
 
-[data-theme="dark"] .toc a[aria-current="true"],
-[data-theme="dark"] .toc a[data-active="true"],
-[data-theme="dark"] nav[aria-label*="Table"] a[aria-current="true"],
-[data-theme="dark"] div[class*="toc"] a[aria-current="true"] {
+[data-theme="dark"] nav[aria-labelledby*="table-of-contents"] a[aria-current="true"],
+[data-theme="dark"] aside div[class*="sticky"] nav a[aria-current="true"],
+[data-theme="dark"] .toc a[aria-current="true"] {
   color: var(--brand-blue) !important;
   font-weight: 700 !important;
   border-left-color: var(--brand-blue) !important;
 }
 
 /* Dark Mode Search */
-[data-theme="dark"] div[class*="search"],
-[data-theme="dark"] input[type="search"],
-[data-theme="dark"] input[class*="search"],
-[data-theme="dark"] button[data-search-button],
-[data-theme="dark"] [cmdk-root],
-[data-theme="dark"] [cmdk-input] {
+[data-theme="dark"] #search-bar-entry,
+[data-theme="dark"] button#search-bar-entry {
   background-color: var(--surface) !important;
   border: 1px solid var(--border-dark) !important;
+}
+
+[data-theme="dark"] .bg-background-dark {
+  background-color: var(--surface) !important;
 }
 
 /* Dark Mode Cards */
-[data-theme="dark"] div[class*="Card"],
-[data-theme="dark"] div[class*="card"],
-[data-theme="dark"] a[class*="Card"],
-[data-theme="dark"] .grid > div {
+[data-theme="dark"] a[href] > div[data-component-part="card-content-container"],
+[data-theme="dark"] a[href]:has(div[data-component-part="card-content-container"]) {
   background-color: var(--surface) !important;
-  border: 1px solid var(--border-dark) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
-[data-theme="dark"] div[class*="Card"]:hover,
-[data-theme="dark"] a[class*="Card"]:hover {
+[data-theme="dark"] a[href]:has(div[data-component-part="card-content-container"]):hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
+[data-theme="dark"] div[class*="group"]:has(div[data-component-part="card-content-container"]) {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--border-dark) !important;
+}
+
 /* Dark Mode CTA Cards */
 [data-theme="dark"] .card-cta,
-[data-theme="dark"] [data-card-type="cta"],
-[data-theme="dark"] .card-cta div[class*="Card"] {
+[data-theme="dark"] .card-cta a,
+[data-theme="dark"] [data-card-type="cta"] {
   background-color: var(--cta-dark) !important;
   color: #0F0F0F !important;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1) !important;

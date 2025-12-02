@@ -1,126 +1,426 @@
-/* Mintlify Custom CSS for Hometrics Documentation */
+/* Hometrics Guide - Custom Styles */
 
-/* Base Typography */
+/* ================================
+   LIGHT MODE (DEFAULT)
+   ================================ */
+
+:root {
+  /* Brand Colors */
+  --brand-blue: #052EAD;
+  --brand-blue-light: #3B82F6;
+  
+  /* Backgrounds */
+  --background: #FFFFFF;
+  --surface-light: #F7F6F3;
+  --cta-dark: #1F1F1F;
+  
+  /* Text Colors */
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  /* Borders */
+  --border-light: #E5E5E5;
+  
+  /* Component Colors */
+  --note-bg: #EFF6FF;
+  --note-border: #3B82F6;
+  --note-text: #1E3A8A;
+  
+  --warning-bg: #FEF2F2;
+  --warning-border: #EF4444;
+  --warning-text: #991B1B;
+  
+  --tip-bg: #F0FDF4;
+  --tip-border: #22C55E;
+  --tip-text: #166534;
+  
+  --info-bg: #F5F5F5;
+  --info-border: #737373;
+  --info-text: #404040;
+  
+  --check-bg: #F0FDF4;
+  --check-border: #22C55E;
+  --check-text: #166534;
+}
+
+/* Typography */
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Sans', sans-serif;
+  color: var(--text-primary);
 }
 
-body {
-  font-family: 'DM Sans', sans-serif;
+/* ================================
+   NAVIGATION
+   ================================ */
+
+/* Main Navigation Tabs - Active State */
+nav[role="tablist"] button[aria-selected="true"],
+nav[role="tablist"] a[aria-current="page"] {
+  color: var(--brand-blue) !important;
+  border-bottom: 2px solid var(--brand-blue) !important;
+  font-weight: 600;
+  /* Remove any duplicate borders or transforms */
+  box-shadow: none !important;
+  transform: none !important;
 }
 
-/* Light Mode Variables */
-:root {
-  --brand-blue: #052EAD;
-  --accent-blue-dark: #4A78FF;
-  --accent-light: #F7F6F3;
-
-  --warning-bg: #FDECEA;
-  --warning-border: #E5484D;
-  --warning-text: #912023;
-
-  --info-bg: #F5F7FA;
-  --info-border: #DDE2EB;
-  --info-text: #1C1C1C;
-
-  --success-bg: #EDF7F3;
-  --success-border: #1F7A52;
-  --success-text: #1F3F32;
-
-  --tooltip-bg: #F5F4F2;
-  --tooltip-text: #1C1C1C;
+/* Sidebar Active Page */
+aside nav a[aria-current="page"],
+aside nav a[data-active="true"] {
+  color: var(--brand-blue) !important;
+  background-color: var(--surface-light) !important;
+  font-weight: 500;
+  border-radius: 6px;
 }
 
-/* Dark Mode Variables */
-[data-theme="dark"] {
-  --background: #0A0A0A;
-  --surface: #1C1C1C;
-  --accent-blue-dark: #4A78FF;
-
-  --warning-bg: #2A1414;
-  --warning-border: #E5484D;
-  --warning-text: #F2D4D4;
-
-  --info-bg: #1A1A1A;
-  --info-border: #3A3A3A;
-  --info-text: #DADADA;
-
-  --success-bg: #0F2A1F;
-  --success-border: #1F7A52;
-  --success-text: #CFEFE2;
-
-  --tooltip-bg: #1A1A1A;
-  --tooltip-text: #ECECEC;
-}
-
-/* TOC Styling */
+/* Table of Contents - "On This Page" */
 .toc a {
-  color: #222222;
+  color: var(--text-secondary);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .toc a:hover {
-  text-decoration: underline;
+  color: var(--text-primary);
 }
 
-.toc a[aria-current="true"] {
-  color: var(--brand-blue);
-}
-
-[data-theme="dark"] .toc a {
-  color: #CFCFCF;
-}
-
-[data-theme="dark"] .toc a[aria-current="true"] {
-  color: var(--accent-blue-dark);
-}
-
-/* Sidebar Active */
-nav a[aria-current="page"] {
+.toc a[aria-current="true"],
+.toc a[data-active="true"] {
   color: var(--brand-blue) !important;
-  background-color: var(--accent-light) !important;
+  font-weight: 500;
+  border-left: 2px solid var(--brand-blue);
+  padding-left: 14px;
+  margin-left: -16px;
 }
 
-[data-theme="dark"] nav a[aria-current="page"] {
-  color: var(--accent-blue-dark) !important;
+/* ================================
+   SEARCH
+   ================================ */
+
+.search-bar,
+input[type="search"],
+[data-search-input],
+button[data-search-button] {
+  background-color: var(--surface-light) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 8px;
+}
+
+/* ================================
+   CARDS
+   ================================ */
+
+/* Standard Card Groups */
+[class*="card-group"] > div,
+[class*="Card"] {
+  background-color: var(--surface-light) !important;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+[class*="card-group"] > div:hover,
+[class*="Card"]:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* CTA Cards - Matte Dark Style */
+.card-cta,
+[data-card-type="cta"] {
+  background-color: var(--cta-dark) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card-cta:hover,
+[data-card-type="cta"]:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.card-cta h3,
+.card-cta p,
+[data-card-type="cta"] h3,
+[data-card-type="cta"] p {
+  color: #FFFFFF !important;
+}
+
+/* ================================
+   CALLOUTS
+   ================================ */
+
+/* Note - Blue */
+.callout[data-callout="note"],
+div[class*="Note"] {
+  background-color: var(--note-bg) !important;
+  border-left: 4px solid var(--note-border) !important;
+  color: var(--note-text) !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Warning - Soft Red */
+.callout[data-callout="warning"],
+div[class*="Warning"] {
+  background-color: var(--warning-bg) !important;
+  border-left: 4px solid var(--warning-border) !important;
+  color: var(--warning-text) !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Tip - Green */
+.callout[data-callout="tip"],
+div[class*="Tip"] {
+  background-color: var(--tip-bg) !important;
+  border-left: 4px solid var(--tip-border) !important;
+  color: var(--tip-text) !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Info - Gray */
+.callout[data-callout="info"],
+div[class*="Info"] {
+  background-color: var(--info-bg) !important;
+  border-left: 4px solid var(--info-border) !important;
+  color: var(--info-text) !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Check - Green */
+.callout[data-callout="check"],
+div[class*="Check"] {
+  background-color: var(--check-bg) !important;
+  border-left: 4px solid var(--check-border) !important;
+  color: var(--check-text) !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* ================================
+   STEPS COMPONENT
+   ================================ */
+
+/* Step Number Circles */
+[class*="step"] > div[class*="number"],
+.step-number,
+[data-step-number] {
+  background-color: var(--surface-light) !important;
+  color: var(--text-primary) !important;
+  border: 2px solid var(--border-light);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* ================================
+   DARK MODE
+   ================================ */
+
+[data-theme="dark"] {
+  /* Brand Colors */
+  --brand-blue: #4A78FF;
+  --brand-blue-dark: #3B69E5;
+  
+  /* Backgrounds - Google Studio inspired */
+  --background: #0F0F0F;
+  --surface: #1E1E1E;
+  --surface-elevated: #252525;
+  --cta-dark: #FFFFFF;
+  
+  /* Text Colors */
+  --text-primary: #E8E8E8;
+  --text-secondary: #A8A8A8;
+  --text-tertiary: #787878;
+  
+  /* Borders - Subtle */
+  --border-dark: rgba(255, 255, 255, 0.08);
+  
+  /* Component Colors */
+  --note-bg: rgba(59, 130, 246, 0.1);
+  --note-border: #3B82F6;
+  --note-text: #93C5FD;
+  
+  --warning-bg: rgba(239, 68, 68, 0.1);
+  --warning-border: #EF4444;
+  --warning-text: #FCA5A5;
+  
+  --tip-bg: rgba(34, 197, 94, 0.1);
+  --tip-border: #22C55E;
+  --tip-text: #86EFAC;
+  
+  --info-bg: rgba(115, 115, 115, 0.1);
+  --info-border: #737373;
+  --info-text: #D4D4D4;
+  
+  --check-bg: rgba(34, 197, 94, 0.1);
+  --check-border: #22C55E;
+  --check-text: #86EFAC;
+}
+
+/* Dark Mode Typography */
+[data-theme="dark"] body {
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-primary);
+}
+
+/* Dark Mode Navigation */
+[data-theme="dark"] nav[role="tablist"] button[aria-selected="true"],
+[data-theme="dark"] nav[role="tablist"] a[aria-current="page"] {
+  color: var(--brand-blue) !important;
+  border-bottom: 2px solid var(--brand-blue) !important;
+}
+
+[data-theme="dark"] aside nav a[aria-current="page"],
+[data-theme="dark"] aside nav a[data-active="true"] {
+  color: var(--brand-blue) !important;
   background-color: var(--surface) !important;
 }
 
-/* Callouts */
-.callout-warning {
-  background: var(--warning-bg);
-  border-left: 4px solid var(--warning-border);
-  color: var(--warning-text);
+[data-theme="dark"] .toc a {
+  color: var(--text-secondary);
 }
 
-.callout-info {
-  background: var(--info-bg);
-  border-left: 4px solid var(--info-border);
-  color: var(--info-text);
+[data-theme="dark"] .toc a:hover {
+  color: var(--text-primary);
 }
 
-.callout-success {
-  background: var(--success-bg);
-  border-left: 4px solid var(--success-border);
-  color: var(--success-text);
+[data-theme="dark"] .toc a[aria-current="true"],
+[data-theme="dark"] .toc a[data-active="true"] {
+  color: var(--brand-blue) !important;
+  border-left-color: var(--brand-blue);
 }
 
-/* Tooltips */
-.tooltip {
-  background: var(--tooltip-bg) !important;
-  color: var(--tooltip-text) !important;
+/* Dark Mode Search */
+[data-theme="dark"] .search-bar,
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] [data-search-input],
+[data-theme="dark"] button[data-search-button] {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--border-dark) !important;
 }
 
-[data-theme="dark"] .tooltip {
-  background: var(--tooltip-bg) !important;
-  color: var(--tooltip-text) !important;
+/* Dark Mode Cards */
+[data-theme="dark"] [class*="card-group"] > div,
+[data-theme="dark"] [class*="Card"] {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Search Bar */
-.search-bar {
-  background-color: var(--accent-light);
+[data-theme="dark"] [class*="card-group"] > div:hover,
+[data-theme="dark"] [class*="Card"]:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-[data-theme="dark"] .search-bar {
-  background-color: var(--surface);
+/* Dark Mode CTA Cards - Inverted to White */
+[data-theme="dark"] .card-cta,
+[data-theme="dark"] [data-card-type="cta"] {
+  background-color: var(--cta-dark) !important;
+  color: #0F0F0F !important;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .card-cta h3,
+[data-theme="dark"] .card-cta p,
+[data-theme="dark"] [data-card-type="cta"] h3,
+[data-theme="dark"] [data-card-type="cta"] p {
+  color: #0F0F0F !important;
+}
+
+/* Dark Mode Callouts */
+[data-theme="dark"] .callout[data-callout="note"],
+[data-theme="dark"] div[class*="Note"] {
+  background-color: var(--note-bg) !important;
+  border-left-color: var(--note-border) !important;
+  color: var(--note-text) !important;
+}
+
+[data-theme="dark"] .callout[data-callout="warning"],
+[data-theme="dark"] div[class*="Warning"] {
+  background-color: var(--warning-bg) !important;
+  border-left-color: var(--warning-border) !important;
+  color: var(--warning-text) !important;
+}
+
+[data-theme="dark"] .callout[data-callout="tip"],
+[data-theme="dark"] div[class*="Tip"] {
+  background-color: var(--tip-bg) !important;
+  border-left-color: var(--tip-border) !important;
+  color: var(--tip-text) !important;
+}
+
+[data-theme="dark"] .callout[data-callout="info"],
+[data-theme="dark"] div[class*="Info"] {
+  background-color: var(--info-bg) !important;
+  border-left-color: var(--info-border) !important;
+  color: var(--info-text) !important;
+}
+
+[data-theme="dark"] .callout[data-callout="check"],
+[data-theme="dark"] div[class*="Check"] {
+  background-color: var(--check-bg) !important;
+  border-left-color: var(--check-border) !important;
+  color: var(--check-text) !important;
+}
+
+/* Dark Mode Steps */
+[data-theme="dark"] [class*="step"] > div[class*="number"],
+[data-theme="dark"] .step-number,
+[data-theme="dark"] [data-step-number] {
+  background-color: var(--surface) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-dark);
+}
+
+/* ================================
+   UTILITIES
+   ================================ */
+
+/* Smooth Transitions */
+* {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--brand-blue);
+  color: white;
+}
+
+[data-theme="dark"] ::selection {
+  background-color: var(--brand-blue);
+  color: white;
 }

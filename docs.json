@@ -41,7 +41,7 @@
         "tab": "Service Categories",
         "groups": [
           {
-            "group": "Accountants & Tax",
+            "group": "ACCOUNTANTS & TAX",
             "icon": "calculator",
             "pages": [
               "service-categories/accountants-tax/overview",
@@ -82,7 +82,7 @@
           },
           {
             "group": "Homeowners Insurance",
-            "icon": "house-shield",
+            "icon": "shield",
             "pages": [
               "service-categories/homeowners-insurance/overview",
               "service-categories/homeowners-insurance/types-of-coverage",

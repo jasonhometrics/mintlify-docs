@@ -41,43 +41,17 @@
         "tab": "Service Categories",
         "groups": [
           {
-            "group": "Title & Escrow",
-            "icon": "shield-check",
+            "group": "Accountants & Tax",
+            "icon": "calculator",
             "pages": [
-              "service-categories/title-escrow/overview",
-              "service-categories/title-escrow/title-company-roles",
-              "service-categories/title-escrow/title-insurance",
-              "service-categories/title-escrow/title-ownership-options",
-              "service-categories/title-escrow/earnest-money",
-              "service-categories/title-escrow/wire-fraud-protection",
-              "service-categories/title-escrow/closing-process",
-              "service-categories/title-escrow/comparing-title-companies"
-            ]
-          },
-          {
-            "group": "Mortgage Lenders",
-            "icon": "house-circle-check",
-            "pages": [
-              "service-categories/mortgage-lenders/overview",
-              "service-categories/mortgage-lenders/loan-officers-and-brokers",
-              "service-categories/mortgage-lenders/local-vs-national-lenders",
-              "service-categories/mortgage-lenders/pre-approval",
-              "service-categories/mortgage-lenders/loan-types",
-              "service-categories/mortgage-lenders/mortgage-timeline",
-              "service-categories/mortgage-lenders/comparing-lenders"
-            ]
-          },
-          {
-            "group": "Property Management",
-            "icon": "building",
-            "pages": [
-              "service-categories/property-management/overview",
-              "service-categories/property-management/types-of-services",
-              "service-categories/property-management/the-management-process",
-              "service-categories/property-management/costs-and-fees",
-              "service-categories/property-management/owner-responsibilities",
-              "service-categories/property-management/evaluating-performance",
-              "service-categories/property-management/comparing-property-managers"
+              "service-categories/accountants-tax/overview",
+              "service-categories/accountants-tax/types-of-tax-professionals",
+              "service-categories/accountants-tax/tax-implications-buying",
+              "service-categories/accountants-tax/tax-implications-selling",
+              "service-categories/accountants-tax/rental-property-taxes",
+              "service-categories/accountants-tax/1031-exchanges",
+              "service-categories/accountants-tax/property-tax-appeals",
+              "service-categories/accountants-tax/comparing-accountants"
             ]
           },
           {
@@ -89,7 +63,7 @@
               "service-categories/appraisers/the-appraisal-process",
               "service-categories/appraisers/understanding-the-report",
               "service-categories/appraisers/appraisal-vs-other-valuations",
-              "service-categories/appraisers/when-appraisals-come-in-low",
+              "service-categories/appraisers/low-appraisals",
               "service-categories/appraisers/comparing-appraisers"
             ]
           },
@@ -107,39 +81,28 @@
             ]
           },
           {
-            "group": "Staging and Interior Design",
-            "icon": "couch",
+            "group": "Homeowners Insurance",
+            "icon": "house-shield",
             "pages": [
-              {
-                "group": "Staging",
-                "pages": [
-                  "service-categories/staging-interior-design/staging/overview",
-                  "service-categories/staging-interior-design/staging/types-of-staging",
-                  "service-categories/staging-interior-design/staging/the-staging-process",
-                  "service-categories/staging-interior-design/staging/costs-and-roi",
-                  "service-categories/staging-interior-design/staging/comparing-stagers"
-                ]
-              },
-              {
-                "group": "Interior Design",
-                "pages": [
-                  "service-categories/staging-interior-design/interior-design/overview",
-                  "service-categories/staging-interior-design/interior-design/types-of-services",
-                  "service-categories/staging-interior-design/interior-design/the-design-process",
-                  "service-categories/staging-interior-design/interior-design/costs-and-fees",
-                  "service-categories/staging-interior-design/interior-design/comparing-designers"
-                ]
-              }
+              "service-categories/homeowners-insurance/overview",
+              "service-categories/homeowners-insurance/types-of-coverage",
+              "service-categories/homeowners-insurance/policy-types",
+              "service-categories/homeowners-insurance/what-affects-premiums",
+              "service-categories/homeowners-insurance/filing-claims",
+              "service-categories/homeowners-insurance/flood-insurance",
+              "service-categories/homeowners-insurance/specialty-coverage",
+              "service-categories/homeowners-insurance/comparing-insurance"
             ]
           },
           {
-            "group": "Real Estate Agents",
-            "icon": "house-user",
+            "group": "Interior Design",
+            "icon": "couch",
             "pages": [
-              "service-categories/real-estate-agents/overview",
-              "service-categories/real-estate-agents/how-to-evaluate",
-              "service-categories/real-estate-agents/what-to-expect",
-              "service-categories/real-estate-agents/ready-to-compare"
+              "service-categories/staging-interior-design/interior-design/overview",
+              "service-categories/staging-interior-design/interior-design/types-of-services",
+              "service-categories/staging-interior-design/interior-design/the-design-process",
+              "service-categories/staging-interior-design/interior-design/costs-and-fees",
+              "service-categories/staging-interior-design/interior-design/comparing-designers"
             ]
           },
           {
@@ -218,24 +181,79 @@
             ]
           },
           {
-            "group": "Homeowners Insurance",
-            "icon": "house-shield",
+            "group": "Mortgage Lenders",
+            "icon": "house-circle-check",
             "pages": [
-              "service-categories/homeowners-insurance/overview"
-            ]
-          },
-          {
-            "group": "Accountants & Tax",
-            "icon": "calculator",
-            "pages": [
-              "service-categories/accountants-tax/overview"
+              "service-categories/mortgage-lenders/overview",
+              "service-categories/mortgage-lenders/loan-officers-and-brokers",
+              "service-categories/mortgage-lenders/local-vs-national-lenders",
+              "service-categories/mortgage-lenders/pre-approval",
+              "service-categories/mortgage-lenders/loan-types",
+              "service-categories/mortgage-lenders/mortgage-timeline",
+              "service-categories/mortgage-lenders/comparing-lenders"
             ]
           },
           {
             "group": "Moving Companies",
             "icon": "truck-moving",
             "pages": [
-              "service-categories/moving-companies/overview"
+              "service-categories/moving-companies/overview",
+              "service-categories/moving-companies/types-of-moves",
+              "service-categories/moving-companies/getting-estimates",
+              "service-categories/moving-companies/the-moving-process",
+              "service-categories/moving-companies/costs-and-pricing",
+              "service-categories/moving-companies/protecting-your-belongings",
+              "service-categories/moving-companies/avoiding-scams",
+              "service-categories/moving-companies/comparing-movers"
+            ]
+          },
+          {
+            "group": "Property Management",
+            "icon": "building",
+            "pages": [
+              "service-categories/property-management/overview",
+              "service-categories/property-management/types-of-services",
+              "service-categories/property-management/the-management-process",
+              "service-categories/property-management/costs-and-fees",
+              "service-categories/property-management/owner-responsibilities",
+              "service-categories/property-management/evaluating-performance",
+              "service-categories/property-management/comparing-property-managers"
+            ]
+          },
+          {
+            "group": "Real Estate Agents",
+            "icon": "house-user",
+            "pages": [
+              "service-categories/real-estate-agents/overview",
+              "service-categories/real-estate-agents/types-of-agents",
+              "service-categories/real-estate-agents/the-agent-process",
+              "service-categories/real-estate-agents/commission-and-costs",
+              "service-categories/real-estate-agents/comparing-agents"
+            ]
+          },
+          {
+            "group": "Staging",
+            "icon": "wand-magic-sparkles",
+            "pages": [
+              "service-categories/staging-interior-design/staging/overview",
+              "service-categories/staging-interior-design/staging/types-of-staging",
+              "service-categories/staging-interior-design/staging/the-staging-process",
+              "service-categories/staging-interior-design/staging/costs-and-roi",
+              "service-categories/staging-interior-design/staging/comparing-stagers"
+            ]
+          },
+          {
+            "group": "Title & Escrow",
+            "icon": "shield-check",
+            "pages": [
+              "service-categories/title-escrow/overview",
+              "service-categories/title-escrow/title-company-roles",
+              "service-categories/title-escrow/title-insurance",
+              "service-categories/title-escrow/title-ownership-options",
+              "service-categories/title-escrow/earnest-money",
+              "service-categories/title-escrow/wire-fraud-protection",
+              "service-categories/title-escrow/closing-process",
+              "service-categories/title-escrow/comparing-title-companies"
             ]
           }
         ]

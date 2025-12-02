@@ -65,7 +65,6 @@ nav[role="tablist"] a[aria-current="page"] {
   color: var(--brand-blue) !important;
   border-bottom: 2px solid var(--brand-blue) !important;
   font-weight: 600;
-  /* Remove any duplicate borders or transforms */
   box-shadow: none !important;
   transform: none !important;
 }
@@ -79,77 +78,122 @@ aside nav a[data-active="true"] {
   border-radius: 6px;
 }
 
-/* Table of Contents - "On This Page" */
-.toc a {
-  color: var(--text-secondary);
+/* Table of Contents - "On This Page" - AGGRESSIVE TARGETING */
+.toc a,
+nav[aria-label*="Table"] a,
+div[class*="toc"] a,
+aside nav ul li a {
+  color: var(--text-secondary) !important;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 400 !important;
 }
 
-.toc a:hover {
-  color: var(--text-primary);
+.toc a:hover,
+nav[aria-label*="Table"] a:hover,
+div[class*="toc"] a:hover {
+  color: var(--text-primary) !important;
 }
 
+/* ACTIVE STATE - Brand Blue + Bold */
 .toc a[aria-current="true"],
-.toc a[data-active="true"] {
+.toc a[data-active="true"],
+nav[aria-label*="Table"] a[aria-current="true"],
+nav[aria-label*="Table"] a[data-active="true"],
+div[class*="toc"] a[aria-current="true"],
+div[class*="toc"] a[data-active="true"],
+aside nav ul li a[aria-current="true"],
+aside nav ul li a[data-active="true"] {
   color: var(--brand-blue) !important;
-  font-weight: 500;
-  border-left: 2px solid var(--brand-blue);
-  padding-left: 14px;
-  margin-left: -16px;
+  font-weight: 700 !important;
+  border-left: 2px solid var(--brand-blue) !important;
+  padding-left: 14px !important;
+  margin-left: -16px !important;
 }
 
 /* ================================
-   SEARCH
+   SEARCH - AGGRESSIVE TARGETING
    ================================ */
 
-.search-bar,
+/* Search container */
+div[class*="search"],
+div[data-search],
+form[role="search"],
+[cmdk-root],
+[cmdk-input-wrapper] {
+  background-color: var(--surface-light) !important;
+  border-radius: 8px !important;
+}
+
+/* Search input field */
 input[type="search"],
-[data-search-input],
-button[data-search-button] {
+input[placeholder*="Search"],
+input[class*="search"],
+[cmdk-input] {
   background-color: var(--surface-light) !important;
   border: 1px solid var(--border-light) !important;
-  border-radius: 8px;
+  border-radius: 8px !important;
+}
+
+/* Search button/trigger */
+button[data-search-button],
+button[class*="search"],
+button[aria-label*="Search"],
+kbd {
+  background-color: var(--surface-light) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 6px !important;
 }
 
 /* ================================
-   CARDS
+   CARDS - AGGRESSIVE TARGETING
    ================================ */
 
-/* Standard Card Groups */
-[class*="card-group"] > div,
-[class*="Card"] {
+/* All card variations */
+div[class*="Card"],
+div[class*="card"],
+a[class*="Card"],
+a[class*="card"],
+[data-card],
+.grid > div,
+.grid > a {
   background-color: var(--surface-light) !important;
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  transition: all 0.2s ease;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
 }
 
-[class*="card-group"] > div:hover,
-[class*="Card"]:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+div[class*="Card"]:hover,
+div[class*="card"]:hover,
+a[class*="Card"]:hover,
+a[class*="card"]:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* CTA Cards - Matte Dark Style */
 .card-cta,
-[data-card-type="cta"] {
+[data-card-type="cta"],
+.card-cta div[class*="Card"],
+[data-card-type="cta"] div[class*="Card"] {
   background-color: var(--cta-dark) !important;
   color: #FFFFFF !important;
   border: none !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
 }
 
 .card-cta:hover,
 [data-card-type="cta"]:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-3px) !important;
 }
 
 .card-cta h3,
 .card-cta p,
+.card-cta div,
 [data-card-type="cta"] h3,
-[data-card-type="cta"] p {
+[data-card-type="cta"] p,
+[data-card-type="cta"] div {
   color: #FFFFFF !important;
 }
 
@@ -158,73 +202,82 @@ button[data-search-button] {
    ================================ */
 
 /* Note - Blue */
+div[class*="Note"],
 .callout[data-callout="note"],
-div[class*="Note"] {
+[data-callout="note"] {
   background-color: var(--note-bg) !important;
   border-left: 4px solid var(--note-border) !important;
   color: var(--note-text) !important;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px !important;
+  border-radius: 8px !important;
 }
 
 /* Warning - Soft Red */
+div[class*="Warning"],
 .callout[data-callout="warning"],
-div[class*="Warning"] {
+[data-callout="warning"] {
   background-color: var(--warning-bg) !important;
   border-left: 4px solid var(--warning-border) !important;
   color: var(--warning-text) !important;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px !important;
+  border-radius: 8px !important;
 }
 
 /* Tip - Green */
+div[class*="Tip"],
 .callout[data-callout="tip"],
-div[class*="Tip"] {
+[data-callout="tip"] {
   background-color: var(--tip-bg) !important;
   border-left: 4px solid var(--tip-border) !important;
   color: var(--tip-text) !important;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px !important;
+  border-radius: 8px !important;
 }
 
 /* Info - Gray */
+div[class*="Info"],
 .callout[data-callout="info"],
-div[class*="Info"] {
+[data-callout="info"] {
   background-color: var(--info-bg) !important;
   border-left: 4px solid var(--info-border) !important;
   color: var(--info-text) !important;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px !important;
+  border-radius: 8px !important;
 }
 
 /* Check - Green */
+div[class*="Check"],
 .callout[data-callout="check"],
-div[class*="Check"] {
+[data-callout="check"] {
   background-color: var(--check-bg) !important;
   border-left: 4px solid var(--check-border) !important;
   color: var(--check-text) !important;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px !important;
+  border-radius: 8px !important;
 }
 
 /* ================================
    STEPS COMPONENT
    ================================ */
 
-/* Step Number Circles */
-[class*="step"] > div[class*="number"],
+/* Step Number Circles - AGGRESSIVE */
+div[class*="Step"] > div:first-child,
+div[class*="step"] > div:first-child,
+span[class*="number"],
 .step-number,
-[data-step-number] {
+[data-step-number],
+div[class*="Step"] span,
+ol[class*="step"] li::before {
   background-color: var(--surface-light) !important;
   color: var(--text-primary) !important;
-  border: 2px solid var(--border-light);
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
+  border: 2px solid var(--border-light) !important;
+  border-radius: 50% !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
 }
 
 /* ================================
@@ -236,7 +289,7 @@ div[class*="Check"] {
   --brand-blue: #4A78FF;
   --brand-blue-dark: #3B69E5;
   
-  /* Backgrounds - Google Studio inspired */
+  /* Backgrounds */
   --background: #0F0F0F;
   --surface: #1E1E1E;
   --surface-elevated: #252525;
@@ -247,7 +300,7 @@ div[class*="Check"] {
   --text-secondary: #A8A8A8;
   --text-tertiary: #787878;
   
-  /* Borders - Subtle */
+  /* Borders */
   --border-dark: rgba(255, 255, 255, 0.08);
   
   /* Component Colors */
@@ -274,8 +327,8 @@ div[class*="Check"] {
 
 /* Dark Mode Typography */
 [data-theme="dark"] body {
-  color: var(--text-primary);
-  background-color: var(--background);
+  color: var(--text-primary) !important;
+  background-color: var(--background) !important;
 }
 
 [data-theme="dark"] h1,
@@ -284,7 +337,7 @@ div[class*="Check"] {
 [data-theme="dark"] h4,
 [data-theme="dark"] h5,
 [data-theme="dark"] h6 {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
 }
 
 /* Dark Mode Navigation */
@@ -300,49 +353,61 @@ div[class*="Check"] {
   background-color: var(--surface) !important;
 }
 
-[data-theme="dark"] .toc a {
-  color: var(--text-secondary);
+/* Dark Mode TOC */
+[data-theme="dark"] .toc a,
+[data-theme="dark"] nav[aria-label*="Table"] a,
+[data-theme="dark"] div[class*="toc"] a {
+  color: var(--text-secondary) !important;
 }
 
-[data-theme="dark"] .toc a:hover {
-  color: var(--text-primary);
+[data-theme="dark"] .toc a:hover,
+[data-theme="dark"] nav[aria-label*="Table"] a:hover {
+  color: var(--text-primary) !important;
 }
 
 [data-theme="dark"] .toc a[aria-current="true"],
-[data-theme="dark"] .toc a[data-active="true"] {
+[data-theme="dark"] .toc a[data-active="true"],
+[data-theme="dark"] nav[aria-label*="Table"] a[aria-current="true"],
+[data-theme="dark"] div[class*="toc"] a[aria-current="true"] {
   color: var(--brand-blue) !important;
-  border-left-color: var(--brand-blue);
+  font-weight: 700 !important;
+  border-left-color: var(--brand-blue) !important;
 }
 
 /* Dark Mode Search */
-[data-theme="dark"] .search-bar,
+[data-theme="dark"] div[class*="search"],
 [data-theme="dark"] input[type="search"],
-[data-theme="dark"] [data-search-input],
-[data-theme="dark"] button[data-search-button] {
+[data-theme="dark"] input[class*="search"],
+[data-theme="dark"] button[data-search-button],
+[data-theme="dark"] [cmdk-root],
+[data-theme="dark"] [cmdk-input] {
   background-color: var(--surface) !important;
   border: 1px solid var(--border-dark) !important;
 }
 
 /* Dark Mode Cards */
-[data-theme="dark"] [class*="card-group"] > div,
-[data-theme="dark"] [class*="Card"] {
+[data-theme="dark"] div[class*="Card"],
+[data-theme="dark"] div[class*="card"],
+[data-theme="dark"] a[class*="Card"],
+[data-theme="dark"] .grid > div {
   background-color: var(--surface) !important;
-  border: 1px solid var(--border-dark);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-dark) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
-[data-theme="dark"] [class*="card-group"] > div:hover,
-[data-theme="dark"] [class*="Card"]:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.12);
+[data-theme="dark"] div[class*="Card"]:hover,
+[data-theme="dark"] a[class*="Card"]:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
-/* Dark Mode CTA Cards - Inverted to White */
+/* Dark Mode CTA Cards */
 [data-theme="dark"] .card-cta,
-[data-theme="dark"] [data-card-type="cta"] {
+[data-theme="dark"] [data-card-type="cta"],
+[data-theme="dark"] .card-cta div[class*="Card"] {
   background-color: var(--cta-dark) !important;
   color: #0F0F0F !important;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1) !important;
 }
 
 [data-theme="dark"] .card-cta h3,
@@ -353,48 +418,48 @@ div[class*="Check"] {
 }
 
 /* Dark Mode Callouts */
-[data-theme="dark"] .callout[data-callout="note"],
-[data-theme="dark"] div[class*="Note"] {
+[data-theme="dark"] div[class*="Note"],
+[data-theme="dark"] [data-callout="note"] {
   background-color: var(--note-bg) !important;
   border-left-color: var(--note-border) !important;
   color: var(--note-text) !important;
 }
 
-[data-theme="dark"] .callout[data-callout="warning"],
-[data-theme="dark"] div[class*="Warning"] {
+[data-theme="dark"] div[class*="Warning"],
+[data-theme="dark"] [data-callout="warning"] {
   background-color: var(--warning-bg) !important;
   border-left-color: var(--warning-border) !important;
   color: var(--warning-text) !important;
 }
 
-[data-theme="dark"] .callout[data-callout="tip"],
-[data-theme="dark"] div[class*="Tip"] {
+[data-theme="dark"] div[class*="Tip"],
+[data-theme="dark"] [data-callout="tip"] {
   background-color: var(--tip-bg) !important;
   border-left-color: var(--tip-border) !important;
   color: var(--tip-text) !important;
 }
 
-[data-theme="dark"] .callout[data-callout="info"],
-[data-theme="dark"] div[class*="Info"] {
+[data-theme="dark"] div[class*="Info"],
+[data-theme="dark"] [data-callout="info"] {
   background-color: var(--info-bg) !important;
   border-left-color: var(--info-border) !important;
   color: var(--info-text) !important;
 }
 
-[data-theme="dark"] .callout[data-callout="check"],
-[data-theme="dark"] div[class*="Check"] {
+[data-theme="dark"] div[class*="Check"],
+[data-theme="dark"] [data-callout="check"] {
   background-color: var(--check-bg) !important;
   border-left-color: var(--check-border) !important;
   color: var(--check-text) !important;
 }
 
 /* Dark Mode Steps */
-[data-theme="dark"] [class*="step"] > div[class*="number"],
-[data-theme="dark"] .step-number,
-[data-theme="dark"] [data-step-number] {
+[data-theme="dark"] div[class*="Step"] > div:first-child,
+[data-theme="dark"] span[class*="number"],
+[data-theme="dark"] .step-number {
   background-color: var(--surface) !important;
   color: var(--text-primary) !important;
-  border-color: var(--border-dark);
+  border-color: var(--border-dark) !important;
 }
 
 /* ================================
@@ -410,17 +475,17 @@ div[class*="Check"] {
 
 /* Focus States */
 *:focus-visible {
-  outline: 2px solid var(--brand-blue);
+  outline: 2px solid var(--brand-blue) !important;
   outline-offset: 2px;
 }
 
 /* Selection */
 ::selection {
-  background-color: var(--brand-blue);
-  color: white;
+  background-color: var(--brand-blue) !important;
+  color: white !important;
 }
 
 [data-theme="dark"] ::selection {
-  background-color: var(--brand-blue);
-  color: white;
+  background-color: var(--brand-blue) !important;
+  color: white !important;
 }

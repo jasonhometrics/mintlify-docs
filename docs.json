@@ -41,7 +41,7 @@
         "tab": "Service Categories",
         "groups": [
           {
-            "group": "ACCOUNTANTS & TAX",
+            "group": "Accountants & Tax",
             "icon": "calculator",
             "pages": [
               "service-categories/accountants-tax/overview",
@@ -82,7 +82,7 @@
           },
           {
             "group": "Homeowners Insurance",
-            "icon": "shield",
+            "icon": "house-shield",
             "pages": [
               "service-categories/homeowners-insurance/overview",
               "service-categories/homeowners-insurance/types-of-coverage",
@@ -205,6 +205,17 @@
               "service-categories/moving-companies/protecting-your-belongings",
               "service-categories/moving-companies/avoiding-scams",
               "service-categories/moving-companies/comparing-movers"
+            ]
+          },
+          {
+            "group": "Photography & Videography",
+            "icon": "camera",
+            "pages": [
+              "service-categories/photography-videography/overview",
+              "service-categories/photography-videography/types-of-services",
+              "service-categories/photography-videography/the-shoot-process",
+              "service-categories/photography-videography/costs-and-pricing",
+              "service-categories/photography-videography/comparing-photographers"
             ]
           },
           {

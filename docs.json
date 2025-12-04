@@ -34,6 +34,16 @@
               "introduction",
               "glossary"
             ]
+          },
+          {
+            "group": "Getting Started",
+            "icon": "lightbulb",
+            "pages": [
+              "overview/why-research-matters",
+              "overview/what-is-hometrics",
+              "overview/how-the-platform-works",
+              "overview/how-we-are-different"
+            ]
           }
         ]
       },

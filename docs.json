@@ -361,13 +361,13 @@
     "links": [
       {
         "label": "Contact",
-        "href": "https://hometrics.com/contact"
+        "href": "https://hometrics.io/contact"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Search Directory",
-      "href": "https://hometrics.com"
+      "href": "https://hometrics.io"
     }
   },
   "footer": {

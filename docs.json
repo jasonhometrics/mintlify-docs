@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "mint",
   "name": "Hometrics Guide",
   "colors": {
     "primary": "#3FA37D",

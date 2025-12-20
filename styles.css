@@ -1,5 +1,5 @@
 /* =====================================================
-   HOMETRICS – PALM THEME (CORRECTED)
+   HOMETRICS – PALM THEME (FINAL CORRECTIONS)
    ===================================================== */
 
 /* =====================================================
@@ -29,10 +29,11 @@ h4, h5, h6 {
 }
 
 /* =====================================================
-   TOP TOOLBAR
+   TOP TOOLBAR (NAV ONLY — NOT PAGE HEADER)
    ===================================================== */
 
-header {
+/* Palm-specific top nav container */
+header nav {
   background-color: #F4F7FA;
 }
 
@@ -46,15 +47,16 @@ header nav img {
 }
 
 /* =====================================================
-   NAVIGATION – TOP TABS
+   TOP NAVIGATION TABS
    ===================================================== */
 
+/* Remove bold everywhere */
 nav[role="tablist"] a,
 nav[role="tablist"] button {
   font-weight: 400 !important;
 }
 
-/* Active tab: color + underline only */
+/* Active tab underline only */
 nav[role="tablist"] a[aria-current="page"],
 nav[role="tablist"] button[aria-selected="true"] {
   border-bottom-width: 2px;
@@ -105,13 +107,17 @@ a.primary {
 }
 
 /* =====================================================
-   DARK MODE TOKENS
+   DARK MODE TOKENS (CRITICAL FIX)
    ===================================================== */
 
 [data-theme="dark"] {
-  /* Interaction green (DARK MODE) */
+  /* Interaction green */
   --primary: #45B88E;
   --mint-primary: #45B88E;
+
+  /* ALSO override accent/brand usage */
+  --accent: #45B88E;
+  --brand: #45B88E;
 
   /* Surfaces */
   --background: #1F2326;
@@ -126,11 +132,13 @@ a.primary {
    DARK MODE APPLICATION
    ===================================================== */
 
+/* Links & interaction */
 [data-theme="dark"] a {
   color: var(--primary);
   text-decoration-color: var(--primary);
 }
 
+/* Active nav */
 [data-theme="dark"] nav[role="tablist"] a[aria-current="page"],
 [data-theme="dark"] nav[role="tablist"] button[aria-selected="true"] {
   color: var(--primary);
@@ -142,26 +150,40 @@ a.primary {
   color: var(--primary);
 }
 
-/* Sidebar group titles + icons */
+/* =====================================================
+   DARK MODE SIDEBAR GROUP TITLES + ICONS (FIXED)
+   ===================================================== */
+
 [data-theme="dark"] .sidebar-group-header,
-[data-theme="dark"] .sidebar-group-header h5,
-[data-theme="dark"] .sidebar-group-header svg {
+[data-theme="dark"] .sidebar-group-header h5 {
   color: #FFFFFF;
 }
 
-/* Cards / tiles */
+/* SVG icons – force white */
+[data-theme="dark"] .sidebar-group-header svg,
+[data-theme="dark"] .sidebar-group-header svg path {
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+/* =====================================================
+   CARDS / TILES
+   ===================================================== */
+
 [data-theme="dark"] .card,
 [data-theme="dark"] [class*="rounded"][class*="border"] {
   border-color: var(--border);
   background-color: var(--surface);
 }
 
-/* Focus states */
+/* =====================================================
+   FOCUS + SELECTION
+   ===================================================== */
+
 [data-theme="dark"] *:focus-visible {
   outline: 2px solid var(--primary);
 }
 
-/* Selection */
 [data-theme="dark"] ::selection {
   background-color: var(--primary);
   color: #0B0F12;

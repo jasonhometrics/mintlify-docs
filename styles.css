@@ -11,3 +11,24 @@
 [data-theme="dark"] main {
   background-color: transparent;
 }
+
+/* =====================================
+   Light mode text alignment with logo
+   ===================================== */
+
+/* Top navigation tabs */
+nav[role="tablist"] a,
+nav[role="tablist"] button {
+  color: #1F2326;
+}
+
+/* Sidebar group titles */
+.sidebar-group-header,
+.sidebar-group-header h5 {
+  color: #1F2326;
+}
+
+/* Page titles / section headings */
+h1, h2, h3 {
+  color: #1F2326;
+}

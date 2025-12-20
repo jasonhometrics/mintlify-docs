@@ -1,7 +1,13 @@
+/* =====================================
+   Matte dark mode background (Mint)
+   ===================================== */
+
+/* Page background */
 [data-theme="dark"] {
   background-color: #1F2326;
 }
 
+/* Ensure inner content does not override */
 [data-theme="dark"] main {
   background-color: transparent;
 }

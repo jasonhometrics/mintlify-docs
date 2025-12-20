@@ -2,19 +2,16 @@
    Matte dark mode background (Mint)
    ===================================== */
 
-/* Page background */
 [data-theme="dark"] {
   background-color: #1F2326;
 }
 
-/* Ensure inner content does not override */
 [data-theme="dark"] main {
   background-color: transparent;
 }
 
 /* =====================================
    Light mode: align UI text with logo
-   (brand black ONLY in light mode)
    ===================================== */
 
 /* Top navigation tabs (light mode only) */
@@ -37,15 +34,20 @@ body:not([data-theme="dark"]) h3 {
 }
 
 /* =====================================
-   Dark mode: fix sidebar group contrast
-   (explicitly force white)
+   Dark mode: FORCE sidebar group text
+   AND icons to white (accessibility fix)
    ===================================== */
 
 [data-theme="dark"] .sidebar-group-header,
-[data-theme="dark"] .sidebar-group-header h5,
-[data-theme="dark"] .sidebar-group-header svg {
+[data-theme="dark"] .sidebar-group-header h5 {
   color: #FFFFFF !important;
+}
+
+/* SVG icons inside sidebar group headers */
+[data-theme="dark"] .sidebar-group-header svg,
+[data-theme="dark"] .sidebar-group-header svg * {
   fill: #FFFFFF !important;
+  stroke: #FFFFFF !important;
 }
 
 /* =====================================

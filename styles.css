@@ -1,0 +1,29 @@
+/* =========================================
+   Minimal dark-mode contrast helpers
+   ========================================= */
+
+/* 1. Improve brand green visibility in dark mode
+   (used for section labels / breadcrumbs) */
+[data-theme="dark"] .text-green,
+[data-theme="dark"] .breadcrumb,
+[data-theme="dark"] .page-meta {
+  color: #3FA37D !important; /* lifted brand-adjacent green */
+}
+
+/* 2. Improve sidebar group header hierarchy */
+[data-theme="dark"] .sidebar-group-header,
+[data-theme="dark"] .sidebar-group-header h5 {
+  color: #FFFFFF !important;
+}
+
+/* 3. Slightly improve card / tile separation */
+[data-theme="dark"] .card,
+[data-theme="dark"] [class*="rounded"][class*="border"] {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* 4. Logo balance (small but important) */
+header nav img {
+  max-height: 20px;
+  width: auto;
+}

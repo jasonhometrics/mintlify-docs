@@ -1,27 +1,39 @@
 /* =====================================================
-   HOMETRICS – PALM THEME OVERRIDES
-   Full, clean, accessibility-first
+   HOMETRICS – PALM THEME (CORRECTED)
    ===================================================== */
 
 /* =====================================================
-   BASE TYPOGRAPHY
+   LIGHT MODE TOKENS
+   ===================================================== */
+
+:root {
+  /* Interaction green (LIGHT MODE) */
+  --primary: #2F5B4B;
+  --mint-primary: #2F5B4B;
+}
+
+/* =====================================================
+   TYPOGRAPHY
    ===================================================== */
 
 body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 600;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
   font-weight: 500;
+}
+
+/* =====================================================
+   TOP TOOLBAR
+   ===================================================== */
+
+header {
+  background-color: #F4F7FA;
 }
 
 /* =====================================================
@@ -37,7 +49,6 @@ header nav img {
    NAVIGATION – TOP TABS
    ===================================================== */
 
-/* Remove bold emphasis completely */
 nav[role="tablist"] a,
 nav[role="tablist"] button {
   font-weight: 400 !important;
@@ -46,45 +57,34 @@ nav[role="tablist"] button {
 /* Active tab: color + underline only */
 nav[role="tablist"] a[aria-current="page"],
 nav[role="tablist"] button[aria-selected="true"] {
-  font-weight: 400 !important;
-  text-decoration: none;
   border-bottom-width: 2px;
   border-bottom-style: solid;
 }
 
-/* Icons inherit tab color */
-nav[role="tablist"] svg {
-  color: inherit;
-}
-
 /* =====================================================
-   SIDEBAR NAVIGATION
+   SIDEBAR
    ===================================================== */
 
-/* Sidebar links */
 aside nav a {
   font-weight: 400;
   text-decoration: none;
   border-radius: 6px;
 }
 
-/* Active sidebar page */
 aside nav a[aria-current="page"],
 aside nav a[data-active="true"] {
   font-weight: 400;
 }
 
 /* =====================================================
-   TABLE OF CONTENTS ("ON THIS PAGE")
+   TOC ("ON THIS PAGE")
    ===================================================== */
 
-/* TOC links */
 .toc a {
   font-weight: 400;
   text-decoration: none;
 }
 
-/* Active TOC item – color only (no underline, no bold) */
 #table-of-contents-content a[aria-current="true"],
 #table-of-contents-content a[class*="active"] {
   font-weight: 400;
@@ -92,39 +92,26 @@ aside nav a[data-active="true"] {
 }
 
 /* =====================================================
-   CARDS / TILES
+   PRIMARY BUTTONS
    ===================================================== */
 
-.card,
-[class*="rounded"][class*="border"] {
-  transition: border-color 0.15s ease;
+button[data-variant="primary"],
+a[data-variant="primary"],
+button.primary,
+a.primary {
+  background-color: #1F2326;
+  color: #FFFFFF;
+  border-color: #1F2326;
 }
 
 /* =====================================================
-   ACCESSIBILITY
-   ===================================================== */
-
-*:focus-visible {
-  outline-offset: 2px;
-}
-
-/* =====================================================
-   DARK MODE – TOKEN OVERRIDES (KEY PART)
+   DARK MODE TOKENS
    ===================================================== */
 
 [data-theme="dark"] {
-  /* --- IMPORTANT ---
-     Palm respects these variables.
-     This is what fixes the green issue.
-  */
-
-  /* Interaction / UI green (lifted for contrast) */
+  /* Interaction green (DARK MODE) */
   --primary: #45B88E;
   --mint-primary: #45B88E;
-
-  /* Text contrast */
-  --text-primary: #E6E9ED;
-  --text-secondary: #B3BAC2;
 
   /* Surfaces */
   --background: #1F2326;
@@ -136,31 +123,22 @@ aside nav a[data-active="true"] {
 }
 
 /* =====================================================
-   DARK MODE – APPLICATION
+   DARK MODE APPLICATION
    ===================================================== */
 
-/* Links & interactive elements */
 [data-theme="dark"] a {
   color: var(--primary);
   text-decoration-color: var(--primary);
 }
 
-/* Active top tab */
 [data-theme="dark"] nav[role="tablist"] a[aria-current="page"],
 [data-theme="dark"] nav[role="tablist"] button[aria-selected="true"] {
   color: var(--primary);
   border-bottom-color: var(--primary);
 }
 
-/* Active sidebar item */
 [data-theme="dark"] aside nav a[aria-current="page"],
 [data-theme="dark"] aside nav a[data-active="true"] {
-  color: var(--primary);
-}
-
-/* TOC active item */
-[data-theme="dark"] #table-of-contents-content a[aria-current="true"],
-[data-theme="dark"] #table-of-contents-content a[class*="active"] {
   color: var(--primary);
 }
 
@@ -169,10 +147,9 @@ aside nav a[data-active="true"] {
 [data-theme="dark"] .sidebar-group-header h5,
 [data-theme="dark"] .sidebar-group-header svg {
   color: #FFFFFF;
-  opacity: 1;
 }
 
-/* Cards / tiles separation */
+/* Cards / tiles */
 [data-theme="dark"] .card,
 [data-theme="dark"] [class*="rounded"][class*="border"] {
   border-color: var(--border);
@@ -184,7 +161,7 @@ aside nav a[data-active="true"] {
   outline: 2px solid var(--primary);
 }
 
-/* Text selection */
+/* Selection */
 [data-theme="dark"] ::selection {
   background-color: var(--primary);
   color: #0B0F12;

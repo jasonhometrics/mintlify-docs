@@ -1,190 +1,64 @@
-/* =====================================================
-   HOMETRICS – PALM THEME (FINAL CORRECTIONS)
-   ===================================================== */
+/* =========================================
+   HOMETRICS – PALM (FIXED, MINIMAL)
+   ========================================= */
 
-/* =====================================================
-   LIGHT MODE TOKENS
-   ===================================================== */
-
-:root {
-  /* Interaction green (LIGHT MODE) */
-  --primary: #2F5B4B;
-  --mint-primary: #2F5B4B;
-}
-
-/* =====================================================
-   TYPOGRAPHY
-   ===================================================== */
-
-body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-h4, h5, h6 {
-  font-weight: 500;
-}
-
-/* =====================================================
-   TOP TOOLBAR (NAV ONLY — NOT PAGE HEADER)
-   ===================================================== */
-
-/* Palm-specific top nav container */
-header nav {
-  background-color: #F4F7FA;
-}
-
-/* =====================================================
+/* -----------------------------
    LOGO
-   ===================================================== */
-
+   ----------------------------- */
 header nav img {
   max-height: 20px;
   width: auto;
 }
 
-/* =====================================================
-   TOP NAVIGATION TABS
-   ===================================================== */
+/* -----------------------------
+   TOP TOOLBAR ONLY
+   ----------------------------- */
+header nav {
+  background-color: #F4F7FA;
+}
 
-/* Remove bold everywhere */
+/* -----------------------------
+   REMOVE BOLD FROM TABS
+   ----------------------------- */
 nav[role="tablist"] a,
 nav[role="tablist"] button {
   font-weight: 400 !important;
 }
 
-/* Active tab underline only */
-nav[role="tablist"] a[aria-current="page"],
-nav[role="tablist"] button[aria-selected="true"] {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-}
-
-/* =====================================================
-   SIDEBAR
-   ===================================================== */
-
-aside nav a {
-  font-weight: 400;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-aside nav a[aria-current="page"],
-aside nav a[data-active="true"] {
-  font-weight: 400;
-}
-
-/* =====================================================
-   TOC ("ON THIS PAGE")
-   ===================================================== */
-
-.toc a {
-  font-weight: 400;
-  text-decoration: none;
-}
-
-#table-of-contents-content a[aria-current="true"],
-#table-of-contents-content a[class*="active"] {
-  font-weight: 400;
-  text-decoration: none;
-}
-
-/* =====================================================
+/* -----------------------------
    PRIMARY BUTTONS
-   ===================================================== */
-
+   ----------------------------- */
 button[data-variant="primary"],
-a[data-variant="primary"],
-button.primary,
-a.primary {
+a[data-variant="primary"] {
   background-color: #1F2326;
   color: #FFFFFF;
   border-color: #1F2326;
 }
 
-/* =====================================================
-   DARK MODE TOKENS (CRITICAL FIX)
-   ===================================================== */
-
+/* =================================================
+   DARK MODE ONLY (THIS IS THE KEY)
+   ================================================= */
 [data-theme="dark"] {
-  /* Interaction green */
+  /* Lift interaction green ONLY in dark mode */
   --primary: #45B88E;
   --mint-primary: #45B88E;
-
-  /* ALSO override accent/brand usage */
-  --accent: #45B88E;
-  --brand: #45B88E;
-
-  /* Surfaces */
-  --background: #1F2326;
-  --surface: #262B30;
-  --surface-hover: #2F353B;
-
-  /* Borders */
-  --border: rgba(255, 255, 255, 0.18);
 }
 
-/* =====================================================
-   DARK MODE APPLICATION
-   ===================================================== */
-
-/* Links & interaction */
-[data-theme="dark"] a {
-  color: var(--primary);
-  text-decoration-color: var(--primary);
-}
-
-/* Active nav */
-[data-theme="dark"] nav[role="tablist"] a[aria-current="page"],
-[data-theme="dark"] nav[role="tablist"] button[aria-selected="true"] {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
-}
-
-[data-theme="dark"] aside nav a[aria-current="page"],
-[data-theme="dark"] aside nav a[data-active="true"] {
-  color: var(--primary);
-}
-
-/* =====================================================
-   DARK MODE SIDEBAR GROUP TITLES + ICONS (FIXED)
-   ===================================================== */
-
+/* -----------------------------
+   DARK MODE SIDEBAR HEADERS ONLY
+   ----------------------------- */
 [data-theme="dark"] .sidebar-group-header,
 [data-theme="dark"] .sidebar-group-header h5 {
   color: #FFFFFF;
 }
 
-/* SVG icons – force white */
-[data-theme="dark"] .sidebar-group-header svg,
+/* Icons ONLY in sidebar headers */
 [data-theme="dark"] .sidebar-group-header svg path {
   stroke: #FFFFFF;
-  fill: #FFFFFF;
+  fill: none;
 }
 
-/* =====================================================
-   CARDS / TILES
-   ===================================================== */
-
-[data-theme="dark"] .card,
-[data-theme="dark"] [class*="rounded"][class*="border"] {
-  border-color: var(--border);
-  background-color: var(--surface);
-}
-
-/* =====================================================
-   FOCUS + SELECTION
-   ===================================================== */
-
-[data-theme="dark"] *:focus-visible {
-  outline: 2px solid var(--primary);
-}
-
-[data-theme="dark"] ::selection {
-  background-color: var(--primary);
-  color: #0B0F12;
-}
+/* -----------------------------
+   DO NOT TOUCH TILE ICONS
+   DO NOT TOUCH TILE BORDERS
+   ----------------------------- */

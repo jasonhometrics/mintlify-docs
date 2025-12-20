@@ -13,22 +13,50 @@
 }
 
 /* =====================================
-   Light mode text alignment with logo
+   Light mode: align UI text with logo
+   (brand black ONLY in light mode)
    ===================================== */
 
-/* Top navigation tabs */
-nav[role="tablist"] a,
-nav[role="tablist"] button {
+/* Top navigation tabs (light mode only) */
+body:not([data-theme="dark"]) nav[role="tablist"] a,
+body:not([data-theme="dark"]) nav[role="tablist"] button {
   color: #1F2326;
 }
 
-/* Sidebar group titles */
-.sidebar-group-header,
-.sidebar-group-header h5 {
+/* Sidebar group titles (light mode only) */
+body:not([data-theme="dark"]) .sidebar-group-header,
+body:not([data-theme="dark"]) .sidebar-group-header h5 {
   color: #1F2326;
 }
 
-/* Page titles / section headings */
-h1, h2, h3 {
+/* Page titles / headings (light mode only) */
+body:not([data-theme="dark"]) h1,
+body:not([data-theme="dark"]) h2,
+body:not([data-theme="dark"]) h3 {
   color: #1F2326;
+}
+
+/* =====================================
+   Dark mode: fix sidebar group contrast
+   (explicitly force white)
+   ===================================== */
+
+[data-theme="dark"] .sidebar-group-header,
+[data-theme="dark"] .sidebar-group-header h5,
+[data-theme="dark"] .sidebar-group-header svg {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+/* =====================================
+   Link underline clarity (all modes)
+   ===================================== */
+
+a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2.5px;
 }

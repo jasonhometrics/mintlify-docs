@@ -1,58 +1,11 @@
 /* =====================================
-   Matte dark mode background (Mint)
+   Light mode navigation text only
+   (no content, no headings)
    ===================================== */
 
-[data-theme="dark"] {
-  background-color: #1F2326;
-}
-
-[data-theme="dark"] main {
-  background-color: transparent;
-}
-
-/* =====================================
-   Light mode: align navigation with logo
-   (DO NOT touch content typography)
-   ===================================== */
-
-/* Top navigation tabs (light mode only) */
-body:not([data-theme="dark"]) nav[role="tablist"] a,
-body:not([data-theme="dark"]) nav[role="tablist"] button {
+html:not([data-theme="dark"]) nav[role="tablist"] a,
+html:not([data-theme="dark"]) nav[role="tablist"] button,
+html:not([data-theme="dark"]) .sidebar-group-header,
+html:not([data-theme="dark"]) .sidebar-group-header h5 {
   color: #1F2326;
-}
-
-/* Sidebar group titles (light mode only) */
-body:not([data-theme="dark"]) .sidebar-group-header,
-body:not([data-theme="dark"]) .sidebar-group-header h5 {
-  color: #1F2326;
-}
-
-/* =====================================
-   Dark mode: sidebar group contrast fix
-   (text + icons MUST be white)
-   ===================================== */
-
-[data-theme="dark"] .sidebar-group-header,
-[data-theme="dark"] .sidebar-group-header h5 {
-  color: #FFFFFF !important;
-}
-
-/* Force sidebar group icons to white */
-[data-theme="dark"] .sidebar-group-header svg,
-[data-theme="dark"] .sidebar-group-header svg * {
-  fill: #FFFFFF !important;
-  stroke: #FFFFFF !important;
-}
-
-/* =====================================
-   Link underline clarity (all modes)
-   ===================================== */
-
-a {
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  text-decoration-thickness: 2.5px;
 }

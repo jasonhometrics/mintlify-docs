@@ -1,46 +1,191 @@
 /* =====================================================
-   FORCE DARK-MODE INTERACTION GREEN
-   This overrides Mintlify inline + utility styles
+   HOMETRICS – PALM THEME OVERRIDES
+   Full, clean, accessibility-first
    ===================================================== */
 
-/* --- Logo sizing (requested) --- */
+/* =====================================================
+   BASE TYPOGRAPHY
+   ===================================================== */
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
 header nav img {
-  max-height: 20px !important;
-  width: auto !important;
+  max-height: 20px;
+  width: auto;
 }
 
-/* --- Force interaction green in dark mode --- */
-[data-theme="dark"] a,
-[data-theme="dark"] a *,
-[data-theme="dark"] nav[role="tablist"] a,
-[data-theme="dark"] nav[role="tablist"] button,
-[data-theme="dark"] nav[role="tablist"] a *,
-[data-theme="dark"] nav[role="tablist"] button *,
-[data-theme="dark"] aside nav a,
-[data-theme="dark"] aside nav a *,
-[data-theme="dark"] #table-of-contents-content a,
-[data-theme="dark"] #table-of-contents-content a * {
-  color: #45B88E !important;
-  text-decoration-color: #45B88E !important;
+/* =====================================================
+   NAVIGATION – TOP TABS
+   ===================================================== */
+
+/* Remove bold emphasis completely */
+nav[role="tablist"] a,
+nav[role="tablist"] button {
+  font-weight: 400 !important;
 }
 
-/* --- Active states (underline / borders) --- */
+/* Active tab: color + underline only */
+nav[role="tablist"] a[aria-current="page"],
+nav[role="tablist"] button[aria-selected="true"] {
+  font-weight: 400 !important;
+  text-decoration: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+/* Icons inherit tab color */
+nav[role="tablist"] svg {
+  color: inherit;
+}
+
+/* =====================================================
+   SIDEBAR NAVIGATION
+   ===================================================== */
+
+/* Sidebar links */
+aside nav a {
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Active sidebar page */
+aside nav a[aria-current="page"],
+aside nav a[data-active="true"] {
+  font-weight: 400;
+}
+
+/* =====================================================
+   TABLE OF CONTENTS ("ON THIS PAGE")
+   ===================================================== */
+
+/* TOC links */
+.toc a {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Active TOC item – color only (no underline, no bold) */
+#table-of-contents-content a[aria-current="true"],
+#table-of-contents-content a[class*="active"] {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* =====================================================
+   CARDS / TILES
+   ===================================================== */
+
+.card,
+[class*="rounded"][class*="border"] {
+  transition: border-color 0.15s ease;
+}
+
+/* =====================================================
+   ACCESSIBILITY
+   ===================================================== */
+
+*:focus-visible {
+  outline-offset: 2px;
+}
+
+/* =====================================================
+   DARK MODE – TOKEN OVERRIDES (KEY PART)
+   ===================================================== */
+
+[data-theme="dark"] {
+  /* --- IMPORTANT ---
+     Palm respects these variables.
+     This is what fixes the green issue.
+  */
+
+  /* Interaction / UI green (lifted for contrast) */
+  --primary: #45B88E;
+  --mint-primary: #45B88E;
+
+  /* Text contrast */
+  --text-primary: #E6E9ED;
+  --text-secondary: #B3BAC2;
+
+  /* Surfaces */
+  --background: #1F2326;
+  --surface: #262B30;
+  --surface-hover: #2F353B;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.18);
+}
+
+/* =====================================================
+   DARK MODE – APPLICATION
+   ===================================================== */
+
+/* Links & interactive elements */
+[data-theme="dark"] a {
+  color: var(--primary);
+  text-decoration-color: var(--primary);
+}
+
+/* Active top tab */
 [data-theme="dark"] nav[role="tablist"] a[aria-current="page"],
 [data-theme="dark"] nav[role="tablist"] button[aria-selected="true"] {
-  border-bottom-color: #45B88E !important;
+  color: var(--primary);
+  border-bottom-color: var(--primary);
 }
 
-/* --- Sidebar group headers + icons --- */
+/* Active sidebar item */
+[data-theme="dark"] aside nav a[aria-current="page"],
+[data-theme="dark"] aside nav a[data-active="true"] {
+  color: var(--primary);
+}
+
+/* TOC active item */
+[data-theme="dark"] #table-of-contents-content a[aria-current="true"],
+[data-theme="dark"] #table-of-contents-content a[class*="active"] {
+  color: var(--primary);
+}
+
+/* Sidebar group titles + icons */
 [data-theme="dark"] .sidebar-group-header,
 [data-theme="dark"] .sidebar-group-header h5,
 [data-theme="dark"] .sidebar-group-header svg {
-  color: #FFFFFF !important;
-  opacity: 1 !important;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
-/* --- Cards / tiles separation --- */
+/* Cards / tiles separation */
 [data-theme="dark"] .card,
 [data-theme="dark"] [class*="rounded"][class*="border"] {
-  border-color: rgba(255, 255, 255, 0.18) !important;
-  background-color: #24292D !important;
+  border-color: var(--border);
+  background-color: var(--surface);
+}
+
+/* Focus states */
+[data-theme="dark"] *:focus-visible {
+  outline: 2px solid var(--primary);
+}
+
+/* Text selection */
+[data-theme="dark"] ::selection {
+  background-color: var(--primary);
+  color: #0B0F12;
 }

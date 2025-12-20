@@ -69,6 +69,45 @@
               "learn/first-time-home-buyer/title-and-closing",
               "learn/first-time-home-buyer/insurance-and-moving"
             ]
+          },
+          {
+            "group": "Selling Your Home",
+            "icon": "sign-hanging",
+            "pages": [
+              "learn/selling-your-home/overview",
+              "learn/selling-your-home/choosing-a-listing-agent",
+              "learn/selling-your-home/preparing-your-home",
+              "learn/selling-your-home/pricing-and-listing",
+              "learn/selling-your-home/reviewing-offers",
+              "learn/selling-your-home/under-contract-to-closing",
+              "learn/selling-your-home/tax-implications-and-moving"
+            ]
+          },
+          {
+            "group": "Inherited Property",
+            "icon": "scroll",
+            "pages": [
+              "learn/inherited-property/overview",
+              "learn/inherited-property/probate-process",
+              "learn/inherited-property/tax-implications",
+              "learn/inherited-property/deciding-what-to-do",
+              "learn/inherited-property/transferring-title",
+              "learn/inherited-property/selling-inherited-property",
+              "learn/inherited-property/keeping-as-rental"
+            ]
+          },
+          {
+            "group": "Real Estate Investing",
+            "icon": "chart-line",
+            "pages": [
+              "learn/real-estate-investing/overview",
+              "learn/real-estate-investing/financing-investment-property",
+              "learn/real-estate-investing/finding-and-evaluating-properties",
+              "learn/real-estate-investing/entity-structure-and-legal",
+              "learn/real-estate-investing/managing-your-investment",
+              "learn/real-estate-investing/tax-strategies",
+              "learn/real-estate-investing/insurance-and-liability"
+            ]
           }
         ]
       },

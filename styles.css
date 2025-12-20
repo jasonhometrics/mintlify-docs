@@ -1,294 +1,164 @@
-/* Hometrics Guide - Custom Styles */
-
-/* ================================
-   LIGHT MODE (DEFAULT)
-   ================================ */
+/* ======================================================
+   HOMETRICS – LIGHT MODE FOUNDATION
+   ====================================================== */
 
 :root {
-  /* Brand Colors */
-  --brand-blue: #2F5B4B;
-  --brand-blue-light: #3B82F6;
-  
+  /* Core Brand Colors */
+  --brand-black: #1F2326;
+  --brand-green: #2F5B4B;        /* narrative / editorial only */
+  --accent-green: #3FA37D;       /* interaction + emphasis */
+
+  /* Text System */
+  --text-primary: #2A2A2A;       /* body text (slightly darker than #5A5A5A) */
+  --text-secondary: #5A5A5A;     /* navigation links, secondary text */
+  --text-muted: #8A8A8A;
+
   /* Backgrounds */
   --background: #FFFFFF;
   --surface-light: #F7F6F3;
-  --cta-dark: #1F1F1F;
-  
-  /* Text Colors */
-  --text-primary: #111111;
-  --text-secondary: #666666;
-  --text-tertiary: #999999;
-  
+  --hover-bg: #EFEFED;
+
   /* Borders */
   --border-light: #E5E5E5;
-  
-  /* Component Colors */
-  --note-bg: #EFF6FF;
-  --note-border: #3B82F6;
-  --note-text: #1E3A8A;
-  
-  --warning-bg: #FEF2F2;
-  --warning-border: #EF4444;
-  --warning-text: #991B1B;
-  
-  --tip-bg: #F0FDF4;
-  --tip-border: #22C55E;
-  --tip-text: #166534;
-  
-  --info-bg: #F5F5F5;
-  --info-border: #737373;
-  --info-text: #404040;
-  
-  --check-bg: #F0FDF4;
-  --check-border: #22C55E;
-  --check-text: #166534;
 }
 
-/* Typography */
+/* ======================================================
+   TYPOGRAPHY
+   ====================================================== */
+
 body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text-primary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--text-primary);
+h1,
+h2,
+h3 {
+  color: var(--brand-black);
+  font-weight: 600;
 }
 
-/* ================================
-   NAVIGATION
-   ================================ */
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 500;
+}
 
-/* Main Navigation Tabs - Active State */
+/* ======================================================
+   LINKS (CONTENT)
+   ====================================================== */
+
+a {
+  color: var(--accent-green);
+  text-decoration-color: var(--accent-green);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* ======================================================
+   TOP NAVIGATION TABS
+   ====================================================== */
+
+/* Active tab: color + underline only (NO bold) */
 nav[role="tablist"] button[aria-selected="true"],
 nav[role="tablist"] a[aria-current="page"] {
-  color: var(--brand-blue) !important;
-  border-bottom: 2px solid var(--brand-blue) !important;
-  font-weight: 600;
+  color: var(--accent-green) !important;
+  border-bottom: 2px solid var(--accent-green) !important;
+  font-weight: 400 !important;
   box-shadow: none !important;
-  transform: none !important;
 }
 
-/* Sidebar Active Page */
-aside nav a[aria-current="page"],
-aside nav a[data-active="true"] {
-  color: var(--brand-blue) !important;
-  background-color: var(--surface-light) !important;
+/* Inactive tabs */
+nav[role="tablist"] button,
+nav[role="tablist"] a {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* ======================================================
+   SIDEBAR NAVIGATION
+   ====================================================== */
+
+/* Sidebar group titles */
+.sidebar-group-header,
+.sidebar-group-header h5 {
+  color: var(--brand-black) !important;
   font-weight: 500;
+}
+
+/* Inactive page links */
+aside nav a {
+  color: var(--text-secondary);
+  font-weight: 400;
   border-radius: 6px;
 }
 
-/* Table of Contents - "On This Page" */
+aside nav a:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Active page: colored background + color (NO underline) */
+aside nav a[aria-current="page"],
+aside nav a[data-active="true"] {
+  color: var(--accent-green) !important;
+  background-color: var(--surface-light) !important;
+  font-weight: 400;
+}
+
+/* ======================================================
+   TABLE OF CONTENTS (RIGHT SIDE)
+   ====================================================== */
+
 .toc a {
   color: var(--text-secondary);
+  font-weight: 400;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .toc a:hover {
   color: var(--text-primary);
 }
 
-/* Active state in light mode - Brand Blue + Bold */
-#table-of-contents-content a[class*="font-medium"][class*="text-primary"] {
-  color: var(--brand-blue) !important;
-  font-weight: 700 !important;
+/* Active section in TOC */
+#table-of-contents-content a[class*="font-medium"] {
+  color: var(--accent-green) !important;
+  font-weight: 400 !important;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-green);
 }
 
-/* ================================
-   CALLOUTS
-   ================================ */
+/* ======================================================
+   LOGO
+   ====================================================== */
 
-/* Note - Blue */
-div[class*="Note"],
-.callout[data-callout="note"] {
-  background-color: var(--note-bg) !important;
-  border-left: 4px solid var(--note-border) !important;
-  color: var(--note-text) !important;
-  padding: 16px !important;
-  border-radius: 8px !important;
+header nav img {
+  max-height: 30px;
+  width: auto;
 }
 
-/* Warning - Soft Red */
-div[class*="Warning"],
-.callout[data-callout="warning"] {
-  background-color: var(--warning-bg) !important;
-  border-left: 4px solid var(--warning-border) !important;
-  color: var(--warning-text) !important;
-  padding: 16px !important;
-  border-radius: 8px !important;
+/* ======================================================
+   CALLOUTS (UNCHANGED, NEUTRAL)
+   ====================================================== */
+
+.callout {
+  border-radius: 8px;
+  padding: 16px;
 }
 
-/* Tip - Green */
-div[class*="Tip"],
-.callout[data-callout="tip"] {
-  background-color: var(--tip-bg) !important;
-  border-left: 4px solid var(--tip-border) !important;
-  color: var(--tip-text) !important;
-  padding: 16px !important;
-  border-radius: 8px !important;
-}
+/* ======================================================
+   ACCESSIBILITY
+   ====================================================== */
 
-/* Info - Gray */
-div[class*="Info"],
-.callout[data-callout="info"] {
-  background-color: var(--info-bg) !important;
-  border-left: 4px solid var(--info-border) !important;
-  color: var(--info-text) !important;
-  padding: 16px !important;
-  border-radius: 8px !important;
-}
-
-/* Check - Green */
-div[class*="Check"],
-.callout[data-callout="check"] {
-  background-color: var(--check-bg) !important;
-  border-left: 4px solid var(--check-border) !important;
-  color: var(--check-text) !important;
-  padding: 16px !important;
-  border-radius: 8px !important;
-}
-
-/* ================================
-   DARK MODE
-   ================================ */
-
-[data-theme="dark"] {
-  /* Brand Colors */
-  --brand-blue: #4A78FF;
-  --brand-blue-dark: #3B69E5;
-  
-  /* Backgrounds */
-  --background: #0F0F0F;
-  --surface: #1E1E1E;
-  --surface-elevated: #252525;
-  --cta-dark: #FFFFFF;
-  
-  /* Text Colors */
-  --text-primary: #E8E8E8;
-  --text-secondary: #A8A8A8;
-  --text-tertiary: #787878;
-  
-  /* Borders */
-  --border-dark: rgba(255, 255, 255, 0.08);
-  
-  /* Component Colors */
-  --note-bg: rgba(59, 130, 246, 0.1);
-  --note-border: #3B82F6;
-  --note-text: #93C5FD;
-  
-  --warning-bg: rgba(239, 68, 68, 0.1);
-  --warning-border: #EF4444;
-  --warning-text: #FCA5A5;
-  
-  --tip-bg: rgba(34, 197, 94, 0.1);
-  --tip-border: #22C55E;
-  --tip-text: #86EFAC;
-  
-  --info-bg: rgba(115, 115, 115, 0.1);
-  --info-border: #737373;
-  --info-text: #D4D4D4;
-  
-  --check-bg: rgba(34, 197, 94, 0.1);
-  --check-border: #22C55E;
-  --check-text: #86EFAC;
-}
-
-/* Dark Mode Typography */
-[data-theme="dark"] body {
-  color: var(--text-primary);
-}
-
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-  color: var(--text-primary);
-}
-
-/* Dark Mode Navigation */
-[data-theme="dark"] nav[role="tablist"] button[aria-selected="true"],
-[data-theme="dark"] nav[role="tablist"] a[aria-current="page"] {
-  color: var(--brand-blue) !important;
-  border-bottom: 2px solid var(--brand-blue) !important;
-}
-
-[data-theme="dark"] aside nav a[aria-current="page"],
-[data-theme="dark"] aside nav a[data-active="true"] {
-  color: var(--brand-blue) !important;
-  background-color: var(--surface) !important;
-}
-
-/* Dark Mode Sidebar Category Headers - White Text */
-[data-theme="dark"] .sidebar-group-header,
-[data-theme="dark"] .sidebar-group-header h5 {
-  color: #E5E5E5 !important;
-}
-
-/* Dark Mode TOC */
-[data-theme="dark"] .toc a {
-  color: var(--text-secondary);
-}
-
-[data-theme="dark"] .toc a:hover {
-  color: var(--text-primary);
-}
-
-[data-theme="dark"] #table-of-contents-content a[class*="font-medium"] {
-  color: var(--brand-blue) !important;
-  font-weight: 700 !important;
-}
-
-/* Dark Mode Callouts */
-[data-theme="dark"] div[class*="Note"] {
-  background-color: var(--note-bg) !important;
-  border-left-color: var(--note-border) !important;
-  color: var(--note-text) !important;
-}
-
-[data-theme="dark"] div[class*="Warning"] {
-  background-color: var(--warning-bg) !important;
-  border-left-color: var(--warning-border) !important;
-  color: var(--warning-text) !important;
-}
-
-[data-theme="dark"] div[class*="Tip"] {
-  background-color: var(--tip-bg) !important;
-  border-left-color: var(--tip-border) !important;
-  color: var(--tip-text) !important;
-}
-
-[data-theme="dark"] div[class*="Info"] {
-  background-color: var(--info-bg) !important;
-  border-left-color: var(--info-border) !important;
-  color: var(--info-text) !important;
-}
-
-[data-theme="dark"] div[class*="Check"] {
-  background-color: var(--check-bg) !important;
-  border-left-color: var(--check-border) !important;
-  color: var(--check-text) !important;
-}
-
-/* ================================
-   UTILITIES
-   ================================ */
-
-/* Focus States */
 *:focus-visible {
-  outline: 2px solid var(--brand-blue) !important;
+  outline: 2px solid var(--accent-green);
   outline-offset: 2px;
 }
 
-/* Selection */
 ::selection {
-  background-color: var(--brand-blue) !important;
-  color: white !important;
-}
-
-[data-theme="dark"] ::selection {
-  background-color: var(--brand-blue) !important;
-  color: white !important;
+  background-color: var(--accent-green);
+  color: #FFFFFF;
 }

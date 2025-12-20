@@ -1,0 +1,4 @@
+/* Matte dark background override (Mint theme) */
+[data-theme="dark"] {
+  background-color: #1F2326;
+}

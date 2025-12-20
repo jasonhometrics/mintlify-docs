@@ -11,7 +11,8 @@
 }
 
 /* =====================================
-   Light mode: align UI text with logo
+   Light mode: align navigation with logo
+   (DO NOT touch content typography)
    ===================================== */
 
 /* Top navigation tabs (light mode only) */
@@ -26,16 +27,9 @@ body:not([data-theme="dark"]) .sidebar-group-header h5 {
   color: #1F2326;
 }
 
-/* Page titles / headings (light mode only) */
-body:not([data-theme="dark"]) h1,
-body:not([data-theme="dark"]) h2,
-body:not([data-theme="dark"]) h3 {
-  color: #1F2326;
-}
-
 /* =====================================
-   Dark mode: FORCE sidebar group text
-   AND icons to white (accessibility fix)
+   Dark mode: sidebar group contrast fix
+   (text + icons MUST be white)
    ===================================== */
 
 [data-theme="dark"] .sidebar-group-header,
@@ -43,7 +37,7 @@ body:not([data-theme="dark"]) h3 {
   color: #FFFFFF !important;
 }
 
-/* SVG icons inside sidebar group headers */
+/* Force sidebar group icons to white */
 [data-theme="dark"] .sidebar-group-header svg,
 [data-theme="dark"] .sidebar-group-header svg * {
   fill: #FFFFFF !important;

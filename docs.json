@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "Hometrics Guide",
   "colors": {
-    "primary": "#3FA37D",
-    "light": "#2F5B4B",
+    "primary": "#2F5B4B",
+    "light": "#3FA37D",
     "dark": "#1F2326"
   },
   "font": {

@@ -1,16 +1,20 @@
 /* ======================================================
-   HOMETRICS – LIGHT MODE FOUNDATION
+   HOMETRICS – DESIGN FOUNDATION
    ====================================================== */
+
+/* --------------------
+   LIGHT MODE (DEFAULT)
+   -------------------- */
 
 :root {
   /* Core Brand Colors */
   --brand-black: #1F2326;
-  --brand-green: #2F5B4B;        /* narrative / editorial only */
+  --brand-green: #2F5B4B;        /* editorial only */
   --accent-green: #3FA37D;       /* interaction + emphasis */
 
   /* Text System */
-  --text-primary: #2A2A2A;       /* body text (slightly darker than #5A5A5A) */
-  --text-secondary: #5A5A5A;     /* navigation links, secondary text */
+  --text-primary: #2A2A2A;
+  --text-secondary: #5A5A5A;
   --text-muted: #8A8A8A;
 
   /* Backgrounds */
@@ -63,12 +67,13 @@ a:hover {
    TOP NAVIGATION TABS
    ====================================================== */
 
-/* Active tab: color + underline only (NO bold) */
+/* Active tab — COLOR + GREEN UNDERLINE ONLY (NO BOLD) */
 nav[role="tablist"] button[aria-selected="true"],
 nav[role="tablist"] a[aria-current="page"] {
   color: var(--accent-green) !important;
   border-bottom: 2px solid var(--accent-green) !important;
-  font-weight: 400 !important;
+  font-weight: 400 !important;               /* override Mintlify default */
+  text-decoration: none !important;
   box-shadow: none !important;
 }
 
@@ -83,7 +88,7 @@ nav[role="tablist"] a {
    SIDEBAR NAVIGATION
    ====================================================== */
 
-/* Sidebar group titles */
+/* Group titles */
 .sidebar-group-header,
 .sidebar-group-header h5 {
   color: var(--brand-black) !important;
@@ -95,22 +100,24 @@ aside nav a {
   color: var(--text-secondary);
   font-weight: 400;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 aside nav a:hover {
   background-color: var(--hover-bg);
 }
 
-/* Active page: colored background + color (NO underline) */
+/* Active page — COLORED BACKGROUND + COLOR (NO UNDERLINE) */
 aside nav a[aria-current="page"],
 aside nav a[data-active="true"] {
   color: var(--accent-green) !important;
   background-color: var(--surface-light) !important;
-  font-weight: 400;
+  font-weight: 400 !important;
+  text-decoration: none !important;
 }
 
 /* ======================================================
-   TABLE OF CONTENTS (RIGHT SIDE)
+   TABLE OF CONTENTS ("ON THIS PAGE")
    ====================================================== */
 
 .toc a {
@@ -123,12 +130,11 @@ aside nav a[data-active="true"] {
   color: var(--text-primary);
 }
 
-/* Active section in TOC */
+/* Active TOC item — COLOR ONLY (NO UNDERLINE, NO BOLD) */
 #table-of-contents-content a[class*="font-medium"] {
   color: var(--accent-green) !important;
   font-weight: 400 !important;
-  text-decoration: underline;
-  text-decoration-color: var(--accent-green);
+  text-decoration: none !important;
 }
 
 /* ======================================================
@@ -138,15 +144,6 @@ aside nav a[data-active="true"] {
 header nav img {
   max-height: 30px;
   width: auto;
-}
-
-/* ======================================================
-   CALLOUTS (UNCHANGED, NEUTRAL)
-   ====================================================== */
-
-.callout {
-  border-radius: 8px;
-  padding: 16px;
 }
 
 /* ======================================================
@@ -161,4 +158,89 @@ header nav img {
 ::selection {
   background-color: var(--accent-green);
   color: #FFFFFF;
+}
+
+/* ======================================================
+   DARK MODE
+   ====================================================== */
+
+[data-theme="dark"] {
+  /* Core Brand Colors */
+  --brand-black: #E8ECEF;
+  --brand-green: #2F5B4B;
+  --accent-green: #45B88E;
+
+  /* Text System */
+  --text-primary: #D6DADF;
+  --text-secondary: #A9B0B6;
+  --text-muted: #7E8790;
+
+  /* Backgrounds */
+  --background: #1F2326;
+  --surface-light: #262A2D;
+  --hover-bg: #2E3337;
+
+  /* Borders */
+  --border-light: rgba(255, 255, 255, 0.08);
+}
+
+/* ======================================================
+   DARK MODE TYPOGRAPHY
+   ====================================================== */
+
+[data-theme="dark"] body {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+  color: var(--brand-black);
+}
+
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-primary);
+}
+
+/* ======================================================
+   DARK MODE LINKS
+   ====================================================== */
+
+[data-theme="dark"] a {
+  color: var(--accent-green);
+  text-decoration-color: var(--accent-green);
+}
+
+/* ======================================================
+   DARK MODE NAVIGATION (MATCHES LIGHT MODE BEHAVIOR)
+   ====================================================== */
+
+/* Active top tab — NO BOLD, GREEN UNDERLINE */
+[data-theme="dark"] nav[role="tablist"] button[aria-selected="true"],
+[data-theme="dark"] nav[role="tablist"] a[aria-current="page"] {
+  color: var(--accent-green) !important;
+  border-bottom: 2px solid var(--accent-green) !important;
+  font-weight: 400 !important;
+}
+
+/* Active sidebar page */
+[data-theme="dark"] aside nav a[aria-current="page"],
+[data-theme="dark"] aside nav a[data-active="true"] {
+  background-color: var(--surface-light) !important;
+  text-decoration: none !important;
+}
+
+/* Active TOC item — COLOR ONLY */
+[data-theme="dark"] #table-of-contents-content a[class*="font-medium"] {
+  color: var(--accent-green) !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+}
+
+/* Selection */
+[data-theme="dark"] ::selection {
+  background-color: var(--accent-green);
+  color: #0B0F12;
 }

@@ -175,134 +175,45 @@
               "service-categories/staging-interior-design/interior-design/overview",
               "service-categories/staging-interior-design/interior-design/types-of-services",
               "service-categories/staging-interior-design/interior-design/the-design-process",
-              "service-categories/staging-interior-design/interior-design/costs-and-fees",
+              "service-categories/staging-interior-design/interior-design/costs-and-budgeting",
               "service-categories/staging-interior-design/interior-design/comparing-designers"
             ]
           },
           {
-            "group": "Legal",
-            "icon": "scale-balanced",
+            "group": "Lenders",
+            "icon": "building-columns",
             "pages": [
-              "service-categories/legal/overview",
-              {
-                "group": "Consumer Protections",
-                "pages": [
-                  "service-categories/legal/consumer-protections/overview",
-                  "service-categories/legal/consumer-protections/respa",
-                  "service-categories/legal/consumer-protections/tila",
-                  "service-categories/legal/consumer-protections/fair-housing",
-                  "service-categories/legal/consumer-protections/required-disclosures"
-                ]
-              },
-              {
-                "group": "Real Estate Attorneys",
-                "pages": [
-                  "service-categories/legal/real-estate-attorneys/overview",
-                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
-                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
-                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
-                ]
-              },
-              {
-                "group": "Contracts & Agreements",
-                "pages": [
-                  "service-categories/legal/contracts-and-agreements/overview",
-                  "service-categories/legal/contracts-and-agreements/purchase-contracts",
-                  "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
-                ]
-              },
-              {
-                "group": "Rentals",
-                "pages": [
-                  "service-categories/legal/rentals/overview",
-                  "service-categories/legal/rentals/lease-agreements",
-                  "service-categories/legal/rentals/landlord-rights",
-                  "service-categories/legal/rentals/tenant-rights",
-                  "service-categories/legal/rentals/eviction-process",
-                  "service-categories/legal/rentals/security-deposits",
-                  "service-categories/legal/rentals/disputes"
-                ]
-              },
-              {
-                "group": "Ownership Changes",
-                "pages": [
-                  "service-categories/legal/ownership-changes/overview",
-                  "service-categories/legal/ownership-changes/probate-process",
-                  "service-categories/legal/ownership-changes/inherited-property",
-                  "service-categories/legal/ownership-changes/trusts-and-real-estate",
-                  "service-categories/legal/ownership-changes/power-of-attorney",
-                  "service-categories/legal/ownership-changes/transferring-ownership",
-                  "service-categories/legal/ownership-changes/divorce-and-property",
-                  "service-categories/legal/ownership-changes/buyout-scenarios",
-                  "service-categories/legal/ownership-changes/removing-names-from-title"
-                ]
-              },
-              {
-                "group": "Property Issues",
-                "pages": [
-                  "service-categories/legal/property-issues/overview",
-                  "service-categories/legal/property-issues/foreclosure-process",
-                  "service-categories/legal/property-issues/short-sales",
-                  "service-categories/legal/property-issues/liens-and-encumbrances",
-                  "service-categories/legal/property-issues/hoa-basics",
-                  "service-categories/legal/property-issues/zoning-and-land-use",
-                  "service-categories/legal/property-issues/environmental-disclosures",
-                  "service-categories/legal/property-issues/property-disputes",
-                  "service-categories/legal/property-issues/llcs-and-business-structures",
-                  "service-categories/legal/property-issues/new-construction"
-                ]
-              }
+              "service-categories/lenders/overview",
+              "service-categories/lenders/types-of-lenders",
+              "service-categories/lenders/types-of-loans",
+              "service-categories/lenders/the-lending-process",
+              "service-categories/lenders/understanding-rates",
+              "service-categories/lenders/costs-and-fees",
+              "service-categories/lenders/comparing-lenders"
             ]
           },
           {
-            "group": "Mortgage Lenders",
-            "icon": "house-circle-check",
-            "pages": [
-              "service-categories/mortgage-lenders/overview",
-              "service-categories/mortgage-lenders/loan-officers-and-brokers",
-              "service-categories/mortgage-lenders/local-vs-national-lenders",
-              "service-categories/mortgage-lenders/pre-approval",
-              "service-categories/mortgage-lenders/loan-types",
-              "service-categories/mortgage-lenders/mortgage-timeline",
-              "service-categories/mortgage-lenders/comparing-lenders"
-            ]
-          },
-          {
-            "group": "Moving Companies",
+            "group": "Movers",
             "icon": "truck-moving",
             "pages": [
-              "service-categories/moving-companies/overview",
-              "service-categories/moving-companies/types-of-moves",
-              "service-categories/moving-companies/getting-estimates",
-              "service-categories/moving-companies/the-moving-process",
-              "service-categories/moving-companies/costs-and-pricing",
-              "service-categories/moving-companies/protecting-your-belongings",
-              "service-categories/moving-companies/avoiding-scams",
-              "service-categories/moving-companies/comparing-movers"
+              "service-categories/movers/overview",
+              "service-categories/movers/types-of-moves",
+              "service-categories/movers/the-moving-process",
+              "service-categories/movers/costs-and-estimates",
+              "service-categories/movers/protecting-your-belongings",
+              "service-categories/movers/comparing-movers"
             ]
           },
           {
-            "group": "Photography & Videography",
-            "icon": "camera",
-            "pages": [
-              "service-categories/photography-videography/overview",
-              "service-categories/photography-videography/types-of-services",
-              "service-categories/photography-videography/the-shoot-process",
-              "service-categories/photography-videography/costs-and-pricing",
-              "service-categories/photography-videography/comparing-photographers"
-            ]
-          },
-          {
-            "group": "Property Management",
+            "group": "Property Managers",
             "icon": "building",
             "pages": [
-              "service-categories/property-management/overview",
-              "service-categories/property-management/types-of-services",
-              "service-categories/property-management/the-management-process",
-              "service-categories/property-management/costs-and-fees",
-              "service-categories/property-management/owner-responsibilities",
-              "service-categories/property-management/evaluating-performance",
-              "service-categories/property-management/comparing-property-managers"
+              "service-categories/property-managers/overview",
+              "service-categories/property-managers/types-of-property-managers",
+              "service-categories/property-managers/services-offered",
+              "service-categories/property-managers/fees-and-contracts",
+              "service-categories/property-managers/landlord-responsibilities",
+              "service-categories/property-managers/comparing-managers"
             ]
           },
           {
@@ -314,6 +225,17 @@
               "service-categories/real-estate-agents/the-agent-process",
               "service-categories/real-estate-agents/commission-and-costs",
               "service-categories/real-estate-agents/comparing-agents"
+            ]
+          },
+          {
+            "group": "Real Estate Attorneys",
+            "icon": "scale-balanced",
+            "pages": [
+              "service-categories/real-estate-attorneys/overview",
+              "service-categories/real-estate-attorneys/when-you-need-an-attorney",
+              "service-categories/real-estate-attorneys/what-attorneys-do",
+              "service-categories/real-estate-attorneys/costs-and-fees",
+              "service-categories/real-estate-attorneys/comparing-attorneys"
             ]
           },
           {
@@ -344,13 +266,37 @@
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Pro",
         "groups": [
           {
-            "group": "Resources",
-            "icon": "toolbox",
+            "group": "Local Search",
+            "icon": "magnifying-glass-location",
             "pages": [
-              "resources/checklists"
+              "pro/local-search/overview",
+              "pro/local-search/how-search-is-changing",
+              "pro/local-search/what-this-means"
+            ]
+          },
+          {
+            "group": "Business Listings",
+            "icon": "list-check",
+            "pages": [
+              "pro/business-listings/overview",
+              "pro/business-listings/types-of-listings",
+              "pro/business-listings/auditing-your-listings",
+              "pro/business-listings/maintaining-consistency"
+            ]
+          },
+          {
+            "group": "Google Business Profile",
+            "icon": "google",
+            "pages": [
+              "pro/google-business-profile/overview",
+              "pro/google-business-profile/setting-up-your-profile",
+              "pro/google-business-profile/optimizing-your-profile",
+              "pro/google-business-profile/managing-reviews",
+              "pro/google-business-profile/insights-and-performance",
+              "pro/google-business-profile/common-mistakes"
             ]
           }
         ]

@@ -180,7 +180,7 @@
             ]
           },
           {
-            "group": "Lenders",
+            "group": "Mortgage Lenders",
             "icon": "building-columns",
             "pages": [
               "service-categories/lenders/overview",

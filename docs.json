@@ -183,14 +183,14 @@
             "group": "Mortgage Lenders",
             "icon": "building-columns",
             "pages": [
-              "service-categories/lenders/overview",
-              "service-categories/lenders/types-of-lenders",
-              "service-categories/lenders/pre-approval",
-              "service-categories/lenders/types-of-loans",
-              "service-categories/lenders/the-lending-process",
-              "service-categories/lenders/understanding-rates",
-              "service-categories/lenders/costs-and-fees",
-              "service-categories/lenders/comparing-lenders"
+              "service-categories/mortgage-lenders/overview",
+              "service-categories/mortgage-lenders/types-of-lenders",
+              "service-categories/mortgage-lenders/pre-approval",
+              "service-categories/mortgage-lenders/types-of-loans",
+              "service-categories/mortgage-lenders/the-lending-process",
+              "service-categories/mortgage-lenders/understanding-rates",
+              "service-categories/mortgage-lenders/costs-and-fees",
+              "service-categories/mortgage-lenders/comparing-lenders"
             ]
           },
           {

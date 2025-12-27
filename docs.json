@@ -227,13 +227,12 @@
             "icon": "building-columns",
             "pages": [
               "service-categories/mortgage-lenders/overview",
-              "service-categories/mortgage-lenders/types-of-lenders",
+              "service-categories/mortgage-lenders/loan-officers-and-brokers",
               "service-categories/mortgage-lenders/pre-approval",
               "service-categories/mortgage-lenders/types-of-loans",
-              "service-categories/mortgage-lenders/the-lending-process",
-              "service-categories/mortgage-lenders/understanding-rates",
-              "service-categories/mortgage-lenders/costs-and-fees",
-              "service-categories/mortgage-lenders/comparing-lenders"
+              "service-categories/mortgage-lenders/mortgage-timeline",
+              "service-categories/mortgage-lenders/comparing-lenders",
+              "service-categories/mortgage-lenders/ready-to-compare"
             ]
           },
           {

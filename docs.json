@@ -14,9 +14,7 @@
   "background": {
     "style": "transparent"
   },
-  "css": [
-    "/styles.css"
-  ],
+  "css": ["/styles.css"],
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
@@ -48,9 +46,7 @@
           {
             "group": "Helpful Tools",
             "icon": "toolbox",
-            "pages": [
-              "overview/helpful-tools/glossary"
-            ]
+            "pages": ["overview/helpful-tools/glossary"]
           }
         ]
       },
@@ -172,11 +168,58 @@
             "group": "Interior Design",
             "icon": "couch",
             "pages": [
-              "service-categories/staging-interior-design/interior-design/overview",
-              "service-categories/staging-interior-design/interior-design/types-of-services",
-              "service-categories/staging-interior-design/interior-design/the-design-process",
-              "service-categories/staging-interior-design/interior-design/costs-and-budgeting",
-              "service-categories/staging-interior-design/interior-design/comparing-designers"
+              "service-categories/interior-design/overview",
+              "service-categories/interior-design/types-of-services",
+              "service-categories/interior-design/the-design-process",
+              "service-categories/interior-design/costs-and-budgeting",
+              "service-categories/interior-design/comparing-designers"
+            ]
+          },
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "service-categories/legal/overview",
+              {
+                "group": "Consumer Protections",
+                "pages": [
+                  "service-categories/legal/consumer-protections/overview",
+                  "service-categories/legal/consumer-protections/respa",
+                  "service-categories/legal/consumer-protections/tila",
+                  "service-categories/legal/consumer-protections/fair-housing",
+                  "service-categories/legal/consumer-protections/required-disclosures"
+                ]
+              },
+              {
+                "group": "Real Estate Attorneys",
+                "pages": [
+                  "service-categories/legal/real-estate-attorneys/overview",
+                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
+                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
+                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
+                ]
+              },
+              {
+                "group": "Contracts & Agreements",
+                "pages": [
+                  "service-categories/legal/contracts-and-agreements/overview",
+                  "service-categories/legal/contracts-and-agreements/purchase-contracts",
+                  "service-categories/legal/contracts-and-agreements/lease-agreements",
+                  "service-categories/legal/contracts-and-agreements/addendums-and-contingencies",
+                  "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
+                ]
+              },
+              {
+                "group": "Landlord-Tenant",
+                "pages": [
+                  "service-categories/legal/rentals/overview",
+                  "service-categories/legal/rentals/landlord-rights",
+                  "service-categories/legal/rentals/tenant-rights",
+                  "service-categories/legal/rentals/security-deposits",
+                  "service-categories/legal/rentals/eviction-process",
+                  "service-categories/legal/rentals/disputes"
+                ]
+              }
             ]
           },
           {
@@ -206,15 +249,26 @@
             ]
           },
           {
-            "group": "Property Managers",
+            "group": "Photography & Videography",
+            "icon": "camera",
+            "pages": [
+              "service-categories/photography-videography/overview",
+              "service-categories/photography-videography/types-of-services",
+              "service-categories/photography-videography/the-shoot-process",
+              "service-categories/photography-videography/costs-and-pricing",
+              "service-categories/photography-videography/comparing-photographers"
+            ]
+          },
+          {
+            "group": "Property Management",
             "icon": "building",
             "pages": [
-              "service-categories/property-managers/overview",
-              "service-categories/property-managers/types-of-property-managers",
-              "service-categories/property-managers/services-offered",
-              "service-categories/property-managers/fees-and-contracts",
-              "service-categories/property-managers/landlord-responsibilities",
-              "service-categories/property-managers/comparing-managers"
+              "service-categories/property-management/overview",
+              "service-categories/property-management/types-of-property-managers",
+              "service-categories/property-management/services-offered",
+              "service-categories/property-management/fees-and-contracts",
+              "service-categories/property-management/landlord-responsibilities",
+              "service-categories/property-management/comparing-managers"
             ]
           },
           {
@@ -229,25 +283,14 @@
             ]
           },
           {
-            "group": "Real Estate Attorneys",
-            "icon": "scale-balanced",
-            "pages": [
-              "service-categories/real-estate-attorneys/overview",
-              "service-categories/real-estate-attorneys/when-you-need-an-attorney",
-              "service-categories/real-estate-attorneys/what-attorneys-do",
-              "service-categories/real-estate-attorneys/costs-and-fees",
-              "service-categories/real-estate-attorneys/comparing-attorneys"
-            ]
-          },
-          {
             "group": "Staging",
             "icon": "wand-magic-sparkles",
             "pages": [
-              "service-categories/staging-interior-design/staging/overview",
-              "service-categories/staging-interior-design/staging/types-of-staging",
-              "service-categories/staging-interior-design/staging/the-staging-process",
-              "service-categories/staging-interior-design/staging/costs-and-roi",
-              "service-categories/staging-interior-design/staging/comparing-stagers"
+              "service-categories/staging/overview",
+              "service-categories/staging/types-of-staging",
+              "service-categories/staging/the-staging-process",
+              "service-categories/staging/costs-and-roi",
+              "service-categories/staging/comparing-stagers"
             ]
           },
           {

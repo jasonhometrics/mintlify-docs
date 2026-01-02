@@ -26,13 +26,10 @@
     "tabs": [
       {
         "tab": "Overview",
+        "pages": [
+          "overview/home"
+        ],
         "groups": [
-          {
-            "group": "",
-            "pages": [
-              "overview/home"
-            ]
-          },
           {
             "group": "Getting Started",
             "icon": "rocket",
@@ -61,14 +58,10 @@
       },
       {
         "tab": "Learn",
+        "pages": [
+          "learn/index"
+        ],
         "groups": [
-          {
-            "group": "",
-            "icon": "graduation-cap",
-            "pages": [
-              "learn/index"
-            ]
-          },
           {
             "group": "First-Time Home Buyer",
             "icon": "house-user",
@@ -125,14 +118,10 @@
       },
       {
         "tab": "Service Categories",
+        "pages": [
+          "service-categories/index"
+        ],
         "groups": [
-          {
-            "group": "Browse Categories",
-            "icon": "grid-2",
-            "pages": [
-              "service-categories/index"
-            ]
-          },
           {
             "group": "Accountants & Tax",
             "icon": "calculator",

@@ -63,7 +63,7 @@
         "tab": "Learn",
         "groups": [
           {
-            "group": "Learning Paths",
+            "group": "",
             "icon": "graduation-cap",
             "pages": [
               "learn/index"

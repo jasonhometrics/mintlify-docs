@@ -216,13 +216,13 @@
               {
                 "group": "Landlord-Tenant",
                 "pages": [
-                  "service-categories/legal/rentals/overview",
-                  "service-categories/legal/rentals/lease-agreements",
-                  "service-categories/legal/rentals/landlord-rights",
-                  "service-categories/legal/rentals/tenant-rights",
-                  "service-categories/legal/rentals/eviction-process",
-                  "service-categories/legal/rentals/security-deposits",
-                  "service-categories/legal/rentals/disputes"
+                  "service-categories/legal/landlord-tenant/overview",
+                  "service-categories/legal/landlord-tenant/lease-agreements",
+                  "service-categories/legal/landlord-tenant/landlord-rights",
+                  "service-categories/legal/landlord-tenant/tenant-rights",
+                  "service-categories/legal/landlord-tenant/eviction-process",
+                  "service-categories/legal/landlord-tenant/security-deposits",
+                  "service-categories/legal/landlord-tenant/disputes"
                 ]
               },
               {

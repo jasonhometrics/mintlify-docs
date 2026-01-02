@@ -31,8 +31,7 @@
             "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              "overview/home",
-              "overview/getting-started/what-is-hometrics",
+              "overview/getting-started/home",
               "overview/getting-started/mission-and-principles"
             ]
           },
@@ -56,9 +55,13 @@
       },
       {
         "tab": "Learn",
-        "groups": [
+        "anchors": [
           {
-            "group": "First-Time Home Buyer",
+            "anchor": "Learning Paths",
+            "pages": ["learn/index"]
+          },
+          {
+            "anchor": "First-Time Home Buyer",
             "icon": "house-user",
             "pages": [
               "learn/first-time-home-buyer/overview",
@@ -71,7 +74,7 @@
             ]
           },
           {
-            "group": "Selling Your Home",
+            "anchor": "Selling Your Home",
             "icon": "sign-hanging",
             "pages": [
               "learn/selling-your-home/overview",
@@ -84,7 +87,7 @@
             ]
           },
           {
-            "group": "Inherited Property",
+            "anchor": "Inherited Property",
             "icon": "scroll",
             "pages": [
               "learn/inherited-property/overview",
@@ -97,7 +100,7 @@
             ]
           },
           {
-            "group": "Real Estate Investing",
+            "anchor": "Real Estate Investing",
             "icon": "chart-line",
             "pages": [
               "learn/real-estate-investing/overview",
@@ -113,9 +116,13 @@
       },
       {
         "tab": "Service Categories",
-        "groups": [
+        "anchors": [
           {
-            "group": "Accountants & Tax",
+            "anchor": "Browse Categories",
+            "pages": ["service-categories/index"]
+          },
+          {
+            "anchor": "Accountants & Tax",
             "icon": "calculator",
             "pages": [
               "service-categories/accountants-tax/overview",
@@ -129,7 +136,7 @@
             ]
           },
           {
-            "group": "Appraisers",
+            "anchor": "Appraisers",
             "icon": "magnifying-glass-dollar",
             "pages": [
               "service-categories/appraisers/overview",
@@ -142,7 +149,7 @@
             ]
           },
           {
-            "group": "Home Inspectors",
+            "anchor": "Home Inspectors",
             "icon": "clipboard-check",
             "pages": [
               "service-categories/home-inspectors/overview",
@@ -155,7 +162,7 @@
             ]
           },
           {
-            "group": "Homeowners Insurance",
+            "anchor": "Homeowners Insurance",
             "icon": "shield-halved",
             "pages": [
               "service-categories/homeowners-insurance/overview",
@@ -169,7 +176,7 @@
             ]
           },
           {
-            "group": "Interior Design",
+            "anchor": "Interior Design",
             "icon": "couch",
             "pages": [
               "service-categories/staging-interior-design/interior-design/overview",
@@ -180,7 +187,7 @@
             ]
           },
           {
-            "group": "Legal",
+            "anchor": "Legal",
             "icon": "scale-balanced",
             "pages": [
               "service-categories/legal/overview",
@@ -257,7 +264,7 @@
             ]
           },
           {
-            "group": "Mortgage Lenders",
+            "anchor": "Mortgage Lenders",
             "icon": "building-columns",
             "pages": [
               "service-categories/mortgage-lenders/overview",
@@ -271,7 +278,7 @@
             ]
           },
           {
-            "group": "Movers",
+            "anchor": "Movers",
             "icon": "truck-moving",
             "pages": [
               "service-categories/movers/overview",
@@ -283,7 +290,7 @@
             ]
           },
           {
-            "group": "Photography & Video",
+            "anchor": "Photography & Video",
             "icon": "camera",
             "pages": [
               "service-categories/photography-videography/overview",
@@ -294,7 +301,7 @@
             ]
           },
           {
-            "group": "Property Managers",
+            "anchor": "Property Managers",
             "icon": "building",
             "pages": [
               "service-categories/property-managers/overview",
@@ -306,7 +313,7 @@
             ]
           },
           {
-            "group": "Real Estate Agents",
+            "anchor": "Real Estate Agents",
             "icon": "house-user",
             "pages": [
               "service-categories/real-estate-agents/overview",
@@ -317,7 +324,7 @@
             ]
           },
           {
-            "group": "Staging",
+            "anchor": "Staging",
             "icon": "wand-magic-sparkles",
             "pages": [
               "service-categories/staging-interior-design/staging/overview",
@@ -328,7 +335,7 @@
             ]
           },
           {
-            "group": "Title & Escrow",
+            "anchor": "Title & Escrow",
             "icon": "shield-check",
             "pages": [
               "service-categories/title-escrow/overview",

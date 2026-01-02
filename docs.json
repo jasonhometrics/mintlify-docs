@@ -28,10 +28,15 @@
         "tab": "Overview",
         "groups": [
           {
+            "group": "",
+            "pages": [
+              "overview/home"
+            ]
+          },
+          {
             "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              "overview/home",
               "overview/getting-started/what-is-hometrics",
               "overview/getting-started/mission-and-principles"
             ]

@@ -14,12 +14,6 @@
   "background": {
     "style": "transparent"
   },
-  "styling": {
-    "eyebrows": "breadcrumbs"
-  },
-  "interaction": {
-    "drilldown": true
-  },
   "css": [
     "/styles.css"
   ],
@@ -32,345 +26,342 @@
     "tabs": [
       {
         "tab": "Overview",
-        "groups": [
+        "anchors": [
           {
-            "group": "Overview",
+            "anchor": "Home",
+            "icon": "house",
+            "pages": ["overview/home"]
+          },
+          {
+            "anchor": "Getting Started",
+            "icon": "rocket",
             "pages": [
-              "overview/home",
-              {
-                "group": "Getting Started",
-                "icon": "rocket",
-                "pages": [
-                  "overview/getting-started/what-is-hometrics",
-                  "overview/getting-started/mission-and-principles"
-                ]
-              },
-              {
-                "group": "Platform Features",
-                "icon": "star",
-                "pages": [
-                  "overview/platform-features/performance-badges",
-                  "overview/platform-features/differentiators",
-                  "overview/platform-features/special-offers-and-discounts"
-                ]
-              },
-              {
-                "group": "Helpful Tools",
-                "icon": "toolbox",
-                "pages": [
-                  "overview/helpful-tools/glossary"
-                ]
-              }
+              "overview/getting-started/what-is-hometrics",
+              "overview/getting-started/mission-and-principles"
+            ]
+          },
+          {
+            "anchor": "Platform Features",
+            "icon": "star",
+            "pages": [
+              "overview/platform-features/performance-badges",
+              "overview/platform-features/differentiators",
+              "overview/platform-features/special-offers-and-discounts"
+            ]
+          },
+          {
+            "anchor": "Helpful Tools",
+            "icon": "toolbox",
+            "pages": [
+              "overview/helpful-tools/glossary"
             ]
           }
         ]
       },
       {
         "tab": "Learn",
-        "groups": [
+        "anchors": [
           {
-            "group": "Learn",
+            "anchor": "Learning Paths",
+            "icon": "graduation-cap",
+            "pages": ["learn/index"]
+          },
+          {
+            "anchor": "First-Time Home Buyer",
+            "icon": "house-user",
             "pages": [
-              "learn/index",
-              {
-                "group": "First-Time Home Buyer",
-                "icon": "house-user",
-                "pages": [
-                  "learn/first-time-home-buyer/overview",
-                  "learn/first-time-home-buyer/getting-pre-approved",
-                  "learn/first-time-home-buyer/finding-an-agent",
-                  "learn/first-time-home-buyer/making-an-offer",
-                  "learn/first-time-home-buyer/due-diligence",
-                  "learn/first-time-home-buyer/title-and-closing",
-                  "learn/first-time-home-buyer/insurance-and-moving"
-                ]
-              },
-              {
-                "group": "Selling Your Home",
-                "icon": "sign-hanging",
-                "pages": [
-                  "learn/selling-your-home/overview",
-                  "learn/selling-your-home/choosing-a-listing-agent",
-                  "learn/selling-your-home/preparing-your-home",
-                  "learn/selling-your-home/pricing-and-listing",
-                  "learn/selling-your-home/reviewing-offers",
-                  "learn/selling-your-home/under-contract-to-closing",
-                  "learn/selling-your-home/tax-implications-and-moving"
-                ]
-              },
-              {
-                "group": "Inherited Property",
-                "icon": "scroll",
-                "pages": [
-                  "learn/inherited-property/overview",
-                  "learn/inherited-property/probate-process",
-                  "learn/inherited-property/tax-implications",
-                  "learn/inherited-property/deciding-what-to-do",
-                  "learn/inherited-property/transferring-title",
-                  "learn/inherited-property/selling-inherited-property",
-                  "learn/inherited-property/keeping-as-rental"
-                ]
-              },
-              {
-                "group": "Real Estate Investing",
-                "icon": "chart-line",
-                "pages": [
-                  "learn/real-estate-investing/overview",
-                  "learn/real-estate-investing/financing-investment-property",
-                  "learn/real-estate-investing/finding-and-evaluating-properties",
-                  "learn/real-estate-investing/entity-structure-and-legal",
-                  "learn/real-estate-investing/managing-your-investment",
-                  "learn/real-estate-investing/tax-strategies",
-                  "learn/real-estate-investing/insurance-and-liability"
-                ]
-              }
+              "learn/first-time-home-buyer/overview",
+              "learn/first-time-home-buyer/getting-pre-approved",
+              "learn/first-time-home-buyer/finding-an-agent",
+              "learn/first-time-home-buyer/making-an-offer",
+              "learn/first-time-home-buyer/due-diligence",
+              "learn/first-time-home-buyer/title-and-closing",
+              "learn/first-time-home-buyer/insurance-and-moving"
+            ]
+          },
+          {
+            "anchor": "Selling Your Home",
+            "icon": "sign-hanging",
+            "pages": [
+              "learn/selling-your-home/overview",
+              "learn/selling-your-home/choosing-a-listing-agent",
+              "learn/selling-your-home/preparing-your-home",
+              "learn/selling-your-home/pricing-and-listing",
+              "learn/selling-your-home/reviewing-offers",
+              "learn/selling-your-home/under-contract-to-closing",
+              "learn/selling-your-home/tax-implications-and-moving"
+            ]
+          },
+          {
+            "anchor": "Inherited Property",
+            "icon": "scroll",
+            "pages": [
+              "learn/inherited-property/overview",
+              "learn/inherited-property/probate-process",
+              "learn/inherited-property/tax-implications",
+              "learn/inherited-property/deciding-what-to-do",
+              "learn/inherited-property/transferring-title",
+              "learn/inherited-property/selling-inherited-property",
+              "learn/inherited-property/keeping-as-rental"
+            ]
+          },
+          {
+            "anchor": "Real Estate Investing",
+            "icon": "chart-line",
+            "pages": [
+              "learn/real-estate-investing/overview",
+              "learn/real-estate-investing/financing-investment-property",
+              "learn/real-estate-investing/finding-and-evaluating-properties",
+              "learn/real-estate-investing/entity-structure-and-legal",
+              "learn/real-estate-investing/managing-your-investment",
+              "learn/real-estate-investing/tax-strategies",
+              "learn/real-estate-investing/insurance-and-liability"
             ]
           }
         ]
       },
       {
         "tab": "Service Categories",
-        "groups": [
+        "anchors": [
           {
-            "group": "Service Categories",
+            "anchor": "Browse Categories",
+            "icon": "grid-2",
+            "pages": ["service-categories/index"]
+          },
+          {
+            "anchor": "Accountants & Tax",
+            "icon": "calculator",
             "pages": [
-              "service-categories/index",
+              "service-categories/accountants-tax/overview",
+              "service-categories/accountants-tax/types-of-tax-professionals",
+              "service-categories/accountants-tax/tax-implications-buying",
+              "service-categories/accountants-tax/tax-implications-selling",
+              "service-categories/accountants-tax/rental-property-taxes",
+              "service-categories/accountants-tax/1031-exchanges",
+              "service-categories/accountants-tax/property-tax-appeals",
+              "service-categories/accountants-tax/comparing-accountants"
+            ]
+          },
+          {
+            "anchor": "Appraisers",
+            "icon": "magnifying-glass-dollar",
+            "pages": [
+              "service-categories/appraisers/overview",
+              "service-categories/appraisers/types-of-appraisals",
+              "service-categories/appraisers/the-appraisal-process",
+              "service-categories/appraisers/understanding-the-report",
+              "service-categories/appraisers/appraisal-vs-other-valuations",
+              "service-categories/appraisers/low-appraisals",
+              "service-categories/appraisers/comparing-appraisers"
+            ]
+          },
+          {
+            "anchor": "Home Inspectors",
+            "icon": "clipboard-check",
+            "pages": [
+              "service-categories/home-inspectors/overview",
+              "service-categories/home-inspectors/types-of-inspections",
+              "service-categories/home-inspectors/the-inspection-process",
+              "service-categories/home-inspectors/understanding-the-report",
+              "service-categories/home-inspectors/common-issues-found",
+              "service-categories/home-inspectors/after-the-inspection",
+              "service-categories/home-inspectors/comparing-inspectors"
+            ]
+          },
+          {
+            "anchor": "Homeowners Insurance",
+            "icon": "shield-halved",
+            "pages": [
+              "service-categories/homeowners-insurance/overview",
+              "service-categories/homeowners-insurance/types-of-coverage",
+              "service-categories/homeowners-insurance/policy-types",
+              "service-categories/homeowners-insurance/what-affects-premiums",
+              "service-categories/homeowners-insurance/filing-claims",
+              "service-categories/homeowners-insurance/flood-insurance",
+              "service-categories/homeowners-insurance/specialty-coverage",
+              "service-categories/homeowners-insurance/comparing-insurance"
+            ]
+          },
+          {
+            "anchor": "Interior Design",
+            "icon": "couch",
+            "pages": [
+              "service-categories/staging-interior-design/interior-design/overview",
+              "service-categories/staging-interior-design/interior-design/types-of-services",
+              "service-categories/staging-interior-design/interior-design/the-design-process",
+              "service-categories/staging-interior-design/interior-design/costs-and-budgeting",
+              "service-categories/staging-interior-design/interior-design/comparing-designers"
+            ]
+          },
+          {
+            "anchor": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "service-categories/legal/overview",
               {
-                "group": "Accountants & Tax",
-                "icon": "calculator",
+                "group": "Consumer Protections",
                 "pages": [
-                  "service-categories/accountants-tax/overview",
-                  "service-categories/accountants-tax/types-of-tax-professionals",
-                  "service-categories/accountants-tax/tax-implications-buying",
-                  "service-categories/accountants-tax/tax-implications-selling",
-                  "service-categories/accountants-tax/rental-property-taxes",
-                  "service-categories/accountants-tax/1031-exchanges",
-                  "service-categories/accountants-tax/property-tax-appeals",
-                  "service-categories/accountants-tax/comparing-accountants"
+                  "service-categories/legal/consumer-protections/overview",
+                  "service-categories/legal/consumer-protections/respa",
+                  "service-categories/legal/consumer-protections/tila",
+                  "service-categories/legal/consumer-protections/fair-housing",
+                  "service-categories/legal/consumer-protections/required-disclosures"
                 ]
               },
               {
-                "group": "Appraisers",
-                "icon": "magnifying-glass-dollar",
+                "group": "Real Estate Attorneys",
                 "pages": [
-                  "service-categories/appraisers/overview",
-                  "service-categories/appraisers/types-of-appraisals",
-                  "service-categories/appraisers/the-appraisal-process",
-                  "service-categories/appraisers/understanding-the-report",
-                  "service-categories/appraisers/appraisal-vs-other-valuations",
-                  "service-categories/appraisers/low-appraisals",
-                  "service-categories/appraisers/comparing-appraisers"
+                  "service-categories/legal/real-estate-attorneys/overview",
+                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
+                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
+                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
                 ]
               },
               {
-                "group": "Home Inspectors",
-                "icon": "clipboard-check",
+                "group": "Contracts & Agreements",
                 "pages": [
-                  "service-categories/home-inspectors/overview",
-                  "service-categories/home-inspectors/types-of-inspections",
-                  "service-categories/home-inspectors/the-inspection-process",
-                  "service-categories/home-inspectors/understanding-the-report",
-                  "service-categories/home-inspectors/common-issues-found",
-                  "service-categories/home-inspectors/after-the-inspection",
-                  "service-categories/home-inspectors/comparing-inspectors"
+                  "service-categories/legal/contracts-and-agreements/overview",
+                  "service-categories/legal/contracts-and-agreements/purchase-contracts",
+                  "service-categories/legal/contracts-and-agreements/lease-agreements",
+                  "service-categories/legal/contracts-and-agreements/addendums-and-contingencies",
+                  "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
                 ]
               },
               {
-                "group": "Homeowners Insurance",
-                "icon": "shield-halved",
+                "group": "Landlord-Tenant",
                 "pages": [
-                  "service-categories/homeowners-insurance/overview",
-                  "service-categories/homeowners-insurance/types-of-coverage",
-                  "service-categories/homeowners-insurance/policy-types",
-                  "service-categories/homeowners-insurance/what-affects-premiums",
-                  "service-categories/homeowners-insurance/filing-claims",
-                  "service-categories/homeowners-insurance/flood-insurance",
-                  "service-categories/homeowners-insurance/specialty-coverage",
-                  "service-categories/homeowners-insurance/comparing-insurance"
+                  "service-categories/legal/landlord-tenant/overview",
+                  "service-categories/legal/landlord-tenant/lease-agreements",
+                  "service-categories/legal/landlord-tenant/landlord-rights",
+                  "service-categories/legal/landlord-tenant/tenant-rights",
+                  "service-categories/legal/landlord-tenant/eviction-process",
+                  "service-categories/legal/landlord-tenant/security-deposits",
+                  "service-categories/legal/landlord-tenant/disputes"
                 ]
               },
               {
-                "group": "Interior Design",
-                "icon": "couch",
+                "group": "Ownership Changes",
                 "pages": [
-                  "service-categories/staging-interior-design/interior-design/overview",
-                  "service-categories/staging-interior-design/interior-design/types-of-services",
-                  "service-categories/staging-interior-design/interior-design/the-design-process",
-                  "service-categories/staging-interior-design/interior-design/costs-and-budgeting",
-                  "service-categories/staging-interior-design/interior-design/comparing-designers"
+                  "service-categories/legal/ownership-changes/overview",
+                  "service-categories/legal/ownership-changes/probate-process",
+                  "service-categories/legal/ownership-changes/inherited-property",
+                  "service-categories/legal/ownership-changes/trusts-and-real-estate",
+                  "service-categories/legal/ownership-changes/power-of-attorney",
+                  "service-categories/legal/ownership-changes/transferring-ownership",
+                  "service-categories/legal/ownership-changes/divorce-and-property",
+                  "service-categories/legal/ownership-changes/buyout-scenarios",
+                  "service-categories/legal/ownership-changes/removing-names-from-title"
                 ]
               },
               {
-                "group": "Legal",
-                "icon": "scale-balanced",
+                "group": "Property Issues",
                 "pages": [
-                  "service-categories/legal/overview",
-                  {
-                    "group": "Consumer Protections",
-                    "pages": [
-                      "service-categories/legal/consumer-protections/overview",
-                      "service-categories/legal/consumer-protections/respa",
-                      "service-categories/legal/consumer-protections/tila",
-                      "service-categories/legal/consumer-protections/fair-housing",
-                      "service-categories/legal/consumer-protections/required-disclosures"
-                    ]
-                  },
-                  {
-                    "group": "Real Estate Attorneys",
-                    "pages": [
-                      "service-categories/legal/real-estate-attorneys/overview",
-                      "service-categories/legal/real-estate-attorneys/when-you-need-one",
-                      "service-categories/legal/real-estate-attorneys/types-of-attorneys",
-                      "service-categories/legal/real-estate-attorneys/comparing-attorneys"
-                    ]
-                  },
-                  {
-                    "group": "Contracts & Agreements",
-                    "pages": [
-                      "service-categories/legal/contracts-and-agreements/overview",
-                      "service-categories/legal/contracts-and-agreements/purchase-contracts",
-                      "service-categories/legal/contracts-and-agreements/lease-agreements",
-                      "service-categories/legal/contracts-and-agreements/addendums-and-contingencies",
-                      "service-categories/legal/contracts-and-agreements/reviewing-before-signing"
-                    ]
-                  },
-                  {
-                    "group": "Landlord-Tenant",
-                    "pages": [
-                      "service-categories/legal/landlord-tenant/overview",
-                      "service-categories/legal/landlord-tenant/lease-agreements",
-                      "service-categories/legal/landlord-tenant/landlord-rights",
-                      "service-categories/legal/landlord-tenant/tenant-rights",
-                      "service-categories/legal/landlord-tenant/eviction-process",
-                      "service-categories/legal/landlord-tenant/security-deposits",
-                      "service-categories/legal/landlord-tenant/disputes"
-                    ]
-                  },
-                  {
-                    "group": "Ownership Changes",
-                    "pages": [
-                      "service-categories/legal/ownership-changes/overview",
-                      "service-categories/legal/ownership-changes/probate-process",
-                      "service-categories/legal/ownership-changes/inherited-property",
-                      "service-categories/legal/ownership-changes/trusts-and-real-estate",
-                      "service-categories/legal/ownership-changes/power-of-attorney",
-                      "service-categories/legal/ownership-changes/transferring-ownership",
-                      "service-categories/legal/ownership-changes/divorce-and-property",
-                      "service-categories/legal/ownership-changes/buyout-scenarios",
-                      "service-categories/legal/ownership-changes/removing-names-from-title"
-                    ]
-                  },
-                  {
-                    "group": "Property Issues",
-                    "pages": [
-                      "service-categories/legal/property-issues/overview",
-                      "service-categories/legal/property-issues/foreclosure-process",
-                      "service-categories/legal/property-issues/short-sales",
-                      "service-categories/legal/property-issues/liens-and-encumbrances",
-                      "service-categories/legal/property-issues/hoa-basics",
-                      "service-categories/legal/property-issues/zoning-and-land-use",
-                      "service-categories/legal/property-issues/environmental-disclosures",
-                      "service-categories/legal/property-issues/property-disputes",
-                      "service-categories/legal/property-issues/llcs-and-business-structures",
-                      "service-categories/legal/property-issues/new-construction"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Mortgage Lenders",
-                "icon": "building-columns",
-                "pages": [
-                  "service-categories/mortgage-lenders/overview",
-                  "service-categories/mortgage-lenders/types-of-lenders",
-                  "service-categories/mortgage-lenders/pre-approval",
-                  "service-categories/mortgage-lenders/types-of-loans",
-                  "service-categories/mortgage-lenders/the-lending-process",
-                  "service-categories/mortgage-lenders/understanding-rates",
-                  "service-categories/mortgage-lenders/costs-and-fees",
-                  "service-categories/mortgage-lenders/comparing-lenders"
-                ]
-              },
-              {
-                "group": "Movers",
-                "icon": "truck-moving",
-                "pages": [
-                  "service-categories/movers/overview",
-                  "service-categories/movers/types-of-moves",
-                  "service-categories/movers/the-moving-process",
-                  "service-categories/movers/costs-and-estimates",
-                  "service-categories/movers/protecting-your-belongings",
-                  "service-categories/movers/comparing-movers"
-                ]
-              },
-              {
-                "group": "Photography & Video",
-                "icon": "camera",
-                "pages": [
-                  "service-categories/photography-videography/overview",
-                  "service-categories/photography-videography/types-of-services",
-                  "service-categories/photography-videography/the-process",
-                  "service-categories/photography-videography/costs-and-packages",
-                  "service-categories/photography-videography/comparing-photographers"
-                ]
-              },
-              {
-                "group": "Property Managers",
-                "icon": "building",
-                "pages": [
-                  "service-categories/property-managers/overview",
-                  "service-categories/property-managers/types-of-property-managers",
-                  "service-categories/property-managers/services-offered",
-                  "service-categories/property-managers/fees-and-contracts",
-                  "service-categories/property-managers/landlord-responsibilities",
-                  "service-categories/property-managers/comparing-managers"
-                ]
-              },
-              {
-                "group": "Real Estate Agents",
-                "icon": "house-user",
-                "pages": [
-                  "service-categories/real-estate-agents/overview",
-                  "service-categories/real-estate-agents/types-of-agents",
-                  "service-categories/real-estate-agents/the-agent-process",
-                  "service-categories/real-estate-agents/commission-and-costs",
-                  "service-categories/real-estate-agents/comparing-agents"
-                ]
-              },
-              {
-                "group": "Staging",
-                "icon": "wand-magic-sparkles",
-                "pages": [
-                  "service-categories/staging-interior-design/staging/overview",
-                  "service-categories/staging-interior-design/staging/types-of-staging",
-                  "service-categories/staging-interior-design/staging/the-staging-process",
-                  "service-categories/staging-interior-design/staging/costs-and-roi",
-                  "service-categories/staging-interior-design/staging/comparing-stagers"
-                ]
-              },
-              {
-                "group": "Title & Escrow",
-                "icon": "shield-check",
-                "pages": [
-                  "service-categories/title-escrow/overview",
-                  "service-categories/title-escrow/title-company-roles",
-                  "service-categories/title-escrow/title-insurance",
-                  "service-categories/title-escrow/title-ownership-options",
-                  "service-categories/title-escrow/earnest-money",
-                  "service-categories/title-escrow/wire-fraud-protection",
-                  "service-categories/title-escrow/closing-process",
-                  "service-categories/title-escrow/comparing-title-companies"
+                  "service-categories/legal/property-issues/overview",
+                  "service-categories/legal/property-issues/foreclosure-process",
+                  "service-categories/legal/property-issues/short-sales",
+                  "service-categories/legal/property-issues/liens-and-encumbrances",
+                  "service-categories/legal/property-issues/hoa-basics",
+                  "service-categories/legal/property-issues/zoning-and-land-use",
+                  "service-categories/legal/property-issues/environmental-disclosures",
+                  "service-categories/legal/property-issues/property-disputes",
+                  "service-categories/legal/property-issues/llcs-and-business-structures",
+                  "service-categories/legal/property-issues/new-construction"
                 ]
               }
+            ]
+          },
+          {
+            "anchor": "Mortgage Lenders",
+            "icon": "building-columns",
+            "pages": [
+              "service-categories/mortgage-lenders/overview",
+              "service-categories/mortgage-lenders/types-of-lenders",
+              "service-categories/mortgage-lenders/pre-approval",
+              "service-categories/mortgage-lenders/types-of-loans",
+              "service-categories/mortgage-lenders/the-lending-process",
+              "service-categories/mortgage-lenders/understanding-rates",
+              "service-categories/mortgage-lenders/costs-and-fees",
+              "service-categories/mortgage-lenders/comparing-lenders"
+            ]
+          },
+          {
+            "anchor": "Movers",
+            "icon": "truck-moving",
+            "pages": [
+              "service-categories/movers/overview",
+              "service-categories/movers/types-of-moves",
+              "service-categories/movers/the-moving-process",
+              "service-categories/movers/costs-and-estimates",
+              "service-categories/movers/protecting-your-belongings",
+              "service-categories/movers/comparing-movers"
+            ]
+          },
+          {
+            "anchor": "Photography & Video",
+            "icon": "camera",
+            "pages": [
+              "service-categories/photography-videography/overview",
+              "service-categories/photography-videography/types-of-services",
+              "service-categories/photography-videography/the-process",
+              "service-categories/photography-videography/costs-and-packages",
+              "service-categories/photography-videography/comparing-photographers"
+            ]
+          },
+          {
+            "anchor": "Property Managers",
+            "icon": "building",
+            "pages": [
+              "service-categories/property-managers/overview",
+              "service-categories/property-managers/types-of-property-managers",
+              "service-categories/property-managers/services-offered",
+              "service-categories/property-managers/fees-and-contracts",
+              "service-categories/property-managers/landlord-responsibilities",
+              "service-categories/property-managers/comparing-managers"
+            ]
+          },
+          {
+            "anchor": "Real Estate Agents",
+            "icon": "house-user",
+            "pages": [
+              "service-categories/real-estate-agents/overview",
+              "service-categories/real-estate-agents/types-of-agents",
+              "service-categories/real-estate-agents/the-agent-process",
+              "service-categories/real-estate-agents/commission-and-costs",
+              "service-categories/real-estate-agents/comparing-agents"
+            ]
+          },
+          {
+            "anchor": "Staging",
+            "icon": "wand-magic-sparkles",
+            "pages": [
+              "service-categories/staging-interior-design/staging/overview",
+              "service-categories/staging-interior-design/staging/types-of-staging",
+              "service-categories/staging-interior-design/staging/the-staging-process",
+              "service-categories/staging-interior-design/staging/costs-and-roi",
+              "service-categories/staging-interior-design/staging/comparing-stagers"
+            ]
+          },
+          {
+            "anchor": "Title & Escrow",
+            "icon": "shield-check",
+            "pages": [
+              "service-categories/title-escrow/overview",
+              "service-categories/title-escrow/title-company-roles",
+              "service-categories/title-escrow/title-insurance",
+              "service-categories/title-escrow/title-ownership-options",
+              "service-categories/title-escrow/earnest-money",
+              "service-categories/title-escrow/wire-fraud-protection",
+              "service-categories/title-escrow/closing-process",
+              "service-categories/title-escrow/comparing-title-companies"
             ]
           }
         ]
       },
       {
         "tab": "Pro",
-        "groups": [
+        "anchors": [
           {
-            "group": "Local Search",
+            "anchor": "Local Search",
             "icon": "magnifying-glass-location",
             "pages": [
               "pro/local-search/overview",
@@ -379,7 +370,7 @@
             ]
           },
           {
-            "group": "Business Listings",
+            "anchor": "Business Listings",
             "icon": "list-check",
             "pages": [
               "pro/business-listings/overview",
@@ -389,7 +380,7 @@
             ]
           },
           {
-            "group": "Google Business Profile",
+            "anchor": "Google Business Profile",
             "icon": "google",
             "pages": [
               "pro/google-business-profile/overview",

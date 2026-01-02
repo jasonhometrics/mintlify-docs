@@ -31,7 +31,7 @@
             "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              "overview/getting-started/introduction",
+              "overview/home",
               "overview/getting-started/what-is-hometrics",
               "overview/getting-started/mission-and-principles"
             ]
@@ -57,6 +57,13 @@
       {
         "tab": "Learn",
         "groups": [
+          {
+            "group": "Learning Paths",
+            "icon": "graduation-cap",
+            "pages": [
+              "learn/index"
+            ]
+          },
           {
             "group": "First-Time Home Buyer",
             "icon": "house-user",
@@ -114,6 +121,13 @@
       {
         "tab": "Service Categories",
         "groups": [
+          {
+            "group": "Browse Categories",
+            "icon": "grid-2",
+            "pages": [
+              "service-categories/index"
+            ]
+          },
           {
             "group": "Accountants & Tax",
             "icon": "calculator",
@@ -280,6 +294,17 @@
               "service-categories/movers/costs-and-estimates",
               "service-categories/movers/protecting-your-belongings",
               "service-categories/movers/comparing-movers"
+            ]
+          },
+          {
+            "group": "Photography & Video",
+            "icon": "camera",
+            "pages": [
+              "service-categories/photography-videography/overview",
+              "service-categories/photography-videography/types-of-services",
+              "service-categories/photography-videography/the-process",
+              "service-categories/photography-videography/costs-and-packages",
+              "service-categories/photography-videography/comparing-photographers"
             ]
           },
           {

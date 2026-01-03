@@ -25,7 +25,7 @@
   "navigation": {
     "tabs": [
       {
-  "tab": "Overview",
+"tab": "Overview",
   "groups": [
     {
       "group": "",
@@ -47,6 +47,13 @@
         "overview/platform-features/performance-badges",
         "overview/platform-features/differentiators",
         "overview/platform-features/special-offers-and-discounts"
+      ]
+    },
+    {
+      "group": "Helpful Tools",
+      "icon": "toolbox",
+      "pages": [
+        "overview/helpful-tools/glossary"
       ]
     },
     {

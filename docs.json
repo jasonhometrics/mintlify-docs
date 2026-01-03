@@ -25,31 +25,35 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Overview",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "icon": "rocket",
-            "pages": [
-              "overview/home",
-              "overview/getting-started/what-is-hometrics",
-              "overview/getting-started/mission-and-principles"
-            ]
-          },
-          {
-            "group": "Platform Features",
-            "icon": "star",
-            "pages": [
-              "overview/platform-features/performance-badges",
-              "overview/platform-features/differentiators",
-              "overview/platform-features/special-offers-and-discounts"
-            ]
-          },
-          {
-            "group": "Helpful Tools",
-            "icon": "toolbox",
-            "pages": [
-              "overview/helpful-tools/glossary"
+  "tab": "Overview",
+  "groups": [
+    {
+      "group": "",
+      "pages": [
+        "overview/getting-started/home"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "icon": "rocket",
+      "pages": [
+        "overview/getting-started/mission-and-principles"
+      ]
+    },
+    {
+      "group": "Platform Features",
+      "icon": "star",
+      "pages": [
+        "overview/platform-features/performance-badges",
+        "overview/platform-features/differentiators",
+        "overview/platform-features/special-offers-and-discounts"
+      ]
+    },
+    {
+      "group": "Helpful Tools",
+      "icon": "toolbox",
+      "pages": [
+        "overview/helpful-tools/glossary"
             ]
           }
         ]

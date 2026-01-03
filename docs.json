@@ -287,12 +287,14 @@
             "group": "Movers",
             "icon": "truck-moving",
             "pages": [
-              "service-categories/movers/overview",
-              "service-categories/movers/types-of-moves",
-              "service-categories/movers/the-moving-process",
-              "service-categories/movers/costs-and-estimates",
-              "service-categories/movers/protecting-your-belongings",
-              "service-categories/movers/comparing-movers"
+    "service-categories/movers/overview",
+    "service-categories/movers/types-of-moves",
+    "service-categories/movers/getting-estimates",
+    "service-categories/movers/the-moving-process",
+    "service-categories/movers/costs-and-pricing",
+    "service-categories/movers/protecting-your-belongings",
+    "service-categories/movers/comparing-movers",
+    "service-categories/movers/avoiding-scams"
             ]
           },
           {

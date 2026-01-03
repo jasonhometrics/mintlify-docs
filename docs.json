@@ -25,42 +25,35 @@
   "navigation": {
     "tabs": [
       {
-"tab": "Overview",
-  "groups": [
-    {
-      "group": "",
-      "pages": [
-        "overview/home"
-      ]
-    },
-    {
-      "group": "Getting Started",
-      "icon": "rocket",
-      "pages": [
-        "overview/getting-started/mission-and-principles"
-      ]
-    },
-    {
-      "group": "Platform Features",
-      "icon": "star",
-      "pages": [
-        "overview/platform-features/performance-badges",
-        "overview/platform-features/differentiators",
-        "overview/platform-features/special-offers-and-discounts"
-      ]
-    },
-    {
-      "group": "Helpful Tools",
-      "icon": "toolbox",
-      "pages": [
-        "overview/helpful-tools/glossary"
-      ]
-    },
-    {
-      "group": "Helpful Tools",
-      "icon": "toolbox",
-      "pages": [
-        "overview/helpful-tools/glossary"
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "",
+            "pages": [
+              "overview/getting-started/home"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              "overview/getting-started/mission-and-principles"
+            ]
+          },
+          {
+            "group": "Platform Features",
+            "icon": "star",
+            "pages": [
+              "overview/platform-features/performance-badges",
+              "overview/platform-features/differentiators",
+              "overview/platform-features/special-offers-and-discounts"
+            ]
+          },
+          {
+            "group": "Helpful Tools",
+            "icon": "toolbox",
+            "pages": [
+              "overview/helpful-tools/glossary"
             ]
           }
         ]
@@ -68,6 +61,13 @@
       {
         "tab": "Learn",
         "groups": [
+          {
+            "group": "Learning Paths",
+            "icon": "graduation-cap",
+            "pages": [
+              "learn/index"
+            ]
+          },
           {
             "group": "First-Time Home Buyer",
             "icon": "house-user",
@@ -79,19 +79,6 @@
               "learn/first-time-home-buyer/due-diligence",
               "learn/first-time-home-buyer/title-and-closing",
               "learn/first-time-home-buyer/insurance-and-moving"
-            ]
-          },
-          {
-            "group": "Selling Your Home",
-            "icon": "sign-hanging",
-            "pages": [
-              "learn/selling-your-home/overview",
-              "learn/selling-your-home/choosing-a-listing-agent",
-              "learn/selling-your-home/preparing-your-home",
-              "learn/selling-your-home/pricing-and-listing",
-              "learn/selling-your-home/reviewing-offers",
-              "learn/selling-your-home/under-contract-to-closing",
-              "learn/selling-your-home/tax-implications-and-moving"
             ]
           },
           {
@@ -119,12 +106,32 @@
               "learn/real-estate-investing/tax-strategies",
               "learn/real-estate-investing/insurance-and-liability"
             ]
+          },
+          {
+            "group": "Selling Your Home",
+            "icon": "sign-hanging",
+            "pages": [
+              "learn/selling-your-home/overview",
+              "learn/selling-your-home/choosing-a-listing-agent",
+              "learn/selling-your-home/preparing-your-home",
+              "learn/selling-your-home/pricing-and-listing",
+              "learn/selling-your-home/reviewing-offers",
+              "learn/selling-your-home/under-contract-to-closing",
+              "learn/selling-your-home/tax-implications-and-moving"
+            ]
           }
         ]
       },
       {
         "tab": "Service Categories",
         "groups": [
+          {
+            "group": "Service Categories",
+            "icon": "grid-2",
+            "pages": [
+              "service-categories/index"
+            ]
+          },
           {
             "group": "Accountants & Tax",
             "icon": "calculator",
@@ -206,15 +213,6 @@
                 ]
               },
               {
-                "group": "Real Estate Attorneys",
-                "pages": [
-                  "service-categories/legal/real-estate-attorneys/overview",
-                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
-                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
-                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
-                ]
-              },
-              {
                 "group": "Contracts & Agreements",
                 "pages": [
                   "service-categories/legal/contracts-and-agreements/overview",
@@ -263,6 +261,15 @@
                   "service-categories/legal/property-issues/property-disputes",
                   "service-categories/legal/property-issues/llcs-and-business-structures",
                   "service-categories/legal/property-issues/new-construction"
+                ]
+              },
+              {
+                "group": "Real Estate Attorneys",
+                "pages": [
+                  "service-categories/legal/real-estate-attorneys/overview",
+                  "service-categories/legal/real-estate-attorneys/when-you-need-one",
+                  "service-categories/legal/real-estate-attorneys/types-of-attorneys",
+                  "service-categories/legal/real-estate-attorneys/comparing-attorneys"
                 ]
               }
             ]

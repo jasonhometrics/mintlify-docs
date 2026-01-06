@@ -185,11 +185,11 @@
             "group": "Interior Design",
             "icon": "couch",
             "pages": [
-              "service-categories/staging-interior-design/interior-design/overview",
-              "service-categories/staging-interior-design/interior-design/types-of-services",
-              "service-categories/staging-interior-design/interior-design/the-design-process",
-              "service-categories/staging-interior-design/interior-design/costs-and-budgeting",
-              "service-categories/staging-interior-design/interior-design/comparing-designers"
+              "service-categories/interior-design/overview",
+              "service-categories/interior-design/types-of-services",
+              "service-categories/interior-design/the-design-process",
+              "service-categories/interior-design/costs-and-budgeting",
+              "service-categories/interior-design/comparing-designers"
             ]
           },
           {
@@ -335,11 +335,11 @@
             "group": "Staging",
             "icon": "wand-magic-sparkles",
             "pages": [
-              "service-categories/staging-interior-design/staging/overview",
-              "service-categories/staging-interior-design/staging/types-of-staging",
-              "service-categories/staging-interior-design/staging/the-staging-process",
-              "service-categories/staging-interior-design/staging/costs-and-roi",
-              "service-categories/staging-interior-design/staging/comparing-stagers"
+              "service-categories/staging/overview",
+              "service-categories/staging/types-of-staging",
+              "service-categories/staging/the-staging-process",
+              "service-categories/staging/costs-and-roi",
+              "service-categories/staging/comparing-stagers"
             ]
           },
           {

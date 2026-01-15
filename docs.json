@@ -24,35 +24,35 @@
   },
   "navigation": {
     "tabs": [
-{
-  "tab": "Overview",
-  "groups": [
-    {
-      "group": "Getting Started",
-      "icon": "rocket",
-      "pages": [
-        "overview/getting-started/home",
-        "overview/getting-started/mission-and-principles"
-      ]
-    },
-    {
-      "group": "Platform Features",
-      "icon": "star",
-      "pages": [
-        "overview/platform-features/performance-badges",
-        "overview/platform-features/differentiators",
-        "overview/platform-features/special-offers-and-discounts"
-      ]
-    },
-    {
-      "group": "Helpful Tools",
-      "icon": "toolbox",
-      "pages": [
-        "overview/helpful-tools/glossary"
-      ]
-    }
-  ]
-},
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              "overview/getting-started/home",
+              "overview/getting-started/mission-and-principles"
+            ]
+          },
+          {
+            "group": "Platform Features",
+            "icon": "star",
+            "pages": [
+              "overview/platform-features/performance-badges",
+              "overview/platform-features/differentiators",
+              "overview/platform-features/special-offers-and-discounts"
+            ]
+          },
+          {
+            "group": "Helpful Tools",
+            "icon": "toolbox",
+            "pages": [
+              "overview/helpful-tools/glossary"
+            ]
+          }
+        ]
+      },
       {
         "tab": "Learn",
         "groups": [
@@ -287,14 +287,14 @@
             "group": "Movers",
             "icon": "truck-moving",
             "pages": [
-    "service-categories/movers/overview",
-    "service-categories/movers/types-of-moves",
-    "service-categories/movers/getting-estimates",
-    "service-categories/movers/the-moving-process",
-    "service-categories/movers/costs-and-pricing",
-    "service-categories/movers/protecting-your-belongings",
-    "service-categories/movers/comparing-movers",
-    "service-categories/movers/avoiding-scams"
+              "service-categories/movers/overview",
+              "service-categories/movers/types-of-moves",
+              "service-categories/movers/getting-estimates",
+              "service-categories/movers/the-moving-process",
+              "service-categories/movers/costs-and-pricing",
+              "service-categories/movers/protecting-your-belongings",
+              "service-categories/movers/comparing-movers",
+              "service-categories/movers/avoiding-scams"
             ]
           },
           {
@@ -359,44 +359,15 @@
         ]
       },
       {
- "tab": "Pro",
-  "groups": [
-    {
-      "group": "Pro Overview",
-      "icon": "briefcase",
-      "pages": [
-        "pro/index"
-      ]
-    },
-    {
-      "group": "Local Search",
-      "icon": "magnifying-glass-location",
-      "pages": [
-        "pro/local-search/overview",
-        "pro/local-search/how-search-is-changing",
-        "pro/local-search/what-this-means"
-      ]
-    },
-    {
-      "group": "Business Listings",
-      "icon": "list-check",
-      "pages": [
-        "pro/business-listings/overview",
-        "pro/business-listings/types-of-listings",
-        "pro/business-listings/auditing-your-listings",
-        "pro/business-listings/maintaining-consistency"
-      ]
-    },
-    {
-      "group": "Google Business Profile",
-      "icon": "google",
-      "pages": [
-        "pro/google-business-profile/overview",
-        "pro/google-business-profile/setting-up-your-profile",
-        "pro/google-business-profile/optimizing-your-profile",
-        "pro/google-business-profile/managing-reviews",
-        "pro/google-business-profile/insights-and-performance",
-        "pro/google-business-profile/common-mistakes"
+        "tab": "Pro",
+        "groups": [
+          {
+            "group": "For Professionals",
+            "icon": "briefcase",
+            "pages": [
+              "pro/why-join",
+              "pro/services",
+              "pro/pricing"
             ]
           }
         ]

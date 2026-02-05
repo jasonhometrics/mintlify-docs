@@ -378,13 +378,13 @@
     "links": [
       {
         "label": "Contact",
-        "href": "https://hometrics.io/contact"
+        "href": "https://hometrics.ai/contact"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Search Directory",
-      "href": "https://hometrics.io"
+      "href": "https://hometrics.ai"
     }
   },
   "footer": {

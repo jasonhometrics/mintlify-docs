@@ -362,6 +362,16 @@
         "tab": "Pro",
         "groups": [
           {
+            "group": "Playbooks",
+            "pages": [
+              "increase",
+              "page",
+              "test-1",
+              "test",
+              "untitled-page"
+            ]
+          },
+          {
             "group": "For Professionals",
             "icon": "briefcase",
             "pages": [

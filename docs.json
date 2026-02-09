@@ -371,6 +371,7 @@
           },
           {
             "group": "Playbooks",
+            "icon": "notebook",
             "pages": [
               "increase",
               "untitled-page",
@@ -380,6 +381,7 @@
           },
           {
             "group": "Services & Pricing",
+            "icon": "credit-card",
             "pages": [
               "pro/services",
               "pro/pricing"

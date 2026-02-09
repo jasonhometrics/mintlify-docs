@@ -362,9 +362,16 @@
         "tab": "Pro",
         "groups": [
           {
+            "group": "Getting Started",
+            "icon": "briefcase",
+            "pages": [
+              "pro/why-join",
+              "page"
+            ]
+          },
+          {
             "group": "Playbooks",
             "pages": [
-              "page",
               "increase",
               "untitled-page",
               "test-1",
@@ -372,10 +379,8 @@
             ]
           },
           {
-            "group": "For Professionals",
-            "icon": "briefcase",
+            "group": "Services & Pricing",
             "pages": [
-              "pro/why-join",
               "pro/services",
               "pro/pricing"
             ]

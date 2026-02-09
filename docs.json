@@ -364,11 +364,11 @@
           {
             "group": "Playbooks",
             "pages": [
-              "increase",
               "page",
+              "increase",
+              "untitled-page",
               "test-1",
-              "test",
-              "untitled-page"
+              "test"
             ]
           },
           {

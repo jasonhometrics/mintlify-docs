@@ -362,29 +362,29 @@
         "tab": "Pro",
         "groups": [
           {
-  "group": "Getting Started",
-  "icon": "rocket",
-  "pages": [
-    "pro/why-join",
-    "pro/profile-overview"
-  ]
-},
-{
-  "group": "Playbooks",
-  "icon": "book-open",
-  "pages": [
-    "pro/earning-performance-badges",
-    "pro/using-differentiators",
-    "pro/special-pricing-strategy",
-    "pro/increase-visibility"
-  ]
-},
-{
-  "group": "Services & Pricing",
-  "icon": "credit-card",
-  "pages": [
-    "pro/services",
-    "pro/pricing"
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              "pro/why-join",
+              "pro/profile-overview"
+            ]
+          },
+          {
+            "group": "Playbooks",
+            "icon": "book-open",
+            "pages": [
+              "pro/earning-performance-badges",
+              "pro/using-differentiators",
+              "pro/special-pricing-strategy",
+              "pro/increase-visibility"
+            ]
+          },
+          {
+            "group": "Services & Pricing",
+            "icon": "credit-card",
+            "pages": [
+              "pro/services",
+              "pro/pricing"
             ]
           }
         ]

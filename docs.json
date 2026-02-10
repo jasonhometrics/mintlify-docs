@@ -365,19 +365,13 @@
             "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              "pro/why-join",
-              "pro/profile-overview"
+              "pro/why-join"
             ]
           },
           {
             "group": "Playbooks",
             "icon": "book-open",
-            "pages": [
-              "pro/earning-performance-badges",
-              "pro/using-differentiators",
-              "pro/special-pricing-strategy",
-              "pro/increase-visibility"
-            ]
+            "pages": []
           },
           {
             "group": "Services & Pricing",

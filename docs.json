@@ -21,7 +21,7 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  ],
+  },
   "metadata": {
     "og:site_name": "Hometrics Guide",
     "og:description": "Resources for real estate professionals and home buyers"

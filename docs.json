@@ -278,12 +278,11 @@
             "icon": "building-columns",
             "pages": [
               "service-categories/mortgage-lenders/overview",
-              "service-categories/mortgage-lenders/types-of-lenders",
+              "service-categories/mortgage-lenders/loan-officers-and-brokers",
+              "service-categories/mortgage-lenders/local-vs-national",
               "service-categories/mortgage-lenders/pre-approval",
               "service-categories/mortgage-lenders/types-of-loans",
-              "service-categories/mortgage-lenders/the-lending-process",
-              "service-categories/mortgage-lenders/understanding-rates",
-              "service-categories/mortgage-lenders/costs-and-fees",
+              "service-categories/mortgage-lenders/mortgage-timeline",
               "service-categories/mortgage-lenders/comparing-lenders"
             ]
           },
@@ -307,21 +306,22 @@
             "pages": [
               "service-categories/photography-videography/overview",
               "service-categories/photography-videography/types-of-services",
-              "service-categories/photography-videography/the-process",
-              "service-categories/photography-videography/costs-and-packages",
+              "service-categories/photography-videography/the-shoot-process",
+              "service-categories/photography-videography/costs-and-pricing",
               "service-categories/photography-videography/comparing-photographers"
             ]
           },
           {
-            "group": "Property Managers",
+            "group": "Property Management",
             "icon": "building",
             "pages": [
-              "service-categories/property-managers/overview",
-              "service-categories/property-managers/types-of-property-managers",
-              "service-categories/property-managers/services-offered",
-              "service-categories/property-managers/fees-and-contracts",
-              "service-categories/property-managers/landlord-responsibilities",
-              "service-categories/property-managers/comparing-managers"
+              "service-categories/property-management/overview",
+              "service-categories/property-management/types-of-services",
+              "service-categories/property-management/the-management-process",
+              "service-categories/property-management/costs-and-fees",
+              "service-categories/property-management/owner-responsibilities",
+              "service-categories/property-management/evaluating-performance",
+              "service-categories/property-management/comparing-property-managers"
             ]
           },
           {

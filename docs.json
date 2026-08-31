@@ -391,6 +391,7 @@
             "icon": "credit-card",
             "pages": [
               "pro/services",
+              "pro/pricing",
               "pro/pricing-full"
             ]
           }

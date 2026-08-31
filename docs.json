@@ -55,7 +55,8 @@
               "overview/helpful-tools/glossary"
             ]
           }
-        ]
+        ],
+        "hidden": true
       },
       {
         "tab": "Learn",
@@ -119,7 +120,8 @@
               "learn/selling-your-home/tax-implications-and-moving"
             ]
           }
-        ]
+        ],
+        "hidden": true
       },
       {
         "tab": "Service Categories",
@@ -360,7 +362,8 @@
               "service-categories/title-escrow/comparing-title-companies"
             ]
           }
-        ]
+        ],
+        "hidden": true
       },
       {
         "tab": "Pro",

@@ -384,10 +384,11 @@
             ]
           },
           {
-            "group": "Services & Pricing",
+            "group": "Pricing",
             "icon": "credit-card",
             "pages": [
               "pro/services",
+              "pro/pricing",
               "pro/pricing_directory"
             ]
           }

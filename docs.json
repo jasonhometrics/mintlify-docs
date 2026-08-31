@@ -37,7 +37,8 @@
             "pages": [
               "overview/getting-started/home",
               "overview/getting-started/mission-and-principles"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Platform Features",
@@ -46,14 +47,16 @@
               "overview/platform-features/performance-badges",
               "overview/platform-features/differentiators",
               "overview/platform-features/special-offers-and-discounts"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Helpful Tools",
             "icon": "toolbox",
             "pages": [
               "overview/helpful-tools/glossary"
-            ]
+            ],
+            "hidden": true
           }
         ],
         "hidden": true
@@ -66,7 +69,8 @@
             "icon": "graduation-cap",
             "pages": [
               "learn/index"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "First-Time Home Buyer",
@@ -79,7 +83,8 @@
               "learn/first-time-home-buyer/due-diligence",
               "learn/first-time-home-buyer/title-and-closing",
               "learn/first-time-home-buyer/insurance-and-moving"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Inherited Property",
@@ -92,7 +97,8 @@
               "learn/inherited-property/transferring-title",
               "learn/inherited-property/selling-inherited-property",
               "learn/inherited-property/keeping-as-rental"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Real Estate Investing",
@@ -105,7 +111,8 @@
               "learn/real-estate-investing/managing-your-investment",
               "learn/real-estate-investing/tax-strategies",
               "learn/real-estate-investing/insurance-and-liability"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Selling Your Home",
@@ -118,7 +125,8 @@
               "learn/selling-your-home/reviewing-offers",
               "learn/selling-your-home/under-contract-to-closing",
               "learn/selling-your-home/tax-implications-and-moving"
-            ]
+            ],
+            "hidden": true
           }
         ],
         "hidden": true
@@ -131,7 +139,8 @@
             "icon": "grid-2",
             "pages": [
               "service-categories/index"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Accountants & Tax",
@@ -145,7 +154,8 @@
               "service-categories/accountants-tax/1031-exchanges",
               "service-categories/accountants-tax/property-tax-appeals",
               "service-categories/accountants-tax/comparing-accountants"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Appraisers",
@@ -158,7 +168,8 @@
               "service-categories/appraisers/appraisal-vs-other-valuations",
               "service-categories/appraisers/low-appraisals",
               "service-categories/appraisers/comparing-appraisers"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Home Inspectors",
@@ -171,7 +182,8 @@
               "service-categories/home-inspectors/common-issues-found",
               "service-categories/home-inspectors/after-the-inspection",
               "service-categories/home-inspectors/comparing-inspectors"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Homeowners Insurance",
@@ -185,7 +197,8 @@
               "service-categories/homeowners-insurance/flood-insurance",
               "service-categories/homeowners-insurance/specialty-coverage",
               "service-categories/homeowners-insurance/comparing-insurance"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Interior Design",
@@ -196,7 +209,8 @@
               "service-categories/interior-design/the-design-process",
               "service-categories/interior-design/costs-and-budgeting",
               "service-categories/interior-design/comparing-designers"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Legal",
@@ -273,7 +287,8 @@
                   "service-categories/legal/real-estate-attorneys/comparing-attorneys"
                 ]
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Mortgage Lenders",
@@ -286,7 +301,8 @@
               "service-categories/mortgage-lenders/types-of-loans",
               "service-categories/mortgage-lenders/mortgage-timeline",
               "service-categories/mortgage-lenders/comparing-lenders"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Movers",
@@ -300,7 +316,8 @@
               "service-categories/movers/protecting-your-belongings",
               "service-categories/movers/comparing-movers",
               "service-categories/movers/avoiding-scams"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Photography & Video",
@@ -311,7 +328,8 @@
               "service-categories/photography-videography/the-shoot-process",
               "service-categories/photography-videography/costs-and-pricing",
               "service-categories/photography-videography/comparing-photographers"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Property Management",
@@ -324,7 +342,8 @@
               "service-categories/property-management/owners-responsibilities",
               "service-categories/property-management/evaluating-performance",
               "service-categories/property-management/comparing-property-managers"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Real Estate Agents",
@@ -335,7 +354,8 @@
               "service-categories/real-estate-agents/the-agent-process",
               "service-categories/real-estate-agents/commission-and-costs",
               "service-categories/real-estate-agents/comparing-agents"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Staging",
@@ -346,7 +366,8 @@
               "service-categories/staging/the-staging-process",
               "service-categories/staging/costs-and-roi",
               "service-categories/staging/comparing-stagers"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Title & Escrow",
@@ -360,7 +381,8 @@
               "service-categories/title-escrow/wire-fraud-protection",
               "service-categories/title-escrow/closing-process",
               "service-categories/title-escrow/comparing-title-companies"
-            ]
+            ],
+            "hidden": true
           }
         ],
         "hidden": true
@@ -374,7 +396,8 @@
             "pages": [
               "pro/why-join",
               "pro/profile-overview"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Playbooks",
@@ -384,7 +407,8 @@
               "pro/using-differentiators",
               "pro/special-pricing-strategy",
               "pro/increase-visibility"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Services & Pricing",

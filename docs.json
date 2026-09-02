@@ -56,5 +56,12 @@
       "label": "Search Directory",
       "href": "https://hometrics.ai"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "getting-started",
+      "destination": "/pro/pricing",
+      "permanent": true
+    }
+  ]
 }
